@@ -1,0 +1,192 @@
+body {
+    font-size: 16px;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.floatright {
+	float: right;
+}
+
+.floatleft {
+	float: left;
+}
+
+.dnone {
+    display: none;
+}
+
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.relative {
+	position: relative;
+}
+
+.alignright {
+    text-align: right;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.badge {
+    position: absolute;
+    top: -14px;
+    right: -12px;
+    padding: 2px;
+    cursor: pointer;
+    background-color: rgb(234,97,22);
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.blue {
+    color: rgb(45,98,232);
+}
+
+.green {
+    color: rgb(11,174,33)
+}
+
+.btn.complete, .btn.green {
+    color: rgb(255,255,255);
+    background: rgb(11,174,33);
+    border: 2px solid rgb(11,174,33);
+}
+
+.btn.blue {
+    background: rgb(45,98,232);
+    color: rgb(255,255,255);
+    border: 2px solid rgb(45,98,232);
+}
+
+.btn.active.blue {
+    border-bottom: 4px solid rgb(1,53,185);
+}
+
+#wrapper {
+margin-top: 120px;
+}
+
+img.max {
+    width: 100%;
+    max-width: 100%;
+}
+
+.btn {
+    width: 200px;
+    border-radius: 8px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: rgb(45,98,232);
+    background: rgb(243,234,234);
+    border: 2px solid rgb(243,234,234);
+}
+
+.xs-margin {
+    min-height: 1px;
+    margin-bottom: 10px;
+}
+
+.sm-margin {
+    min-height: 1px;
+    margin-bottom: 20px;
+}
+
+.md-margin {
+    min-height: 1px;
+    margin-bottom: 40px;
+}
+
+.lg-margin {
+    min-height: 1px;
+    margin-bottom: 60px;
+}
+
+hr.stroke {
+    border-top: 1px solid #d7d7d7;
+    margin-bottom: 0;
+}
+
+.f-60 {
+    font-size: 60px;
+    color: #8c8c8c;
+}
+
+.full-image {
+    width: 100%;
+}
+
+/*[class*='col-'] {
+    float: left;
+}*/
+
+.col-20 {
+    width: 20%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-70 {
+    width: 70%;
+}
+
+.col-80 {
+    width: 80%;
+}
+
