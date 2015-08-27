@@ -8,7 +8,7 @@
     <div class="container">
 
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-10 col-md-offset-1">
 
 <div class="white-box relative cf tab">
    
@@ -31,10 +31,21 @@
         </div>
          <div class="sub-content">
             <div class="white-box">
+                 <div class="">
+                   <div class="row">
+            <div class="col-lg-12">
+                <div class="col-md-6 "></div>
+                <div class="col-md-3 col-md-offset-3">
+                    <!--<a class="btn green" href="/complete/training">MARK WEEK AS COMPLETE</a>-->
+                </div>
+
+            </div>
+        </div> 
+                </div>
                 <div class="activity-list">
                     <?php foreach ($activity as $act): ?>
                     <div class="activity-list-item">
-                        <input type="button" id="<?php echo $act['WorkOut_ID'] ?>" class="btn js-activity-item" value="<?php echo $act['Name'] ?>" />
+                        <input type="button" id="<?php echo $act['WorkOut_ID'] ?>" class="btn js-activity-item exercise" value="<?php echo $act['Name'] ?>" />
                         <div id="ex<?php echo $act['WorkOut_ID'] ?>" class="activity-list-item-dropdown cf dnone">
                         </div>
                     </div>

@@ -23,6 +23,6 @@
     </div>
     <div class="activity-btn-actions cf">
         <a class="btn blue">DOWNLOAD AS PDF</a>
-        <a class="btn green">MARK AS COMPLETE</a>
+        <!--<a class="btn green">MARK AS COMPLETE</a>-->
     </div>
 

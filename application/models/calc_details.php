@@ -148,6 +148,19 @@ class Calc_details extends CI_Model {
 		return  $query->row_array();
 	}
 
+	public function get_veg($type = 'all')
+	{
+		if ($type == 'green') {
+			$this->db->where('meal_type','green');
+		}
+		$this->db->order_by('veg_id','RANDOM');
+		$this->db->limit(1);
+		$query = $this->db->get('veg');
+
+		return  $query->row_array();
+
+	}
+
 	public function save_meal($data,$i,$j,$h)
 	{
 		if (isset($data['carb_f']['Name'])) {
@@ -180,6 +193,15 @@ class Calc_details extends CI_Model {
 		return $this->db->insert('users_meals', $ins);
 	}
 
+	public function delete_meal($data,$day,$meal,$week)
+	{
+		$this->db->where('User_ID',$data['user']['User_ID']);
+		$this->db->where('Week',$week);
+		$this->db->where('Day',$day);
+		$this->db->where('Meal_No',$meal);
+		$this->db->delete('users_meals');
+	}
+
 	public function check_meal($a,$b,$c,$d)
 	{
 		$this->db->where('User_ID',$a);
@@ -188,5 +210,34 @@ class Calc_details extends CI_Model {
 		$this->db->where('Meal_No',$d);
 		$query = $this->db->get('users_meals');
 		return $query->row_array();
+	}
+
+	public function complete_week($week)
+	{
+		$data = array(
+			'Current_Week' => $week + 1
+		);
+
+		$this->db->where('User_ID',$this->session->userdata('uid'));
+		$this->db->update('users', $data);
+		return $week + 1;
+	}
+
+	public function complete_day($day)
+	{
+		$data = array(
+			'Completed_Day' => $day
+		);
+
+		$this->db->where('User_ID',$this->session->userdata('uid'));
+		$this->db->update('users', $data);
+	}
+
+	public function max_meal($UID)
+	{
+		$this->db->select_max('week', 'max_week');
+		$this->db->where('User_ID',$UID);
+		$query = $this->db->get('users_meals');
+		return $query->row()->max_week;
 	}
 }

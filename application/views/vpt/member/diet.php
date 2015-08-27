@@ -27,8 +27,9 @@
 <section>
     <div class="container">
 
+
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-10 col-md-offset-1">
 <div class="white-box relative cf">
 
     
@@ -51,7 +52,23 @@
          <div class="sub-content">
             <div class="white-box">
                 <div class="">
-                    
+                   <div class="row">
+            <div class="col-lg-12">
+                <div class="col-md-6 "></div>
+                <div class="col-md-3 col-md-offset-3">
+                    <?php 
+
+                        if ($week >= $current_week && $current_week < 13) {
+                            ?>
+                                <a class="btn green" href="/complete/diet">MARK WEEK AS COMPLETE</a>
+                            <?php
+                        }
+
+                    ?>
+                </div>
+
+            </div>
+        </div> 
                 </div>
                 <div class="activity-list">
                     <?php
@@ -59,46 +76,79 @@
                         while ( $d <= 7) {
                             ?>
                                 <div class="activity-list-item">
-                                <input type="button" class="btn js-activity-item" value="Day <?php echo $d ?> <?php if (in_array($d, $rest)) { echo '(REST)'; } else { echo '(TRAIN)'; } ?>" />
+                                <input type="button" class="<?php if(($completed_day >= $d && $current_week == $week) || $current_week > $week){ echo "green"; } ?> btn js-activity-item meal" value="Day <?php echo $d ?> <?php if (in_array($d, $rest)) { echo '(REST)'; } else { echo '(TRAIN)'; } ?>" />
                                 <div class="activity-list-item-dropdown cf dnone">
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-3 col-md-offset-1">
                                             <ul class="meal-breakdown js-meal-breakdown">
                                                 <?php 
-                                                    $i = 1;
-                                                    while ( $i <= $total_meal) {
+                                                    $i = $j = 1;
+                                                    if (in_array($d, $rest)) {
+                                                        while ( $i <= $total_meal) {
+                                                        ?> 
+                                                            <li class="meal<?php echo $j ?>" id='<?php echo $i; ?>-0-<?php echo $week ?>'>Meal <?php echo $i; ?></li> 
+                                                        <?php
+                                                                
+                                                            $i += 1;
+                                                            $j += 1;
+                                                        } 
+                                                        
+                                                    } else {
+                                                        while ( $i <= $total_meal) {
+                                                            if ($train_id == $i) {
+                                                                if ($i == 1) {
+                                                                ?>
+                                                                    <li class="meal<?php echo $j ?>" id='13-<?php echo $d ?>-<?php echo $week ?>'>PRE-WORKOUT</li>
 
-                                                        if ($train_id == $i) {
-                                                            ?>
-                                                                <li id='11-<?php echo $d ?>-<?php echo $week ?>'>PRE-WORKOUT</li>
-
-                                                                <li>TRAINING</li>
-                                                            <?php
-                                                        } elseif($train_id + 1 == $i) 
-                                                            {
-                                                                ?> 
-                                                                    <li id='12-<?php echo $d ?>-<?php echo $week ?>'>POST-WORKOUT</li> 
+                                                                    <li class="training">TRAINING</li>
                                                                 <?php
-                                                            } else {
-                                                                ?> 
-                                                                    <li id='<?php echo $i; ?>-<?php echo $d ?>-<?php echo $week ?>'>Meal <?php echo $i; ?></li> 
+                                                                } else {
+                                                                ?>
+
+                                                                    <li class="meal<?php echo $j ?>" id='11-<?php echo $d ?>-<?php echo $week ?>'>PRE-WORKOUT</li>
+
+                                                                    <li class="training">TRAINING</li>
                                                                 <?php
                                                             }
-                                                        $i += 1;
+
+                                                            $j += 1;
+                                                            } elseif($train_id + 1 == $i) 
+                                                                {
+                                                                    ?> 
+                                                                        <li class="meal<?php echo $j ?>" id='12-<?php echo $d ?>-<?php echo $week ?>'>POST-WORKOUT</li> 
+                                                                    <?php
+                                                                } else {
+                                                                    ?> 
+                                                                        <li class="meal<?php echo $j ?>" id='<?php echo $i; ?>-<?php echo $d ?>-<?php echo $week ?>'>Meal <?php echo $i; ?></li> 
+                                                                    <?php
+                                                                }
+                                                            $i += 1;
+                                                            $j += 1;
+                                                        } 
                                                     }
+
+                                                    
 
                                                  ?>
                                                 
                                             </ul>
                                         </div>
-                                        <div class="col-md-8">
-                                            <div class="white-box diet-box" >
-                                                
-                                            </div>
+                                        <div class="col-md-7 diet<?php echo $d ?> diet-info">
+                                            <div></div>
                                         </div>
                                     </div>
                                     <div class="activity-btn-actions cf">
-                                        <a class="btn green">MARK AS COMPLETE</a>
+                                    <?php 
+
+                                        if ($week == $current_week && $completed_day < $d) {
+                                            ?>
+                                                <button class="btn green js-day-complete">MARK DAY AS COMPLETE</button>
+                                                <input type="hidden" value="<?php echo $d ?>">
+                                            <?php
+                                        }
+
+                                    ?>
+                                        
                                     </div>
 
                                 </div>

@@ -11,8 +11,6 @@ class Hub extends CI_Controller {
 		$this->load->helper(array('form', 'url'));
 
 		$this->load->library('session');
-      
-        
 
         $logged_in = $this->session->userdata('logged_in');
         
@@ -53,6 +51,7 @@ class Hub extends CI_Controller {
 	public function training($week = 1)
 	{
 
+		$this->session->set_userdata('week_current', $week);
 		$data['title'] = 'Training';
 		$data['week'] = $week;
 		$data['current_week'] = $this->week;
@@ -66,15 +65,23 @@ class Hub extends CI_Controller {
 
 	public function diet($week = 1)
 	{
-		if ($week > $this->week+2) {
-			# run confirmation function
-			echo "blah";
+		if ($week > $this->week+1) {
+			$data['title'] = 'No access';
+			$data['week'] = $week;
+			$data['current_week'] = $this->week;
+			$data['week_needed'] = $week - 2;
+			$this->load->view('vpt/header_footer/header', $data);
+			$this->load->view('vpt/member/no_access',$data);
+			$this->load->view('vpt/header_footer/footer');
 		} else {
+
+			$this->session->set_userdata('week_current', $week);
 
 			$UID = $this->session->userdata('uid');
 			$data['user'] = $this->calc_details->getuser($UID);
 			$data['train_id'] = $this->train_id;
 			$data['total_meal'] = $data['user']['Meal_No'];
+			$data['completed_day'] = $data['user']['Completed_Day'];
 
 			$data['title'] = 'Diet';
 			$data['week'] = $week;
@@ -96,40 +103,30 @@ class Hub extends CI_Controller {
 
 	public function getmeal($meal, $parent = 'ajax')
 	{
+		
 		$split = explode('-', $meal);
 		$meal = $split[0];
-
 		$UID = $this->session->userdata('uid');
-		$data['user'] = $this->calc_details->getuser($UID);
 
+		$data['user'] = $this->calc_details->getuser($UID);
 		$data['meal'] = $meal;
-		
 		$data['total_meal'] = $data['user']['Meal_No'];
-		
 		$data['goal'] = $this->calc_details->getgoal($data['user']['Goal_ID']);
-		$data['break_1'] = $this->calc_details->getbreakdown($meal, $data['user']['Meal_No'],$this->train_id);
+
+		if ($split[1] == 0) {
+			$trainid = 0;
+		} else {
+			$trainid = $this->train_id;
+		}
+		$data['break_1'] = $this->calc_details->getbreakdown($meal, $data['user']['Meal_No'],$trainid);
 		
 
 		$weight = $data['user']['Weight'];
 		$bodyfat = $data['user']['BodyFat'];
 		$afactor = $data['user']['AFactor'];
-		
 		$bmr = $data['user']['BMR'];
 		$mcal = $data['user']['MCalories'];
-
-		/*
-			//for everyone
-			$mcal = $mcal * (if endormorp 1 if mesomorph 1.1 if ectomorph 1.25)
-			//for bulking male weeks 1-4
-			$calpd = $mcal + (if endormorp 50 if mesomorph 75 if ectomorph 100)
-			//for bulking male weeks 5-8
-			//recalculate bmr and mcal with new weight = weight + 1
-			$calpd = $mcal + (if endormorp 100 if mesomorph 150 if ectomorph 200)
-			//for bulking male weeks 5-8
-			//recalculate bmr and mcal with new weight = weight + 150
-			$calpd = $mcal + (if endormorp 150 if mesomorph 225 if ectomorph 300)
-		*/
-		$calpd = $mcal + $data['goal']['Calories'];
+		$calpd = $data['user']['CaloriesPerDay'];
 
 		//for bulking male
 		$protein_g = $weight * 3;
@@ -204,12 +201,19 @@ class Hub extends CI_Controller {
 				}
 				
 			} else {
+				$data['veg_f'] = $this->calc_details->get_veg();
+
 				if ($data['Fat_Meal1'] > 5) {
 					$data['fat_f'] = $this->calc_details->get_fat($fatleft, $Carb_Left, $carbsextra,1);
 					$data['Fat_Meal1'] = $fatleft;
 				}
 				
 			}
+
+			if (($meal == 2 || $meal == 3 || $meal == 4 || $meal == 5) && empty($data['veg_f'])) {
+				$data['veg_f'] = $this->calc_details->get_veg('green');
+			}
+
 
 			while ($carbs == '' && $data['break_1']['Carbs'] > 0 && $pass_carbs_threshold) {
 				$data['protein_f'] = $this->calc_details->get_protein($data['protein_b'],$data['Carb_Meal1'],$data['Fat_Meal1'],$meal);
@@ -232,34 +236,52 @@ class Hub extends CI_Controller {
 					}
 					
 				} else {
+					$data['veg_f'] = $this->calc_details->get_veg();
+
 					if ($data['Fat_Meal1'] > 5) {
 						$data['fat_f'] = $this->calc_details->get_fat($fatleft, $Carb_Left, $carbsextra,1);
 						$data['Fat_Meal1'] = $fatleft;
 					}
 					
 				}
+
+				if (($meal == 2 || $meal == 3 || $meal == 4 || $meal == 5) && empty($data['veg_f'])) {
+					$data['veg_f'] = $this->calc_details->get_veg('green');
+				}
 			}
 
 		}
 		
 
-		if ($parent == 'make') {
+		if ($parent == 'make' || $parent == 'change') {
 			return $data;
 		} else {
+			if ($split['2'] == $this->week && $split['1'] > $data['user']['Completed_Day']) {
+				$data['change'] = TRUE;
+			} else {
+				$data['change'] = FALSE;
+			}
 			$this->load->view('vpt/member/meal',$data);
 		}
 		
 		//$this->output->enable_profiler(TRUE);
 	}
 
-	public function makemeal()
+	public function makemeal($initial = 'YES')
 	{
 		$UID = $this->session->userdata('uid');
 		$user = $this->calc_details->getuser($UID);
-		$h = $user['Current_Week'];
-		$h_max = $h + 2;
 
-		while ( $h <= $h_max) {
+		if ($initial == 'YES') {
+			$h = $user['Current_Week'];
+			$h_max = $h + 1;
+		} elseif ($initial == 'NO')
+			{
+				$h = $h_max = $this->calc_details->max_meal($UID) + 1;
+			}
+		
+
+		while ( $h <= $h_max && $h_max < 13) {
 			$i = 1;
 		
 			while ( $i <= 7) {
@@ -288,6 +310,37 @@ class Hub extends CI_Controller {
 		}
 		
 		$this->output->enable_profiler(TRUE);
+	}
+
+	public function mark_as_complete($page)
+	{
+		$i = $this->session->userdata('current_week');
+		$j = $this->session->userdata('week_current');
+		while ( $i <= $j) {
+			$week = $this->calc_details->complete_week($i);
+			$this->makemeal('NO');
+			$i++;
+		}
+		$this->calc_details->complete_day(0);
+
+		$this->session->unset_userdata('current_week');
+		$this->session->set_userdata('current_week', $week);
+		redirect("/$page/$week");
+	}
+
+	public function mark_day_complete($day)
+	{
+		$this->calc_details->complete_day($day);
+	}
+
+	public function change_meal($id)
+	{
+
+		$data = $this->getmeal($id,'change');
+		$split = explode('-', $id);
+		$this->calc_details->delete_meal($data,$split[1],$split[0],$split[2]);
+		$this->calc_details->save_meal($data,$split[1],$split[0],$split[2]);
+		$this->getmeal($id,'ajax');
 	}
 }
 

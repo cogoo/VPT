@@ -29,51 +29,100 @@ $(function(){
 
     $("ul.js-log-header").on('click', 'li', function(e) {
     
-    $(this).siblings().removeClass('current');
-    $(this).addClass('current');
-    $('.'+this.id).siblings().not('.circle-title').hide();
-    $('.'+this.id).show();
+        $(this).siblings().removeClass('current');
+        $(this).addClass('current');
+        $('.'+this.id).siblings().not('.circle-title').hide();
+        $('.'+this.id).show();
 
-});
+    });
 
+    $(".js-activity-item.meal").on('click', function(e) {
 
-$(".js-activity-item").on('click', function(e) {
+        if ($(this).next('.activity-list-item-dropdown').is(':visible')) {
+            $('.activity-list-item-dropdown').slideUp(500);
+            $('.js-activity-item').removeClass('active blue');
+        } else {
+            $('.activity-list-item-dropdown').hide();
+            $('.js-activity-item').removeClass('active blue');
+            $(this).addClass('active blue');
+            $(this).next('.activity-list-item-dropdown').slideDown(500);
+        };
 
-    var id = this.id;
-    $.ajax({
-      url: "/getex/"+id
-    })
-      .done(function( html ) {
-        $( '#ex'+id).html( html );
-      });
-    $('.activity-list-item-dropdown').hide();
-    $('.js-activity-item').removeClass('active blue');
-    $(this).addClass('active blue');
-    $(this).next('.activity-list-item-dropdown').show();
+    });
 
-});
+    $(".js-activity-item.exercise").on('click', function(e) {
 
-$("ul.js-meal-breakdown").on('click', 'li', function(e) {
-    
-    $(this).siblings().removeClass('current');
-    $(this).addClass('current');
-    var id = this.id;
-    $.ajax({
-      url: "/getmeal/"+id
-    })
-      .done(function( html ) {
-        $( '.diet-box').html( html );
-      });
+        var id = this.id;
+        $.ajax({
+          url: "/getex/"+id
+        })
+          .done(function( html ) {
+            $( '#ex'+id).html( html );
+          });
+        $('.activity-list-item-dropdown').hide();
+        $('.js-activity-item').removeClass('active blue');
+        $(this).addClass('active blue');
+        $(this).next('.activity-list-item-dropdown').show();
 
-});
+    });
 
-/*$("ul.js-sub-log-header").on('click', 'li', function(e) {
-    
-    $(this).siblings().addBack().removeClass('current complete');
-    $(this).addClass('current');
-    $(this).prevAll().not('.current').addClass('complete');
+    $("ul.js-meal-breakdown").on('click', 'li', function(e) {
+        var id = this.id;
+        var split_id = id.split('-');
+        
+        $('.diet-info.diet'+split_id[1]+' > div').removeClass();
+        $('.diet-info.diet'+split_id[1]+' > div').addClass(this.className);
+        $(this).siblings().removeClass('current');
+        $(this).addClass('current');
+        
+        var id = this.id;
+        $.ajax({
+          url: "/getmeal/"+id
+        })
+          .done(function( html ) {
+            $('.diet-info.diet'+split_id[1]+' > div').html( html );
+            $('.diet-info.diet'+split_id[1]+' > div .meal-info').val( id );
+          });
 
-});*/
+    });
+
+    $(".diet-info").on('click', 'button', function(e) {
+
+        var id = $(this).next('input').val();
+        var split_id = id.split('-');
+       
+        $.ajax({
+          url: "/changemeal/"+id
+        })
+          .done(function( html ) {
+            $('.diet-info.diet'+split_id[1]+' > div').html( html );
+            $('.diet-info.diet'+split_id[1]+' > div .meal-info').val( id );
+          });
+
+    });
+
+    $(".js-day-complete").on('click', function(e) {
+
+        var id = $(this).next('input').val();
+        var btn = $(this);
+       
+        $.ajax({
+          url: "/day/"+id
+        })
+          .done(function( html ) {
+            console.log($(this));
+            btn.hide();
+          });
+
+    });
+
+    /*$("ul.js-sub-log-header").on('click', 'li', function(e) {
+        
+        $(this).siblings().addBack().removeClass('current complete');
+        $(this).addClass('current');
+        $(this).prevAll().not('.current').addClass('complete');
+
+    });*/
 
 
 })

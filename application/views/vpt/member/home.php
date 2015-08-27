@@ -9,7 +9,7 @@
 <div class="container">
 
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-10 col-md-offset-1">
 <div class="white-box relative cf">
     <div class="text-center relative">
         <div class="relative">

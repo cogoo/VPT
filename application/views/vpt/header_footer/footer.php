@@ -11,7 +11,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="/js/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-     <!--Custom JS-->
+    <!--Custom JS-->
     <script src="/js/bootstrap-select.js"></script>
     
    
@@ -26,8 +26,8 @@
    
     
 
-     <script src="/js/global.js"></script>
-<script src="/js/inspina/demo/chartjs-demo.js"></script>
+    <script src="/js/global.js"></script>
+    <script src="/js/inspina/demo/chartjs-demo.js"></script>
     
    
 </body>
