@@ -128,13 +128,54 @@ class Hub extends CI_Controller {
 		$mcal = $data['user']['MCalories'];
 		$calpd = $data['user']['CaloriesPerDay'];
 
-		//for bulking male
-		$protein_g = $weight * 3;
-		$protein_c = $protein_g * 4;
+		switch ($data['user']['Goal_ID']) {
+			case 1:
+				//for bulking male
+				$protein_g = $weight * 3;
+				$protein_c = $protein_g * 4;
 
-		//for bulking male
-		$fat_c = $mcal / 4; //(if mesomorph / 5)
-		$fat_g = $fat_c / 9;
+				$fat_c = $mcal / 4; 
+				$fat_g = $fat_c / 9;
+				break;
+
+			case 2:
+				//loose fat male
+				$protein_g = ($calpd * 0.4)/4;
+				$protein_c = ($calpd * 0.4);
+				
+				$fat_c = $calpd * 0.35; 
+				$fat_g = $fat_c / 9;
+				break;
+
+			case 3:
+				//increase fitness male
+				$protein_g = ($calpd * 0.4)/4;
+				$protein_c = ($calpd * 0.4);
+
+				$fat_c = $calpd * 0.2; 
+				$fat_g = $fat_c / 9;
+				break;
+
+			case 4:
+				//tone up female
+				$protein_g = ($calpd * 0.4)/4;
+				$protein_c = ($calpd * 0.4);
+				
+				$fat_c = $calpd * 0.35; 
+				$fat_g = $fat_c / 9;
+				break;
+
+			case 5:
+				//increase fitness female
+				$protein_g = ($calpd * 0.4)/4;
+				$protein_c = ($calpd * 0.4);
+
+				
+				$fat_c = $calpd * 0.2; 
+				$fat_g = $fat_c / 9;
+				break;
+		}
+		
 
 		//for every goal
 		$carbs_c = $calpd - $protein_c - $fat_c;
@@ -173,6 +214,8 @@ class Hub extends CI_Controller {
 			$data['protein_f']['Protein'] = $check['Protein_Grams'];
 			$data['carb_f']['Carbs'] = $check['Carb_Grams'];
 			$data['fat_f']['Fat'] = $check['Fat_Grams'];
+			$data['veg_f']['Name'] = $check['Green_Veg']; 
+			$data['fail'] = $check['Failed_Meal']; 
 		} else {
 
 			$carbsextra = $data['Carb_Meal12'] - $data['Carb_Meal1'];
@@ -180,13 +223,15 @@ class Hub extends CI_Controller {
 
 			$carbs = '';
 			$pass_carbs_threshold = FALSE;
+			$hate = TRUE;
 
-			$data['protein_f'] = $this->calc_details->get_protein($data['protein_b'],$data['Carb_Meal1'],$data['Fat_Meal1'],$meal);
+			$data['protein_f'] = $this->calc_details->get_protein($data['protein_b'],$data['Carb_Meal1'],$data['Fat_Meal1'],$meal,$hate);
 			$Carb_Left = $data['Carb_Meal1'] - ($data['protein_f']['Carbs'] / 100 )* ($data['protein_b'] / $data['protein_f']['Protein'] * 100);
 			$fatleft = $data['Fat_Meal1'] - (($data['protein_f']['Fat'] / 100 )* ($data['protein_b'] / $data['protein_f']['Protein'] * 100));
 			$data['fatleft'] = $fatleft;
 			$data['Carb_Left'] = $Carb_Left;
 
+			//to be removed .. normal veg going in to carbs table
 			if ($Carb_Left > 15) {
 				$pass_carbs_threshold = TRUE;
 				$data['carb_f'] = $this->calc_details->get_carb($Carb_Left,$fatleft,$meal,$data['protein_f']['Protein_ID']);
@@ -210,13 +255,21 @@ class Hub extends CI_Controller {
 				
 			}
 
-			if (($meal == 2 || $meal == 3 || $meal == 4 || $meal == 5) && empty($data['veg_f'])) {
+			if ($meal == 2 || $meal == 3 || $meal == 4 || $meal == 5) {
 				$data['veg_f'] = $this->calc_details->get_veg('green');
 			}
 
+			$loop = 0;
+			while (($carbs == '' && $data['break_1']['Carbs'] > 0 && $pass_carbs_threshold) || $data['protein_f']['Name'] == '') {
+				if ($loop > 10) {
+					$hate = FALSE;
+				}
 
-			while ($carbs == '' && $data['break_1']['Carbs'] > 0 && $pass_carbs_threshold) {
-				$data['protein_f'] = $this->calc_details->get_protein($data['protein_b'],$data['Carb_Meal1'],$data['Fat_Meal1'],$meal);
+				$data['protein_f'] = $this->calc_details->get_protein($data['protein_b'],$data['Carb_Meal1'],$data['Fat_Meal1'],$meal,$hate);
+				if ($data['protein_f']['Name'] == '') {
+					$loop += 1;
+					continue;
+				}
 				$Carb_Left = $data['Carb_Meal1'] - ($data['protein_f']['Carbs'] / 100 )* ($data['protein_b'] / $data['protein_f']['Protein'] * 100);
 				$fatleft = $data['Fat_Meal1'] - (($data['protein_f']['Fat'] / 100 )* ($data['protein_b'] / $data['protein_f']['Protein'] * 100));
 				$data['fatleft'] = $fatleft;
@@ -245,10 +298,13 @@ class Hub extends CI_Controller {
 					
 				}
 
-				if (($meal == 2 || $meal == 3 || $meal == 4 || $meal == 5) && empty($data['veg_f'])) {
+				if ($meal == 2 || $meal == 3 || $meal == 4 || $meal == 5) {
 					$data['veg_f'] = $this->calc_details->get_veg('green');
 				}
+				$loop += 1;
 			}
+
+			$data['hate'] = $hate;
 
 		}
 		
@@ -264,7 +320,7 @@ class Hub extends CI_Controller {
 			$this->load->view('vpt/member/meal',$data);
 		}
 		
-		//$this->output->enable_profiler(TRUE);
+		$this->output->enable_profiler(TRUE);
 	}
 
 	public function makemeal($initial = 'YES')

@@ -43,9 +43,9 @@
                 <div class="row">
 
                     <div class="col-md-4">
-                        <div class="bg-blue first">
-                            <h2>20th Feb</h2>
-                            <h2>16:24</h2>
+                        <div class="bg-blue first text-left">
+                            <h2 class="no-margin"><?php echo date('j') . '<sup>' . date('S') . '</sup> '.date('F')?></h2>
+                            <h1 class="time"></h1>
                             <p>What is scheduled for today</p>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                         <div class="ibox-content">
                             <div>
                                 <canvas id="doughnutChart" height="300"></canvas>
-                                <h1 class="blue">6,436</h1>
+                                <h1 class="blue"><?php echo number_format($user['CaloriesPerDay']) ?></h1>
                                 <p class="blue">calories consumed</p>
 
                                 <button class="btn blue smaller">view meals</button>

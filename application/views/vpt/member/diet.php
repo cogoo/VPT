@@ -62,6 +62,7 @@
                             ?>
                                 <a class="btn green" href="/complete/diet">MARK WEEK AS COMPLETE</a>
                             <?php
+
                         }
 
                     ?>

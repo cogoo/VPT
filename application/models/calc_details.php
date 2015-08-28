@@ -84,9 +84,15 @@ class Calc_details extends CI_Model {
 		
 	}
 
-	public function get_protein($id,$carb,$fat,$meal_type)
+	public function get_protein($id,$carb,$fat,$meal_type,$hate)
 	{
-		//$protein_b / $protein_f['Protein'] * 100
+
+		$this->db->select('Linked_Protein');
+		$this->db->where('User_ID',$this->session->userdata('uid'));
+		$this->db->where('Linked_Protein <>','');
+		$query = $this->db->get('Allergy');
+		$allergy_array = $query->result_array();
+
 		$this->db->_protect_identifiers = FALSE;
 		$meal = "Meal_type like '%,".$meal_type.",%'";
 		$min = 'Min <= ('.$id.' / Protein * 100)';
@@ -97,6 +103,17 @@ class Calc_details extends CI_Model {
 		} else {
 			$fat = '(Fat / 100 ) * ('.$id.' / Protein * 100) <= '.$fat;
 		}
+
+		if ($hate) {
+			foreach ($allergy_array as $allergy) {
+				foreach ($allergy as $key) {
+					$a_where = 'Protein_ID not in (0'.$key.'0)';
+					$this->db->where($a_where);
+				}
+				
+			}
+		}
+		
 		
 		$this->db->where($min);
 		$this->db->where($meal);
@@ -177,6 +194,12 @@ class Calc_details extends CI_Model {
 			$fat = $fat_g = NULL;
 		}
 
+		if (isset($data['veg_f']['Name'])) {
+			$veg = $data['veg_f']['Name'];
+		} else {
+			$veg = NULL;
+		}
+
 		$ins = array(
 			'User_ID' => $data['user']['User_ID'],
 			'Week' => $h,
@@ -187,7 +210,9 @@ class Calc_details extends CI_Model {
 			'Carb_Name' => $carb,
 			'Carb_Grams' => $carb_g,
 			'Fat_Name' => $fat,
-			'Fat_Grams' => $fat_g
+			'Fat_Grams' => $fat_g,
+			'Green_Veg' => $veg,
+			'Failed_Meal' => $data['hate']
 		);
 
 		return $this->db->insert('users_meals', $ins);

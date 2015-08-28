@@ -10,6 +10,13 @@
             <p><?php if (isset($carb_f['Name'])) { echo number_format($Carb_Meal1 / $carb_f['Carbs'] * 100) ?>g <?php echo $carb_f['Name']; } ?></p>
             <p><?php if (isset($fat_f['Name'])) { echo number_format($Fat_Meal1 / $fat_f['Fat'] * 100) ?>g <?php echo $fat_f['Name']; } ?></p>
             <p><?php if (isset($veg_f['Name'])) { echo '+ '.$veg_f['Name']; } ?></p>
+            <?php  
+
+                if ($fail == 0) {
+                    echo "<p>* bsbklsjlkflgj<p>";
+                }
+
+            ?>
         </div>
         <hr>
         <?php if ($change) {
