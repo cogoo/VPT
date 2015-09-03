@@ -12,7 +12,7 @@
             <p><?php if (isset($veg_f['Name'])) { echo '+ '.$veg_f['Name']; } ?></p>
             <?php  
 
-                if ($fail == 0) {
+                if ($hate == 0) {
                     echo "<p>* bsbklsjlkflgj<p>";
                 }
 

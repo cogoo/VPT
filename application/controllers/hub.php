@@ -215,7 +215,7 @@ class Hub extends CI_Controller {
 			$data['carb_f']['Carbs'] = $check['Carb_Grams'];
 			$data['fat_f']['Fat'] = $check['Fat_Grams'];
 			$data['veg_f']['Name'] = $check['Green_Veg']; 
-			$data['fail'] = $check['Failed_Meal']; 
+			$data['hate'] = $check['Failed_Meal']; 
 		} else {
 
 			$carbsextra = $data['Carb_Meal12'] - $data['Carb_Meal1'];
@@ -224,8 +224,9 @@ class Hub extends CI_Controller {
 			$carbs = '';
 			$pass_carbs_threshold = FALSE;
 			$hate = TRUE;
+			$data['protein_f']['Name'] = '';
 
-			$data['protein_f'] = $this->calc_details->get_protein($data['protein_b'],$data['Carb_Meal1'],$data['Fat_Meal1'],$meal,$hate);
+			/*$data['protein_f'] = $this->calc_details->get_protein($data['protein_b'],$data['Carb_Meal1'],$data['Fat_Meal1'],$meal,$hate);
 			$Carb_Left = $data['Carb_Meal1'] - ($data['protein_f']['Carbs'] / 100 )* ($data['protein_b'] / $data['protein_f']['Protein'] * 100);
 			$fatleft = $data['Fat_Meal1'] - (($data['protein_f']['Fat'] / 100 )* ($data['protein_b'] / $data['protein_f']['Protein'] * 100));
 			$data['fatleft'] = $fatleft;
@@ -257,7 +258,7 @@ class Hub extends CI_Controller {
 
 			if ($meal == 2 || $meal == 3 || $meal == 4 || $meal == 5) {
 				$data['veg_f'] = $this->calc_details->get_veg('green');
-			}
+			}*/
 
 			$loop = 0;
 			while (($carbs == '' && $data['break_1']['Carbs'] > 0 && $pass_carbs_threshold) || $data['protein_f']['Name'] == '') {
@@ -325,6 +326,22 @@ class Hub extends CI_Controller {
 
 	public function makemeal($initial = 'YES')
 	{
+		if ($this->session_times == 3) {
+	        $rest = array("2", "4", "6", "7");
+	    }
+
+	    if ($this->session_times == 4) {
+	        $rest = array("3", "5", "7");
+	    }
+
+	    if ($this->session_times == 5) {
+	        $rest = array("3", "6");
+	    }
+
+	    if ($this->session_times == 6) {
+	        $rest = array("4");
+	    }
+
 		$UID = $this->session->userdata('uid');
 		$user = $this->calc_details->getuser($UID);
 
@@ -341,18 +358,28 @@ class Hub extends CI_Controller {
 			$i = 1;
 		
 			while ( $i <= 7) {
+				//i = days
+				if (in_array($i, $rest)) {
+					$dtrain = 0;
+				} else {
+					$dtrain = $i;
+				}
 				$j = 1;
 				while ( $j <= $user['Meal_No']) {
 					if ($user['Train_ID'] == $j) {
-
-						$k = 11;
+						if ($j == 1) {
+							$k = '13-'.$dtrain;
+						} else {
+							$k = '11-'.$dtrain;
+						}
+						
 		            } elseif($user['Train_ID'] + 1 == $j) {
 
-		                $k = 12;
+		                $k = '12-'.$dtrain;
 		                    
 		                } else {
 		                	
-		                	$k = $j;
+		                	$k = $j.'-'.$dtrain;
 		                  
 		                }
 						$data = $this->getmeal($k,'make');
