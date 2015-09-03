@@ -226,40 +226,6 @@ class Hub extends CI_Controller {
 			$hate = TRUE;
 			$data['protein_f']['Name'] = '';
 
-			/*$data['protein_f'] = $this->calc_details->get_protein($data['protein_b'],$data['Carb_Meal1'],$data['Fat_Meal1'],$meal,$hate);
-			$Carb_Left = $data['Carb_Meal1'] - ($data['protein_f']['Carbs'] / 100 )* ($data['protein_b'] / $data['protein_f']['Protein'] * 100);
-			$fatleft = $data['Fat_Meal1'] - (($data['protein_f']['Fat'] / 100 )* ($data['protein_b'] / $data['protein_f']['Protein'] * 100));
-			$data['fatleft'] = $fatleft;
-			$data['Carb_Left'] = $Carb_Left;
-
-			//to be removed .. normal veg going in to carbs table
-			if ($Carb_Left > 15) {
-				$pass_carbs_threshold = TRUE;
-				$data['carb_f'] = $this->calc_details->get_carb($Carb_Left,$fatleft,$meal,$data['protein_f']['Protein_ID']);
-				
-				if (!empty($data['carb_f'])) {
-					$carbs = $data['carb_f']['Name'];
-					$data['Fat_Meal'] = $fatleft - (($data['carb_f']['Fat'] / 100 )* ($data['Carb_Meal1'] / $data['carb_f']['Carbs'] * 100));
-					$data['Fat_Meal1'] = $data['Fat_Meal'];
-					$Carb_Left = $Carb_Left - (($data['carb_f']['Carbs'] / 100 )* ($Carb_Left / $data['carb_f']['Carbs'] * 100));
-					$data['Carb_Left1'] = $Carb_Left;
-					$data['fat_f'] = $this->calc_details->get_fat($data['Fat_Meal'], $Carb_Left, $carbsextra,1);
-				}
-				
-			} else {
-				$data['veg_f'] = $this->calc_details->get_veg();
-
-				if ($data['Fat_Meal1'] > 5) {
-					$data['fat_f'] = $this->calc_details->get_fat($fatleft, $Carb_Left, $carbsextra,1);
-					$data['Fat_Meal1'] = $fatleft;
-				}
-				
-			}
-
-			if ($meal == 2 || $meal == 3 || $meal == 4 || $meal == 5) {
-				$data['veg_f'] = $this->calc_details->get_veg('green');
-			}*/
-
 			$loop = 0;
 			while (($carbs == '' && $data['break_1']['Carbs'] > 0 && $pass_carbs_threshold) || $data['protein_f']['Name'] == '') {
 				if ($loop > 10) {
