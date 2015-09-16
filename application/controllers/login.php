@@ -35,19 +35,21 @@ class Login extends CI_Controller {
 		$train_id = $result['Train_ID'];
 		$goal_id = $result['Goal_ID'];
 		$session_times = $result['Session_Times'];
+		$first_login = $result['First_Login'];
 
 		if($result)
 		{
 			$newdata = array(
-                   'name'  => $name,
-                   'email'     => $email,
-                   'uid'     => $UID,
-                   'full_name'     => $full_name,
-                   'current_week'     => $current_week,
-                   'train_id'     => $train_id,
-                   'goal_id'     => $goal_id,
-                   'session_times'     => $session_times,
-                   'logged_in' => TRUE
+               'name'  => $name,
+               'email'     => $email,
+               'uid'     => $UID,
+               'full_name'     => $full_name,
+               'current_week'     => $current_week,
+               'train_id'     => $train_id,
+               'goal_id'     => $goal_id,
+               'session_times'     => $session_times,
+               'logged_in' => TRUE,
+               'first_login' => $first_login
                );
         	$this->session->set_userdata($newdata);
         	$data = true;

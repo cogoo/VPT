@@ -19,10 +19,21 @@ class Hub extends CI_Controller {
             redirect('/login');
         }
 
+        //the current week
         $this->week = $this->session->userdata('current_week');
+        //training time
         $this->train_id = $this->session->userdata('train_id');
+        //users goal
         $this->goal_id = $this->session->userdata('goal_id');
+        //how many times to train a week
         $this->session_times = $this->session->userdata('session_times');
+
+        if ($this->session->userdata('first_login')== 0) {
+        	$this->makemeal();
+			$this->calc_details->change_initial();
+			$this->session->unset_userdata('first_login');
+			$this->session->set_userdata('first_login', 1);
+        }
 		
 		
 	}
@@ -36,6 +47,7 @@ class Hub extends CI_Controller {
 
 		$data['user'] = $this->calc_details->getuser($UID);
 		$data['goal'] = $this->calc_details->getgoal($data['user']['Goal_ID']);
+		$data['days_meals'] = $this->calc_details->get_days_meals();
 		
 		$weight = $data['user']['Weight'];
 		$bodyfat = $data['user']['BodyFat'];
@@ -54,6 +66,8 @@ class Hub extends CI_Controller {
 		$this->session->set_userdata('week_current', $week);
 		$data['title'] = 'Training';
 		$data['week'] = $week;
+		$UID = $this->session->userdata('uid');
+		$data['user'] = $this->calc_details->getuser($UID);
 		$data['current_week'] = $this->week;
 		$training_id = $this->calc_details->get_training_id($this->goal_id,$this->session_times);
 		$data['activity'] = $this->calc_details->get_training($training_id,$week);
@@ -101,9 +115,113 @@ class Hub extends CI_Controller {
 		$this->load->view('vpt/member/ajax/exercise',$data);
 	}
 
+	public function makemeal($initial = 'YES')
+	{
+
+		//calculate rest days
+		if ($this->session_times == 3) {
+	        $rest = array("2", "4", "6", "7");
+	    }
+
+	    if ($this->session_times == 4) {
+	        $rest = array("3", "5", "7");
+	    }
+
+	    if ($this->session_times == 5) {
+	        $rest = array("3", "6");
+	    }
+
+	    if ($this->session_times == 6) {
+	        $rest = array("4");
+	    }
+
+		$UID = $this->session->userdata('uid');
+		$user = $this->calc_details->getuser($UID);
+
+		//yes if creating after registration process .. will create meals from week 1 - 2
+		if ($initial == 'YES') {
+			$h = $user['Current_Week'];
+			$h_max = $h + 1;
+		} elseif ($initial == 'NO')
+			{
+				//if not initial .. meaning a week had been marked as completed .. creates meal for the max meal week + 1
+				$h = $h_max = $this->calc_details->max_meal($UID) + 1;
+			}
+		
+
+		while ( $h <= $h_max && $h_max < 13) {
+			$i = 1;
+		
+			while ( $i <= 7) {
+				//i = days
+				$j = 1;
+				//check if its a rest day
+				if (in_array($i, $rest)) {
+					while ( $j <= $user['Meal_No']) {
+			                	
+		                $k = $j.'-'.$i;
+		                  
+						$data = $this->getmeal($k,'make');
+						$this->calc_details->save_meal($data,$i,$k,$h);
+						$j++;
+					}
+
+				} else {
+					while ( $j <= $user['Meal_No']) {
+						if ($user['Train_ID'] == $j) {
+							//if its the first meal and training after meal 1 .. meal 1 has to be sent as 13
+							if ($j == 1) {
+								$k = '13-'.$i;
+							} else {
+								//11 is pre-workout meal
+								$k = '11-'.$i;
+							}
+							
+			            } elseif($user['Train_ID'] + 1 == $j) {
+			            	//12 is post workout meal
+			                $k = '12-'.$i;
+			                    
+			                } else {
+			                	
+			                	$k = $j.'-'.$i;
+			                  
+			                }
+			                //retrieve the meal and save it
+							$data = $this->getmeal($k,'make');
+							$this->calc_details->save_meal($data,$i,$k,$h);
+							//print_r($data);
+							$j++;
+					}
+				}
+					
+				$i++;
+			}
+			$h++;
+		}
+		
+		$this->output->enable_profiler(TRUE);
+	}
+
 	public function getmeal($meal, $parent = 'ajax')
 	{
-		
+		//get rest arrays
+		if ($this->session_times == 3) {
+	        $rest = array("2", "4", "6", "7");
+	    }
+
+	    if ($this->session_times == 4) {
+	        $rest = array("3", "5", "7");
+	    }
+
+	    if ($this->session_times == 5) {
+	        $rest = array("3", "6");
+	    }
+
+	    if ($this->session_times == 6) {
+	        $rest = array("4");
+	    }
+
+		//$meal in the form 11-1-2 (meal number - day - week)
 		$split = explode('-', $meal);
 		$meal = $split[0];
 		$UID = $this->session->userdata('uid');
@@ -113,14 +231,16 @@ class Hub extends CI_Controller {
 		$data['total_meal'] = $data['user']['Meal_No'];
 		$data['goal'] = $this->calc_details->getgoal($data['user']['Goal_ID']);
 
-		if ($split[1] == 0) {
+		//if its a rest day, send trainid as 0
+		if (in_array($split[1], $rest)) {
 			$trainid = 0;
 		} else {
 			$trainid = $this->train_id;
 		}
-		$data['break_1'] = $this->calc_details->getbreakdown($meal, $data['user']['Meal_No'],$trainid);
-		
 
+		//get the breakdown for this scenario
+		$data['break_1'] = $this->calc_details->getbreakdown($meal, $data['user']['Meal_No'],$trainid,$data['user']['Goal_ID']);
+		
 		$weight = $data['user']['Weight'];
 		$bodyfat = $data['user']['BodyFat'];
 		$afactor = $data['user']['AFactor'];
@@ -128,6 +248,7 @@ class Hub extends CI_Controller {
 		$mcal = $data['user']['MCalories'];
 		$calpd = $data['user']['CaloriesPerDay'];
 
+		//calculating protein and fat breakdown
 		switch ($data['user']['Goal_ID']) {
 			case 1:
 				//for bulking male
@@ -200,6 +321,7 @@ class Hub extends CI_Controller {
 		$data['protein_b'] = $data['protein_b'] * 0.9;
 		$data['Carb_Meal1'] = $data['Carb_Meal1'] * 0.9;
 
+		//if this is an ajax call, go get the meal
 		if ($parent == 'ajax') {
 			$check = $this->calc_details->check_meal($UID,$split['2'],$split['1'],$meal);
 		} else {
@@ -218,22 +340,21 @@ class Hub extends CI_Controller {
 			$data['hate'] = $check['Failed_Meal']; 
 		} else {
 
+			//since we are only calculating to 90% .. carbs extra is the 10%
 			$carbsextra = $data['Carb_Meal12'] - $data['Carb_Meal1'];
-
 
 			$carbs = '';
 			$pass_carbs_threshold = FALSE;
 			$hate = TRUE;
-			$data['protein_f']['Name'] = '';
 
 			$loop = 0;
-			while (($carbs == '' && $data['break_1']['Carbs'] > 0 && $pass_carbs_threshold) || $data['protein_f']['Name'] == '') {
+			while ((($carbs == '' && $data['break_1']['Carbs'] > 0 && $pass_carbs_threshold) || empty($data['protein_f'])) && $loop < 20) {
 				if ($loop > 10) {
 					$hate = FALSE;
 				}
 
 				$data['protein_f'] = $this->calc_details->get_protein($data['protein_b'],$data['Carb_Meal1'],$data['Fat_Meal1'],$meal,$hate);
-				if ($data['protein_f']['Name'] == '') {
+				if (empty($data['protein_f'])) {
 					$loop += 1;
 					continue;
 				}
@@ -253,6 +374,9 @@ class Hub extends CI_Controller {
 						$Carb_Left = $Carb_Left - (($data['carb_f']['Carbs'] / 100 )* ($Carb_Left / $data['carb_f']['Carbs'] * 100));
 						$data['Carb_Left1'] = $Carb_Left;
 						$data['fat_f'] = $this->calc_details->get_fat($data['Fat_Meal'], $Carb_Left, $carbsextra,1);
+					} else {
+						$loop += 1;
+						continue;
 					}
 					
 				} else {
@@ -271,12 +395,18 @@ class Hub extends CI_Controller {
 				$loop += 1;
 			}
 
-			$data['hate'] = $hate;
+			if ($parent == 'ffave' && !$hate) {
+				$data['hate'] = 3;
+			} elseif($parent == 'ffave') {
+				$data['hate'] = 2;
+			} else {
+				$data['hate'] = $hate;
+			}
 
 		}
 		
 
-		if ($parent == 'make' || $parent == 'change') {
+		if ($parent == 'make' || $parent == 'change' || $parent == 'ffave') {
 			return $data;
 		} else {
 			if ($split['2'] == $this->week && $split['1'] > $data['user']['Completed_Day']) {
@@ -287,11 +417,13 @@ class Hub extends CI_Controller {
 			$this->load->view('vpt/member/meal',$data);
 		}
 		
-		$this->output->enable_profiler(TRUE);
+		//$this->output->enable_profiler(TRUE);
 	}
 
-	public function makemeal($initial = 'YES')
+	//function to get a fav meal
+	public function get_fav_meal($meal)
 	{
+		//get rest arrays
 		if ($this->session_times == 3) {
 	        $rest = array("2", "4", "6", "7");
 	    }
@@ -308,57 +440,206 @@ class Hub extends CI_Controller {
 	        $rest = array("4");
 	    }
 
+		//$meal in the form 11-1-2 (meal number - day - week)
+		$split = explode('-', $meal);
+		$meal2 = $meal;
+		$meal = $split[0];
 		$UID = $this->session->userdata('uid');
-		$user = $this->calc_details->getuser($UID);
 
-		if ($initial == 'YES') {
-			$h = $user['Current_Week'];
-			$h_max = $h + 1;
-		} elseif ($initial == 'NO')
-			{
-				$h = $h_max = $this->calc_details->max_meal($UID) + 1;
-			}
+		$data['user'] = $this->calc_details->getuser($UID);
+		$data['meal'] = $meal;
+		$data['total_meal'] = $data['user']['Meal_No'];
+		$data['goal'] = $this->calc_details->getgoal($data['user']['Goal_ID']);
+
+		//if its a rest day, send trainid as 0
+		if (in_array($split[1], $rest)) {
+			$trainid = 0;
+		} else {
+			$trainid = $this->train_id;
+		}
+
+		//get the breakdown for this scenario
+		$data['break_1'] = $this->calc_details->getbreakdown($meal, $data['user']['Meal_No'],$trainid,$data['user']['Goal_ID']);
 		
+		$weight = $data['user']['Weight'];
+		$bodyfat = $data['user']['BodyFat'];
+		$afactor = $data['user']['AFactor'];
+		$bmr = $data['user']['BMR'];
+		$mcal = $data['user']['MCalories'];
+		$calpd = $data['user']['CaloriesPerDay'];
 
-		while ( $h <= $h_max && $h_max < 13) {
-			$i = 1;
-		
-			while ( $i <= 7) {
-				//i = days
-				if (in_array($i, $rest)) {
-					$dtrain = 0;
-				} else {
-					$dtrain = $i;
-				}
-				$j = 1;
-				while ( $j <= $user['Meal_No']) {
-					if ($user['Train_ID'] == $j) {
-						if ($j == 1) {
-							$k = '13-'.$dtrain;
-						} else {
-							$k = '11-'.$dtrain;
-						}
-						
-		            } elseif($user['Train_ID'] + 1 == $j) {
+		//calculating protein and fat breakdown
+		switch ($data['user']['Goal_ID']) {
+			case 1:
+				//for bulking male
+				$protein_g = $weight * 3;
+				$protein_c = $protein_g * 4;
 
-		                $k = '12-'.$dtrain;
-		                    
-		                } else {
-		                	
-		                	$k = $j.'-'.$dtrain;
-		                  
-		                }
-						$data = $this->getmeal($k,'make');
-						$this->calc_details->save_meal($data,$i,$k,$h);
-						//print_r($data);
-						$j++;
-				}	
-				$i++;
-			}
-			$h++;
+				$fat_c = $mcal / 4; 
+				$fat_g = $fat_c / 9;
+				break;
+
+			case 2:
+				//loose fat male
+				$protein_g = ($calpd * 0.4)/4;
+				$protein_c = ($calpd * 0.4);
+				
+				$fat_c = $calpd * 0.35; 
+				$fat_g = $fat_c / 9;
+				break;
+
+			case 3:
+				//increase fitness male
+				$protein_g = ($calpd * 0.4)/4;
+				$protein_c = ($calpd * 0.4);
+
+				$fat_c = $calpd * 0.2; 
+				$fat_g = $fat_c / 9;
+				break;
+
+			case 4:
+				//tone up female
+				$protein_g = ($calpd * 0.4)/4;
+				$protein_c = ($calpd * 0.4);
+				
+				$fat_c = $calpd * 0.35; 
+				$fat_g = $fat_c / 9;
+				break;
+
+			case 5:
+				//increase fitness female
+				$protein_g = ($calpd * 0.4)/4;
+				$protein_c = ($calpd * 0.4);
+
+				
+				$fat_c = $calpd * 0.2; 
+				$fat_g = $fat_c / 9;
+				break;
 		}
 		
-		$this->output->enable_profiler(TRUE);
+		//for every goal
+		$carbs_c = $calpd - $protein_c - $fat_c;
+		$carbs_g = $carbs_c / 4;
+
+		$data['bmr'] = $bmr;
+		$data['mcal'] = $mcal;
+		$data['calpd'] = $calpd;
+		$data['protein_g'] = $protein_g;
+		$data['protein_c'] = $protein_c;
+		$data['fat_c'] = $fat_c;
+		$data['fat_g'] = $fat_g;
+		$data['carbs_c'] = $carbs_c;
+		$data['carbs_g'] = $carbs_g;
+
+		$data['protein_b1'] = $protein_g / $data['user']['Meal_No'];
+		$data['protein_b'] = $protein_g / $data['user']['Meal_No'];
+		$data['Carb_Meal12'] = $carbs_g * $data['break_1']['Carbs'];
+		$data['Carb_Meal1'] = $carbs_g * $data['break_1']['Carbs'];
+		$data['Fat_Meal1'] = $fat_g * $data['break_1']['Fat'];
+
+		$data['protein_b'] = $data['protein_b'] * 0.9;
+		$data['Carb_Meal1'] = $data['Carb_Meal1'] * 0.9;
+
+		//since we are only calculating to 90% .. carbs extra is the 10%
+		$carbsextra = $data['Carb_Meal12'] - $data['Carb_Meal1'];
+
+		$carbs = '';
+		$pass_carbs_threshold = FALSE;
+		$hate = TRUE;
+
+		$loop = 0;
+		while ((($carbs == '' && $data['break_1']['Carbs'] > 0 && $pass_carbs_threshold) || empty($data['protein_f'])) && $loop < 21) {
+
+			if ($loop <= 10) {
+				$data['protein_f'] = $this->calc_details->get_fav_protein($data['protein_b'],$data['Carb_Meal1'],$data['Fat_Meal1'],$meal);
+				if (empty($data['protein_f'])) {
+					$loop += 1;
+					continue;
+				}
+				$Carb_Left = $data['Carb_Meal1'] - ($data['protein_f']['Carbs'] / 100 )* ($data['protein_b'] / $data['protein_f']['Protein'] * 100);
+				$fatleft = $data['Fat_Meal1'] - (($data['protein_f']['Fat'] / 100 )* ($data['protein_b'] / $data['protein_f']['Protein'] * 100));
+				$data['fatleft'] = $fatleft;
+				$data['Carb_Left'] = $Carb_Left;
+
+				if ($Carb_Left > 15) {
+					$pass_carbs_threshold = TRUE;
+					$data['carb_f'] = $this->calc_details->get_carb($Carb_Left,$fatleft,$meal,$data['protein_f']['Protein_ID']);
+					
+					if (!empty($data['carb_f'])) {
+						$carbs = $data['carb_f']['Name'];
+						$data['Fat_Meal'] = $fatleft - (($data['carb_f']['Fat'] / 100 )* ($data['Carb_Meal1'] / $data['carb_f']['Carbs'] * 100));
+						$data['Fat_Meal1'] = $data['Fat_Meal'];
+						$Carb_Left = $Carb_Left - (($data['carb_f']['Carbs'] / 100 )* ($Carb_Left / $data['carb_f']['Carbs'] * 100));
+						$data['Carb_Left1'] = $Carb_Left;
+						$data['fat_f'] = $this->calc_details->get_fat($data['Fat_Meal'], $Carb_Left, $carbsextra,1);
+					} else {
+						$loop += 1;
+						continue;
+					}
+					
+				} else {
+					$data['veg_f'] = $this->calc_details->get_veg();
+
+					if ($data['Fat_Meal1'] > 5) {
+						$data['fat_f'] = $this->calc_details->get_fat($fatleft, $Carb_Left, $carbsextra,1);
+						$data['Fat_Meal1'] = $fatleft;
+					}
+					
+				}
+
+				if ($meal == 2 || $meal == 3 || $meal == 4 || $meal == 5) {
+					$data['veg_f'] = $this->calc_details->get_veg('green');
+				}
+				$loop += 1;
+			} elseif ($loop <= 20) {
+				$data['protein_f'] = $this->calc_details->get_protein($data['protein_b'],$data['Carb_Meal1'],$data['Fat_Meal1'],$meal,TRUE);
+				if (empty($data['protein_f'])) {
+					$loop += 1;
+					continue;
+				}
+				$Carb_Left = $data['Carb_Meal1'] - ($data['protein_f']['Carbs'] / 100 )* ($data['protein_b'] / $data['protein_f']['Protein'] * 100);
+				$fatleft = $data['Fat_Meal1'] - (($data['protein_f']['Fat'] / 100 )* ($data['protein_b'] / $data['protein_f']['Protein'] * 100));
+				$data['fatleft'] = $fatleft;
+				$data['Carb_Left'] = $Carb_Left;
+
+				if ($Carb_Left > 15) {
+					$pass_carbs_threshold = TRUE;
+					$data['carb_f'] = $this->calc_details->get_fav_carb($Carb_Left,$fatleft,$meal,$data['protein_f']['Protein_ID']);
+					
+					if (!empty($data['carb_f'])) {
+						$carbs = $data['carb_f']['Name'];
+						$data['Fat_Meal'] = $fatleft - (($data['carb_f']['Fat'] / 100 )* ($data['Carb_Meal1'] / $data['carb_f']['Carbs'] * 100));
+						$data['Fat_Meal1'] = $data['Fat_Meal'];
+						$Carb_Left = $Carb_Left - (($data['carb_f']['Carbs'] / 100 )* ($Carb_Left / $data['carb_f']['Carbs'] * 100));
+						$data['Carb_Left1'] = $Carb_Left;
+						$data['fat_f'] = $this->calc_details->get_fat($data['Fat_Meal'], $Carb_Left, $carbsextra,1);
+					} else {
+						$loop += 1;
+						continue;
+					}
+					
+				} else {
+					$loop = 21;
+					break;
+					
+				}
+
+				if ($meal == 2 || $meal == 3 || $meal == 4 || $meal == 5) {
+					$data['veg_f'] = $this->calc_details->get_veg('green');
+				}
+				$loop += 1;
+
+			} 
+		}
+
+		$data['hate'] = $hate;
+
+		if ($loop > 20) {
+			$data = $this->getmeal($meal2, 'ffave');
+		}
+		return $data;
+		
+		//$this->output->enable_profiler(TRUE);
 	}
 
 	public function mark_as_complete($page)
@@ -386,6 +667,16 @@ class Hub extends CI_Controller {
 	{
 
 		$data = $this->getmeal($id,'change');
+		$split = explode('-', $id);
+		$this->calc_details->delete_meal($data,$split[1],$split[0],$split[2]);
+		$this->calc_details->save_meal($data,$split[1],$split[0],$split[2]);
+		$this->getmeal($id,'ajax');
+	}
+
+	public function change_fav_meal($id)
+	{
+
+		$data = $this->get_fav_meal($id);
 		$split = explode('-', $id);
 		$this->calc_details->delete_meal($data,$split[1],$split[0],$split[2]);
 		$this->calc_details->save_meal($data,$split[1],$split[0],$split[2]);

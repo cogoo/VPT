@@ -11,7 +11,7 @@
     <meta name="description" content="blank page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+    <link rel="stylesheet" href="/css/reset.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 
@@ -27,6 +27,8 @@
    
     <link href="/css/global.css" rel="stylesheet" />
     <link href="/css/default.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" > <!-- Resource style -->
+    <script src="/js/modernizr.js"></script> <!-- Modernizr -->
 
 </head>
 <!-- /Head -->
@@ -36,7 +38,9 @@
    <!-- Navbar-->
    <div class="header">
     <div class="container">
+
         <a class="logout pull-right" href="/logout">Logout</a>
+        <img class="image-header pull-right" src="/images/placeholder/<?php echo $user['User_ID'] ?>.jpg">
     </div>
    </div>
     <!-- /Navbar -->

@@ -190,3 +190,8 @@ hr.stroke {
     width: 80%;
 }
 
+.footer-buffer {
+    min-height: 1px;
+    margin-bottom: 20px;
+}
+

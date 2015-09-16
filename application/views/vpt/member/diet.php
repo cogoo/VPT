@@ -29,7 +29,7 @@
 
 
     <div class="row">
-        <div class="col-lg-10 col-md-offset-1">
+        <div class="col-lg-10 col-lg-offset-1">
 <div class="white-box relative cf">
 
     
@@ -55,12 +55,12 @@
                    <div class="row">
             <div class="col-lg-12">
                 <div class="col-md-6 "></div>
-                <div class="col-md-3 col-md-offset-3">
+                <div class="col-md-6">
                     <?php 
 
                         if ($week >= $current_week && $current_week < 13) {
                             ?>
-                                <a class="btn green" href="/complete/diet">MARK WEEK AS COMPLETE</a>
+                                <a class="btn green pull-right" href="/complete/diet">MARK WEEK AS COMPLETE</a>
                             <?php
 
                         }
@@ -80,14 +80,14 @@
                                 <input type="button" class="<?php if(($completed_day >= $d && $current_week == $week) || $current_week > $week){ echo "green"; } ?> btn js-activity-item meal" value="Day <?php echo $d ?> <?php if (in_array($d, $rest)) { echo '(REST)'; } else { echo '(TRAIN)'; } ?>" />
                                 <div class="activity-list-item-dropdown cf dnone">
                                     <div class="row">
-                                        <div class="col-md-3 col-md-offset-1">
-                                            <ul class="meal-breakdown js-meal-breakdown">
+                                        <div class="col-xs-3 col-xs-offset-1">
+                                            <ul class="meal-breakdown no-padding js-meal-breakdown">
                                                 <?php 
                                                     $i = $j = 1;
                                                     if (in_array($d, $rest)) {
                                                         while ( $i <= $total_meal) {
                                                         ?> 
-                                                            <li class="meal<?php echo $j ?>" id='<?php echo $i; ?>-0-<?php echo $week ?>'>Meal <?php echo $i; ?></li> 
+                                                            <li class="meal<?php echo $j ?>" id='<?php echo $i; ?>-<?php echo $d ?>-<?php echo $week ?>'>Meal <?php echo $i; ?></li> 
                                                         <?php
                                                                 
                                                             $i += 1;
@@ -134,22 +134,24 @@
                                                 
                                             </ul>
                                         </div>
-                                        <div class="col-md-7 diet<?php echo $d ?> diet-info">
+                                        <div class="col-xs-7 diet<?php echo $d ?> diet-info">
                                             <div></div>
                                         </div>
                                     </div>
-                                    <div class="activity-btn-actions cf">
-                                    <?php 
+                                    <div class="row">
+                                        <div class="activity-btn-actions cf">
+                                        <?php 
 
-                                        if ($week == $current_week && $completed_day < $d) {
-                                            ?>
-                                                <button class="btn green js-day-complete">MARK DAY AS COMPLETE</button>
-                                                <input type="hidden" value="<?php echo $d ?>">
-                                            <?php
-                                        }
+                                            if ($week == $current_week && $completed_day < $d) {
+                                                ?>
+                                                    <button class="btn green js-day-complete">MARK DAY AS COMPLETE</button>
+                                                    <input type="hidden" value="<?php echo $d ?>">
+                                                <?php
+                                            }
 
-                                    ?>
-                                        
+                                        ?>
+                                            
+                                        </div>
                                     </div>
 
                                 </div>

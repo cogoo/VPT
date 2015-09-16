@@ -88,9 +88,9 @@ $(function(){
 
     });
 
-    $(".diet-info").on('click', 'button', function(e) {
+    $(".diet-info").on('click', 'button.change', function(e) {
 
-        var id = $(this).next('input').val();
+        var id = $(this).nextAll('input').val();
         var split_id = id.split('-');
        
         $.ajax({
@@ -99,6 +99,24 @@ $(function(){
           .done(function( html ) {
             $('.diet-info.diet'+split_id[1]+' > div').html( html );
             $('.diet-info.diet'+split_id[1]+' > div .meal-info').val( id );
+
+          });
+
+    });
+
+    $(".diet-info").on('click', 'button.fav', function(e) {
+        //need to fix
+        var id = $(this).nextAll('input').val();
+        //alert(id);
+        var split_id = id.split('-');
+       
+        $.ajax({
+          url: "/changefavmeal/"+id
+        })
+          .done(function( html ) {
+            $('.diet-info.diet'+split_id[1]+' > div').html( html );
+            $('.diet-info.diet'+split_id[1]+' > div .meal-info').val( id );
+
           });
 
     });

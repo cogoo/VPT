@@ -47,8 +47,12 @@ body {
     border-radius: 5px;
 }
 
+.p-home {
+    padding: 70px 30px;
+}
+
 .p-80 {
-    padding: 60px;
+    padding: 80px;
 }
 
 .p-40 {
@@ -170,8 +174,8 @@ body {
 }
 
 ul.log-header {
-    width: calc(100% - 200px);
-    padding-left: 200px;
+    /*width: calc(100% - 200px);*/
+    padding-left: 20%;
 }
 
 .log-header li {
@@ -254,6 +258,15 @@ ul.log-header {
     height: 50px;
     line-height: 3;
     border: 1px solid rgb(243,234,234);
+}
+
+@media (max-width: 1000px) {
+    .sub-log-header.main-plan li {
+        margin-right: 8px;
+        width: 40px;
+        height: 40px;
+        line-height: 2.3;
+    }
 }
 
 .sub-log-header.main-plan li:last-child {
@@ -408,7 +421,7 @@ ul.meal-breakdown {
 .diet-info > div {
 
   margin-top: 1em;
-  height: 475px;
+  min-height: 475px;
 
   padding: 0;
 
@@ -420,28 +433,37 @@ ul.meal-breakdown {
 
 }
 
+.image-header {
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    float: right;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
 div.meal2 {
-    transform:translateY(100px);
+    transform:translateY(10px);
 }
 
 div.meal3 {
-    transform:translateY(150px);
+    transform:translateY(80px);
 }
 
 div.meal4 {
-    transform:translateY(200px);
+    transform:translateY(110px);
 }
 
 div.meal5 {
-    transform:translateY(250px);
+    transform:translateY(180px);
 }
 
 div.meal6 {
-    transform:translateY(300px);
+    transform:translateY(210px);
 }
 
 div.meal7 {
-    transform:translateY(350px);
+    transform:translateY(250px);
 }
 
 .diet-breakdown {
@@ -492,9 +514,6 @@ form label {
     text-align: right;
   
 }
-
-
-
 
 .btn-select {
     background-image: linear-gradient(to right, #fff, #fff 80%, rgb(45,98,232) 20%, rgb(45,98,232));

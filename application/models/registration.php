@@ -134,10 +134,6 @@ class Registration extends CI_Model {
 			'BMR' => $bmr,
 			'MCalories' => $mcal,
 			'CaloriesPerDay' => $calpd
-			/*'EMail' => $this->input->post('email'),
-			'FName' => $this->input->post('fname'),
-			'LName' => $this->input->post('lname'),
-			'EMail' => $this->input->post('email'),*/
 		);
 
 		return $this->db->insert('users', $data);
@@ -145,7 +141,6 @@ class Registration extends CI_Model {
 
 	public function login()
 	{
-
 		$email = $this->input->post('email');
 		$password = $this->input->post('pwd');
 

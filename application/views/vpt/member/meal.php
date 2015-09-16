@@ -13,15 +13,20 @@
             <?php  
 
                 if ($hate == 0) {
-                    echo "<p>* bsbklsjlkflgj<p>";
+                    echo "<p>* A meal with your allergies could not be made<p>";
+                } elseif ($hate == 2) {
+                    echo "<p>* A favourite meal could not be made<p>";
+                } elseif ($hate == 3) {
+                    echo "<p>* A meal with you favourites nor allergies could be made<p>";
                 }
-
             ?>
         </div>
         <hr>
         <?php if ($change) {
             ?>
-                <button class="btn green">Change Meal</button>
+                <button class="btn green change">Change Meal</button>
+                <div class="xs-margin"></div>
+                <button class="btn gold fav">Change to Favourites</button>
                 <input type="hidden" class="meal-info">
             <?php
         } ?>

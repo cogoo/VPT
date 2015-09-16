@@ -7,12 +7,15 @@ class Calc_details extends CI_Model {
 	}
 
 
-	public function calculate_overall()
+	public function get_days_meals()
 	{
-
-
-		
-		
+		$this->db->select('Protein_Name, Carb_Name, Fat_Name');
+		$this->db->where('User_ID',12);
+		$this->db->where('Week',1);
+		$this->db->where('Day',1);
+		$this->db->order_by('Meal_No');
+		$query = $this->db->get('users_meals');
+		return $query->result_array();
 	}
 
 	public function getgoal($id)
@@ -61,12 +64,13 @@ class Calc_details extends CI_Model {
 		
 	}
 
-	public function getbreakdown($meal,$t_meal,$train_id)
+	public function getbreakdown($meal,$t_meal,$train_id,$goal_id)
 	{
 
 		$this->db->where('Meal_No', $meal);
 		$this->db->where('No_Meals', $t_meal);
 		$this->db->where('Train_ID', $train_id);
+		$this->db->where('Goal_ID', $goal_id);
 		$query = $this->db->get('cal_breakdown');
 
 		return  $query->row_array();
@@ -104,16 +108,50 @@ class Calc_details extends CI_Model {
 			$fat = '(Fat / 100 ) * ('.$id.' / Protein * 100) <= '.$fat;
 		}
 
-		if ($hate) {
-			foreach ($allergy_array as $allergy) {
-				foreach ($allergy as $key) {
-					$a_where = 'Protein_ID not in (0'.$key.'0)';
-					$this->db->where($a_where);
-				}
-				
-			}
+		//do some more tests on this
+		if ($hate && $allergy_array) {
+			$allergy_array = array_column($allergy_array, 'Linked_Protein');
+			$allergy_array = implode(",", $allergy_array);
+			$this->db->where('protein_id not in ('.$allergy_array.')');
 		}
 		
+		
+		$this->db->where($min);
+		$this->db->where($meal);
+		$this->db->where($max);
+		$this->db->where($carbs);
+		$this->db->where($fat);
+		$this->db->order_by('protein_id','RANDOM');
+		$this->db->limit(1);
+		$this->db->_protect_identifiers = FALSE;
+		$query = $this->db->get('protein');
+
+		return  $query->row_array();
+	}
+
+	public function get_fav_protein($id,$carb,$fat,$meal_type)
+	{
+
+		$this->db->select('Protein_ID');
+		$this->db->where('User_ID',$this->session->userdata('uid'));
+		$query = $this->db->get('user_favourites');
+		$fav_protein = $query->result_array();
+		$fav_protein = array_column($fav_protein, 'Protein_ID');
+
+		$this->db->_protect_identifiers = FALSE;
+		$meal = "Meal_type like '%,".$meal_type.",%'";
+		$min = 'Min <= ('.$id.' / Protein * 100)';
+		$max = 'Max >= ('.$id.' / Protein * 100)';
+		$carbs = '(Carbs / 100 ) * ('.$id.' / Protein * 100) <= '.$carb;
+		if ($fat < 5) {
+			$fat = '(Fat / 100 ) * ('.$id.' / Protein * 100) <= 5';
+		} else {
+			$fat = '(Fat / 100 ) * ('.$id.' / Protein * 100) <= '.$fat;
+		}
+		
+		if ($fav_protein) {
+			$this->db->where_in('protein_id',$fav_protein);
+		}
 		
 		$this->db->where($min);
 		$this->db->where($meal);
@@ -138,6 +176,38 @@ class Calc_details extends CI_Model {
 		}
 		$meal = "Meal_type like '%,".$meal_type.",%'";
 		$link = "Linked_Foods like '%,".$protein.",%'";
+		$this->db->where($min);
+		$this->db->where($link);
+		$this->db->where($fat);
+		$this->db->where($meal);
+		$this->db->order_by('carb_id','RANDOM');
+		$this->db->limit(1);
+		$query = $this->db->get('carbs');
+
+		return  $query->row_array();
+	}
+
+	public function get_fav_carb($id,$fatleft,$meal_type,$protein)
+	{
+		$this->db->select('Carb_ID');
+		$this->db->where('User_ID',$this->session->userdata('uid'));
+		$query = $this->db->get('user_favourites');
+		$fav_carb = $query->result_array();
+		$fav_carb = array_column($fav_carb, 'Carb_ID');
+
+		$min = 'Min <= ('.$id.' / Carbs * 100)';
+		if ($fatleft < 0) {
+			$fat = '(Fat / 100 ) * ('.$id.' / Carbs * 100) <= 5';
+		} else {
+			$fat = '(Fat / 100 ) * ('.$id.' / Carbs * 100) <= '.$fatleft;
+		}
+		$meal = "Meal_type like '%,".$meal_type.",%'";
+		$link = "Linked_Foods like '%,".$protein.",%'";
+
+		if ($fav_carb) {
+			$this->db->where_in('carb_id',$fav_carb);
+		}
+
 		$this->db->where($min);
 		$this->db->where($link);
 		$this->db->where($fat);
@@ -246,6 +316,16 @@ class Calc_details extends CI_Model {
 		$this->db->where('User_ID',$this->session->userdata('uid'));
 		$this->db->update('users', $data);
 		return $week + 1;
+	}
+
+	public function change_initial()
+	{
+		$data = array(
+			'First_Login' => 1
+		);
+
+		$this->db->where('User_ID',$this->session->userdata('uid'));
+		$this->db->update('users', $data);
 	}
 
 	public function complete_day($day)
