@@ -1,0 +1,535 @@
+body {
+	background: rgb(203,203,203);
+}
+
+.bg-gray {
+    background: #e0e0e0;
+}
+
+.bg-blue {
+    background: rgb(45,98,232);
+    color: #fff;
+}
+
+.home-sec-1 > div  div.first {
+    margin: auto 0px;
+    padding: 40px 20px 20px 20px;
+    /*
+        width: 250px;
+    */
+    height: 250px;
+    display: inline-block;  
+    vertical-align: middle;
+}
+
+.home-sec-1 .home-inner {
+    border-radius: 10px; 
+    padding: 0 !important;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+}
+
+.home-inner > div {
+    background: #fff;
+}
+
+.home-sec-1 > div.middle {
+    margin: 0px 20px;
+}
+
+.meal-title {
+    padding: 15px;
+    display: inline-block;
+    color: #333;
+    background-color: #fff;
+    position: relative;
+    bottom: -130px;
+    border-radius: 5px;
+}
+
+.p-home {
+    padding: 70px 30px;
+}
+
+.p-80 {
+    padding: 80px;
+}
+
+.p-40 {
+    padding: 40px;
+}
+
+.header {
+	background: rgb(24, 24,24);
+	border-top: 4px solid rgb(45, 98, 232);
+	height: 60px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+.main-container {
+	
+	margin: 80px auto;
+}
+
+
+.nav {
+
+}
+
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    
+    overflow: hidden;
+    border: 5px solid #fff;
+}
+
+.circle.a {
+    bottom: -115px;
+}
+
+.circle.b {
+    background: #fff;
+    color: rgb(45,98,232);
+    top: 30px;
+    border: 1px solid rgb(45,98,232);
+    box-shadow: #fff 0px 0px 0px 6px; 
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+.circle img {
+    width: 120px;
+}
+
+.nav li {
+	position: relative;
+	display: inline-block;
+	background: rgb(165,165,165);
+	color: rgb(118,118,118);
+	border-radius: 3px;
+	width: 110px;
+	margin-right: 10px;
+	padding: 20px 20px;
+	text-align: center;
+}
+
+.nav a:last-child li {
+    margin-right: 0;
+}
+
+.nav li.current {
+	background: rgb(255,255,255);
+	color: rgb(45,98,232);
+	box-shadow: rgba(0,0,0,0.25) 0px 2px 7.2px 0.8px;
+}
+
+.nav li.current:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -5px;
+	width: 100%;
+	border-bottom: 2px solid rgb(45,98,232);
+	border-radius: 1px;
+}
+
+.white-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.25) 0px 5px 7.2px 0.8px;
+}
+
+.white-box-activity {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #d0d0d0;
+    width: calc(50% - 20px);
+    margin: 10px;
+    /*
+        height: 270px;
+        min-height: 270px;
+        max-height: 270px;
+    */
+    float: left;
+}
+
+.page-container {
+    margin-top: 50px;
+}
+
+ul.log-header {
+    /*width: calc(100% - 200px);*/
+    padding-left: 20%;
+}
+
+.log-header li {
+ 
+    display: inline-block;
+    background: rgb(165,165,165);
+    color: rgb(118,118,118);
+    border-radius: 10px 10px 0 0;
+    width: auto;
+    padding: 10px 20px;
+    text-align: center;
+    border-right: 5px solid rgb(118,118,118);
+    margin: 0px -3px;
+    cursor: pointer;
+}
+
+.log-header li:last-child {
+    border-right: 0;
+}
+
+.log-header li.current {
+	background: rgb(255,255,255);
+	color: rgb(45,98,232);
+}
+
+.circle-title {
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: rgba(45, 98, 232, 0.9) 0px 3px 0px 0px;
+    height: 160px;
+    left: 0;
+    position: absolute;
+    top: -120px;
+    width: 160px;
+    text-align: center;
+}
+
+.circle-title span {
+    top: 60%;
+    transform: translateY(-50%);
+    position: relative;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.btn.smaller {
+  padding: 10px;
+  width: auto;
+}
+
+.sub-header {
+    text-align: center;
+}
+
+.sub-content {
+    background: rgb(243,234,234);
+    padding: 30px 10px;
+}
+
+.disnone {
+    display: none;
+}
+
+.sub-log-header li {
+    display: inline-block;
+    padding: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.sub-log-header.main-plan li {
+    display: inline-block;
+    padding: 0px;
+    position: relative;
+    cursor: pointer;
+    background: rgb(243,234,234);
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    line-height: 3;
+    border: 1px solid rgb(243,234,234);
+}
+
+@media (max-width: 1000px) {
+    .sub-log-header.main-plan li {
+        margin-right: 8px;
+        width: 40px;
+        height: 40px;
+        line-height: 2.3;
+    }
+}
+
+.sub-log-header.main-plan li:last-child {
+    margin-right: 0px;
+}
+
+.sub-log-header.main-plan li.current:after {
+    display: none;
+}
+
+.sub-log-header li.current:after {
+	content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    width: 100%;
+    border-bottom: 3px solid rgb(45,98,232);
+    border-radius: 1px;
+}
+
+.sub-log-header li.current:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgb(255,255,255);
+    bottom: -47px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.header {
+    line-height: 60px;
+    color: #fff;
+}
+
+a {
+    color: inherit;
+}
+
+.sub-log-header.main-plan .current {
+    background: rgb(45,98,232);
+    color: rgb(255,255,255);
+    border: 1px solid rgb(45,98,232);
+    
+}
+
+.sub-log-header.main-plan .complete {
+    background: rgb(255,255,255);
+    color: green;
+    border: 1px solid green;
+    
+}
+
+.activity-list {
+    text-align: center;
+}
+
+.activity-list-item {
+    margin: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.activity-list-item-dropdown {
+    background: rgb(243,234,234);
+    top: -31px;
+    position: relative;
+    z-index: -1;
+    left: -45px;
+    padding: 45px;
+    width: calc(100% + 90px);
+}
+
+.activity-list-item:before {
+    content: '';
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 2px solid rgb(203,203,203);
+    border-radius: 1px;
+    z-index: -1;
+    top: 30px;
+}
+
+.box-workout {
+    text-align: left;
+    padding: 0px 20px;
+}
+
+.box-workout p:first-child {
+    margin-top: 0px;
+}
+
+.activity-btn-actions {
+    margin-top: 40px;
+    display: inline-block;
+}
+
+.activity-btn-actions a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.activity-btn-actions a:last-child {
+    margin-bottom: 0px;
+}
+
+ul.meal-breakdown {
+    margin-top: 1em;
+}
+
+.meal-breakdown li {
+    position: relative;
+    border-radius: 3px;
+    width: 110px;
+    height: 75px;
+    margin-bottom: 40px;
+    padding: 20px 20px;
+    text-align: center;
+    list-style-type: none;
+    background: rgb(255,255,255);
+	box-shadow: rgba(0,0,0,0.25) 0px 2px 7.2px 0.8px;
+    cursor: pointer;
+    /*line-height: 5;*/
+}
+
+.meal-breakdown li.current {
+    background-color: rgb(45,98,232);
+    color: #fff;
+}
+
+.meal-breakdown li.training {
+    background-color: rgb(255,140,0);
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.white-box.diet-box {
+    margin-top: 1em;
+    height: 450px;
+}
+
+.diet-info > div {
+
+  margin-top: 1em;
+  min-height: 475px;
+
+  padding: 0;
+
+  background-color: #fff;
+ 
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.25) 0px 5px 7.2px 0.8px;
+  transition: all 0.5s;
+
+}
+
+.image-header {
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px;
+    float: right;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+div.meal2 {
+    transform:translateY(10px);
+}
+
+div.meal3 {
+    transform:translateY(80px);
+}
+
+div.meal4 {
+    transform:translateY(110px);
+}
+
+div.meal5 {
+    transform:translateY(180px);
+}
+
+div.meal6 {
+    transform:translateY(210px);
+}
+
+div.meal7 {
+    transform:translateY(250px);
+}
+
+.diet-breakdown {
+    text-align: left;
+}
+
+.diet-breakdown p {
+    font-size: 14px;
+}
+
+.diet-separator:after {
+	content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-right: 2px solid rgb(203,203,203);
+    border-radius: 1px;
+    height: 100%;
+}
+
+.form-separator {
+    margin-bottom: 20px;
+}
+
+.error {
+    display: none;
+    color: red;
+}
+
+.meal-img {
+    min-height: 200px;
+    background: url('/images/food/Sirloin-Steak.jpg');
+    background-size: cover;
+    background-size: 100% 100%;
+}
+
+form input, form select {
+      padding: 0px 10px;
+      color: #333;
+      vertical-align: top;
+      height: 38px;
+      line-height: 38px;
+}
+
+form label {
+ 
+    text-align: right;
+  
+}
+
+.btn-select {
+    background-image: linear-gradient(to right, #fff, #fff 80%, rgb(45,98,232) 20%, rgb(45,98,232));
+}
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 45%;
+  margin-right: 0;
+}
+
+
+@media (max-width: 768px) {
+ form label {
+ 
+    text-align: left;
+  
+}
+
+}
