@@ -260,7 +260,7 @@ header h1 {
   width: 36px;
   height: 66px;
   /*background-color: rgba(216, 216, 216, 0.4);*/
-  background-image: url("../images/icons/right.png");
+  background-image: url("../images/icon/right.png");
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 4;
