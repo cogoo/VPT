@@ -38,7 +38,7 @@ Modules - reusable parts of our design
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 100%;
-  max-width: 1170px;
+  max-width: 540px;
   margin: 0 auto;
 }
 .cd-container::after {
@@ -93,7 +93,7 @@ header h1 {
   /*margin-bottom: 6em;*/
 }
 #cd-gallery-items > li img {
-  width: 100%;
+  width: 540px;
   display: block;
 }
 @media only screen and (min-width: 768px) {
@@ -155,6 +155,7 @@ header h1 {
 }
 .cd-item-wrapper li .inner {
   padding: 10px;
+  padding-right: 90px;
 }
 
 .cd-item-wrapper li.cd-item-front {

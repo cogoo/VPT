@@ -1,5 +1,9 @@
 body {
-	background: rgb(203,203,203);
+	background: #f2f2f2;
+}
+
+.bg-white {
+    background: #f7f7f7;
 }
 
 .bg-gray {
@@ -45,6 +49,7 @@ body {
     position: relative;
     bottom: -130px;
     border-radius: 5px;
+    max-width: 90%;
 }
 
 .p-home {
@@ -60,7 +65,7 @@ body {
 }
 
 .header {
-	background: rgb(24, 24,24);
+	background: rgba(24, 24,24,0.85);
 	border-top: 4px solid rgb(45, 98, 232);
 	height: 60px;
 	position: absolute;
@@ -116,14 +121,43 @@ body {
 .nav li {
 	position: relative;
 	display: inline-block;
-	background: rgb(165,165,165);
+	background: rgba(165,165,165,0.5);
 	color: rgb(118,118,118);
 	border-radius: 3px;
-	width: 110px;
+	width: 130px;
 	margin-right: 10px;
 	padding: 20px 20px;
 	text-align: center;
 }
+
+.nav li:hover {
+    background: rgba(165,165,165,0.75);
+}
+
+.nav li i {
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav li {
+        width: auto;
+    }
+
+    .nav li i {
+        margin-right: 0px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .nav li i {
+        font-size: 22px;
+    }
+}
+
+
 
 .nav a:last-child li {
     margin-right: 0;
@@ -154,19 +188,26 @@ body {
     box-shadow: rgba(0,0,0,0.25) 0px 5px 7.2px 0.8px;
 }
 
+.sub-content .white-box {
+    box-shadow: none;
+}
+
 .white-box-activity {
     background-color: #fff;
     padding: 15px;
     border-radius: 5px;
     border: 1px solid #d0d0d0;
+    /*
     width: calc(50% - 20px);
     margin: 10px;
-    /*
+    
         height: 270px;
         min-height: 270px;
         max-height: 270px;
-    */
+    
     float: left;
+    */
+    margin-bottom: 30px;
 }
 
 .page-container {
@@ -181,7 +222,7 @@ ul.log-header {
 .log-header li {
  
     display: inline-block;
-    background: rgb(165,165,165);
+    background: rgba(165,165,165,0.5);
     color: rgb(118,118,118);
     border-radius: 10px 10px 0 0;
     width: auto;
@@ -231,8 +272,9 @@ ul.log-header {
 }
 
 .sub-content {
-    background: rgb(243,234,234);
+    background: #f0f0f0;
     padding: 30px 10px;
+    border-radius: 5px;
 }
 
 .disnone {
@@ -251,14 +293,27 @@ ul.log-header {
     padding: 0px;
     position: relative;
     cursor: pointer;
-    background: rgb(243,234,234);
+    background: rgb(232, 232, 232);
     border-radius: 50%;
     margin-right: 15px;
     width: 50px;
     height: 50px;
     line-height: 3;
-    border: 1px solid rgb(243,234,234);
+    border: 1px solid rgba(167, 165, 165, 0);
 }
+
+.sub-log-header.main-plan:before {
+    content: '';
+    display: block;
+    position: relative;
+    left: 24px;
+    right: 0;
+    width: 94%;
+    border-bottom: 1px solid rgb(203,203,203);
+    top: 25px;
+}
+
+
 
 @media (max-width: 1000px) {
     .sub-log-header.main-plan li {
@@ -266,6 +321,10 @@ ul.log-header {
         width: 40px;
         height: 40px;
         line-height: 2.3;
+    }
+
+    .sub-log-header.main-plan:before {
+        top: 21px;
     }
 }
 
@@ -298,7 +357,7 @@ ul.log-header {
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 20px solid rgb(255,255,255);
-    bottom: -47px;
+    bottom: -62px;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -338,13 +397,19 @@ a {
 }
 
 .activity-list-item-dropdown {
-    background: rgb(243,234,234);
+    background: #f0f0f0;
     top: -31px;
     position: relative;
     z-index: -1;
     left: -45px;
     padding: 45px;
     width: calc(100% + 90px);
+}
+
+@media (max-width: 768px) {
+    .activity-list-item-dropdown {
+        padding: 45px 15px;
+    }  
 }
 
 .activity-list-item:before {
@@ -532,4 +597,39 @@ form label {
   
 }
 
+}
+
+.meal-footer-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid rgb(121, 121, 121);
+}
+
+.meal-footer-nav a {
+    padding: 10px;
+    display: inline-block;
+    color: rgb(118,118,118);
+    width: 100%;
+}
+
+.meal-footer-nav .col-xs-6:first-child {
+    border-right: 2px solid rgb(121, 121, 121);
+}
+
+.meal-footer-nav .left:hover {
+    cursor: w-resize;
+}
+
+.meal-footer-nav .right:hover {
+    cursor: e-resize;
+}
+
+.mobile-meal {
+    padding: 0px 10px;
+}
+
+.mobile-week {
+    padding: 0px 10px;
 }

@@ -84,6 +84,8 @@ class Hub extends CI_Controller {
 			$data['week'] = $week;
 			$data['current_week'] = $this->week;
 			$data['week_needed'] = $week - 2;
+			$UID = $this->session->userdata('uid');
+			$data['user'] = $this->calc_details->getuser($UID);
 			$this->load->view('vpt/header_footer/header', $data);
 			$this->load->view('vpt/member/no_access',$data);
 			$this->load->view('vpt/header_footer/footer');
@@ -113,6 +115,16 @@ class Hub extends CI_Controller {
 	{
 		$data['exercise'] = $this->calc_details->get_exercise($ex);
 		$this->load->view('vpt/member/ajax/exercise',$data);
+	}
+
+	public function get_mobile_meal($days)
+	{
+		$split = explode('-', $days);
+		$day = $split[0];
+		$week = $split[1];
+
+		$data['days_meals'] = $this->calc_details->get_days_meals_mobile($day,$week);
+		$this->load->view('vpt/member/ajax/mobile_meal',$data);
 	}
 
 	public function makemeal($initial = 'YES')

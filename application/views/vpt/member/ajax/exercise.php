@@ -1,7 +1,7 @@
-
-    <div class="cf">
+<div class="row">
         <?php foreach ($exercise as $act): ?>
-        <div class="white-box-activity">
+        <div class="col-md-6">
+            <div class=" white-box-activity">
             <h4><?php echo $act['Order'] ?>. <?php echo $act['Name'] ?></h4>
             <div class="cf">
                 <div class="col-40">
@@ -17,12 +17,13 @@
             <p class="cf box-workout">Works all of your quads. Great for building a solid foundation.</p>
 
         </div>
+      </div>
         <?php endforeach ?>
-      
+        
     
     </div>
     <div class="activity-btn-actions cf">
         <a class="btn blue">DOWNLOAD AS PDF</a>
         <!--<a class="btn green">MARK AS COMPLETE</a>-->
     </div>
-
+</div>

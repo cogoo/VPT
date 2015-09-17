@@ -40,6 +40,8 @@ $(function(){
 
     $(".js-activity-item.meal").on('click', function(e) {
 
+
+
         if ($(this).next('.activity-list-item-dropdown').is(':visible')) {
             $('.activity-list-item-dropdown').slideUp(500);
             $('.js-activity-item').removeClass('active blue');
@@ -48,6 +50,57 @@ $(function(){
             $('.js-activity-item').removeClass('active blue');
             $(this).addClass('active blue');
             $(this).next('.activity-list-item-dropdown').slideDown(500);
+        };
+
+        if ($('.visible-xs.mobile-meal').is(':visible')) {
+
+            var id = this.id;
+
+            $.ajax({
+              url: "/getmobilemeal/"+id
+            })
+              .done(function( html ) {
+                $('.activity-list-item-dropdown .mobile-meal').html( html );
+                var visionTrigger = $('.cd-3d-trigger'),
+                galleryItems = $('.no-touch #cd-gallery-items').children('li'),
+                galleryNavigation = $('.cd-item-navigation a');
+
+                //on mobile - start/end 3d vision clicking on the 3d-vision-trigger
+                visionTrigger.on('click', function(){
+                    $this = $(this);
+                    if( $this.parent('li').hasClass('active') ) {
+                        $this.parent('li').removeClass('active');
+                        //hideNavigation($this.parent('li').find('.cd-item-navigation'));
+                    } else {
+                        $this.parent('li').addClass('active');
+                        updateNavigation($this.parent('li').find('.cd-item-navigation'), $this.parent('li').find('.cd-item-wrapper'));
+                    }
+                });
+
+                //on desktop - update navigation visibility when hovering over the gallery images
+                galleryItems.hover(
+                    //when mouse enters the element, show slider navigation
+                    function(){
+                        $this = $(this).children('.cd-item-wrapper');
+                        updateNavigation($this.siblings('nav').find('.cd-item-navigation').eq(0), $this);
+                    },
+                    //when mouse leaves the element, hide slider navigation
+                    function(){
+                        $this = $(this).children('.cd-item-wrapper');
+                        //hideNavigation($this.siblings('nav').find('.cd-item-navigation').eq(0));
+                    }
+                );
+
+                //change image in the slider
+                galleryNavigation.on('click', function(){
+                    var navigationAnchor = $(this);
+                        direction = navigationAnchor.text(),
+                        activeContainer = navigationAnchor.parents('nav').eq(0).siblings('.cd-item-wrapper');
+                    
+                    ( direction=="Next") ? showNextSlide(activeContainer) : showPreviousSlide(activeContainer);
+                    updateNavigation(navigationAnchor.parents('.cd-item-navigation').eq(0), activeContainer);
+                });
+              });
         };
 
     });
@@ -61,10 +114,16 @@ $(function(){
           .done(function( html ) {
             $( '#ex'+id).html( html );
           });
-        $('.activity-list-item-dropdown').hide();
-        $('.js-activity-item').removeClass('active blue');
-        $(this).addClass('active blue');
-        $(this).next('.activity-list-item-dropdown').show();
+        
+        if ($(this).next('.activity-list-item-dropdown').is(':visible')) {
+            $('.activity-list-item-dropdown').slideUp(500);
+            $('.js-activity-item').removeClass('active blue');
+        } else {
+            $('.activity-list-item-dropdown').hide();
+            $('.js-activity-item').removeClass('active blue');
+            $(this).addClass('active blue');
+            $(this).next('.activity-list-item-dropdown').slideDown(500);
+        };
 
     });
 
@@ -136,6 +195,7 @@ $(function(){
 
     });
 
+
     /*$("ul.js-sub-log-header").on('click', 'li', function(e) {
         
         $(this).siblings().addBack().removeClass('current complete');
@@ -161,6 +221,14 @@ function startTime() {
 function checkTime(i) {
     if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;
+}
+
+function mobile_week(week){
+    if ($('.meal-page').is(':visible')) {
+        window.location.replace('/diet/'+week);
+    } else {
+        window.location.replace('/training/'+week);
+    }
 }
 
 

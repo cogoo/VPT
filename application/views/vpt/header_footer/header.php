@@ -28,6 +28,8 @@
     <link href="/css/global.css" rel="stylesheet" />
     <link href="/css/default.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet" > <!-- Resource style -->
+    <link rel="stylesheet" type="text/css" href="/css/cs-select.css" />
+    <link rel="stylesheet" type="text/css" href="/css/cs-skin-slide.css" />
     <script src="/js/modernizr.js"></script> <!-- Modernizr -->
 
 </head>
@@ -54,22 +56,23 @@
             <ul class="nav no-padding">
                 <a href="/home"><li class="<?php if ($title == 'Home') {
                     echo "current";
-                } ?>">Home</li></a>
+                } ?>"><i class="fa fa-home"></i><span class="hidden-xs">Home</span></li></a>
                 <a href="/diet/<?php echo $current_week ?>"><li class="<?php if ($title == 'Diet') {
                     echo "current";
-                } ?>">Diet</li></a>
+                } ?>"><i class="fa fa-pie-chart"></i><span class="hidden-xs">Diet</span></li></a>
                 <a href="/training/<?php echo $current_week ?>"><li class="<?php if ($title == 'Training') {
                     echo "current";
-                } ?>">Training</li></a>
+                } ?>"><i class="fa fa-trophy"></i><span class="hidden-xs">Training</span></li></a>
                 <a href="/settings"><li class="<?php if ($title == 'Settings') {
                     echo "current";
-                } ?>">Settings</li></a>
+                } ?>"><i class="fa fa-cogs"></i><span class="hidden-xs">Settings</span></li></a>
                 <a href="/support"><li class="<?php if ($title == 'Support') {
                     echo "current";
-                } ?> relative">Support<!--<span class="badge">1</span>--></li></a>
+                } ?> relative"><i class="fa fa-users"></i><span class="hidden-xs">Support</span><!--<span class="badge">1</span>--></li></a>
             </ul>
         </div>
-        <div class="lg-margin"></div>
+        <div class="lg-margin hidden-xs"></div>
+        <div class="sm-margin visible-xs"></div>
                     </div>
                 </div>
             </div>

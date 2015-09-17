@@ -95,7 +95,13 @@ body {
 }
 
 #wrapper {
-margin-top: 120px;
+    margin-top: 120px;
+}
+
+@media (max-width: 768px) {
+    #wrapper {
+        margin-top: 80px;
+    } 
 }
 
 img.max {
@@ -120,8 +126,26 @@ img.max {
     -moz-appearance: none;
     appearance: none;
     color: rgb(45,98,232);
-    background: rgb(243,234,234);
-    border: 2px solid rgb(243,234,234);
+    background: rgb(227, 228, 232);
+    border: 2px solid rgb(189, 193, 199);
+}
+
+@media (max-width: 992px) {
+
+    .btn {
+        padding: 10px;
+        width: auto;
+        max-width: 90%;
+    }
+
+    .activity-list-item:before {
+        top: 20px;
+    }
+
+    .activity-list-item-dropdown {
+        top: -21px;
+    }
+
 }
 
 .xs-margin {

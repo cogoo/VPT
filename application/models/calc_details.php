@@ -9,11 +9,24 @@ class Calc_details extends CI_Model {
 
 	public function get_days_meals()
 	{
+		$order_by = 'Meal_No = 13 desc, Meal_No = 11 desc, Meal_No = 12 desc, Meal_No asc';
 		$this->db->select('Protein_Name, Carb_Name, Fat_Name');
-		$this->db->where('User_ID',12);
-		$this->db->where('Week',1);
+		$this->db->where('User_ID',$this->session->userdata('uid'));
+		$this->db->where('Week',$this->session->userdata('current_week'));
 		$this->db->where('Day',1);
-		$this->db->order_by('Meal_No');
+		$this->db->order_by($order_by);
+		$query = $this->db->get('users_meals');
+		return $query->result_array();
+	}
+
+	public function get_days_meals_mobile($day,$week)
+	{
+		$order_by = 'Meal_No = 13 desc, Meal_No = 11 desc, Meal_No = 12 desc, Meal_No asc';
+		$this->db->select('Protein_Name, Carb_Name, Fat_Name');
+		$this->db->where('User_ID',$this->session->userdata('uid'));
+		$this->db->where('Week',$week);
+		$this->db->where('Day',$day);
+		$this->db->order_by($order_by);
 		$query = $this->db->get('users_meals');
 		return $query->result_array();
 	}

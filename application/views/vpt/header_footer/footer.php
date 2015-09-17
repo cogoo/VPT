@@ -29,6 +29,15 @@
     <script src="/js/global.js"></script>
     <script src="/js/main.js"></script> <!-- Resource jQuery -->
     <script src="/js/inspina/demo/chartjs-demo.js"></script>
+    <script src="/js/classie.js"></script>
+    <script src="/js/selectFx.js"></script>
+    <script>
+        (function() {
+            [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {    
+                new SelectFx(el);
+            } );
+        })();
+    </script>
     
    
 </body>

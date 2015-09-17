@@ -14,24 +14,26 @@
     <div class="text-center relative">
         <div class="relative">
         <h1 class="blue"><?php echo $full_name ?></h1>
-        <div class="row">
-            <div class="col-md-offset-2 col-md-2 text-center">
+        <div class="md-margin"></div>
+        <div class="row hidden-xs">
+            <div class="col-sm-offset-2 col-sm-2 text-center">
                 <h3>Height</h3>
                 <p>6ft</p>
             </div>
-            <div class="col-md-2 text-center">
+            <div class="col-sm-2 text-center">
                 <h3>Weight</h3>
                 <p><?php echo $user['Weight'] ?>kg</p>
             </div>
-            <div class="col-md-2 text-center">
+            <div class="col-sm-2 text-center">
                 <h3>Body fat</h3>
                 <p><?php echo $user['BodyFat'] ?>%</p>
             </div>
-            <div class="col-md-2 text-center">
+            <div class="col-sm-2 text-center">
                 <h3>Goal</h3>
                 <p><?php echo $goal['Goal'] ?></p>
             </div>
         </div>
+        <div class="md-margin hidden-xs"></div>
         <div class="lg-margin"></div>
         <div class="circle a">
             <img src="/images/placeholder/<?php echo $user['User_ID'] ?>.jpg">
@@ -42,7 +44,7 @@
 
                 <div class="row">
 
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
                         <div class="bg-blue first text-left">
                             <h2 class="no-margin"><?php echo date('j') . '<sup>' . date('S') . '</sup> '.date('F')?></h2>
                             <h1 class="time"></h1>
@@ -50,7 +52,8 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-sm-4">
+                        <div class="lg-margin visible-xs"></div>
                         <ul id="cd-gallery-items" class="active cd-container">
                             <li>
                                 <ul class="cd-item-wrapper">
@@ -104,8 +107,8 @@
                         </ul> <!-- cd-gallery-items -->
                     </div>
 
-                    <div class="col-md-4">
-
+                    <div class="col-sm-4">
+                        <div class="lg-margin visible-xs"></div>
                         <div class="home-inner first">
                             <img class="max" src="/images/workout/work1.jpg">
                             <div>
@@ -194,7 +197,7 @@
     </div>
 
 </div>
-
+<div class="md-margin"></div>
 </div>
 </div>
 </div>
