@@ -19,7 +19,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data['title'] = "Diet";
+		$data['current_week'] = "2";
+		$this->load->view('vpt/member/new_vpt',$data);
 	}
 }
 
