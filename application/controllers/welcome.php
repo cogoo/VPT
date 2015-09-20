@@ -23,6 +23,13 @@ class Welcome extends CI_Controller {
 		$data['current_week'] = "2";
 		$this->load->view('vpt/member/new_vpt',$data);
 	}
+
+	public function home()
+	{
+		$data['title'] = "Home";
+		$data['current_week'] = "2";
+		$this->load->view('vpt/member/new_vpt_home',$data);
+	}
 }
 
 /* End of file welcome.php */

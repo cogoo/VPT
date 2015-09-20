@@ -37,6 +37,8 @@
 | in the URL cannot be matched to a valid route.
 |
 */
+$route['new_home'] = "welcome/home";
+$route['new_diet'] = "welcome";
 $route['changefavmeal/(:any)'] = "hub/change_fav_meal/$1";
 $route['changemeal/(:any)'] = "hub/change_meal/$1";
 $route['day/(:any)'] = "hub/mark_day_complete/$1";
