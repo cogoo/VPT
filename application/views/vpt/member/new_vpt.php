@@ -6,7 +6,7 @@
 <!-- Head -->
 <head>
     <meta charset="utf-8" />
-    <title>New Design</title>
+    <title>New Diet</title>
 
     <meta name="description" content="blank page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -87,7 +87,7 @@
             right: 0;
             bottom: -20px;
             width: 100%;
-            border-bottom: 4px solid rgb(45,98,232);
+            border-bottom: 4px solid rgb(27,150,255);
             border-radius: 1px;
         }
 
@@ -169,11 +169,16 @@
             padding-left: 0px;
         }
         .grid__item.blue {
-            background-color: rgb(45,98,232);
+            background-color: rgb(27,150,255);
+            color: #fff;
+        }
+
+        .grid__item.green {
+            background-color: #29B755;
             color: #fff;
         }
         
-        .blue .loader {
+        .blue .loader, .green .loader {
             background-color: rgba(255,255,255,0.5);
         }
         #grid-house.full {
@@ -230,7 +235,7 @@
                             } ?>"><i class="fa fa-home"></i><span class="hidden-xs">Home</span></li></a>
                             <a href="/diet/<?php echo $current_week ?>"><li class="<?php if ($title == 'Diet') {
                                 echo "current";
-                            } ?>"><i class="fa fa-pie-chart"></i><span class="hidden-xs">Diet</span></li></a>
+                            } ?>"><i class="fa fa-pie-chart"></i><span class="hidden-xs">Meal</span></li></a>
                             <a href="/training/<?php echo $current_week ?>"><li class="<?php if ($title == 'Training') {
                                 echo "current";
                             } ?>"><i class="fa fa-trophy"></i><span class="hidden-xs">Training</span></li></a>
@@ -325,7 +330,7 @@
                             <span class="meta__reading-time"><i class="fa fa-clock-o"></i> Training Time: 10am</span>
                         </div>
                     </a>
-                    <a class="grid__item blue" href="#">
+                    <a class="grid__item green" href="#">
                         <h2 class="title title--preview">Go to next week</h2>
                         <div class="loader"></div>
                         <span class="category">What does the next week have in store</span>
