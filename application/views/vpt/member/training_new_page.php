@@ -73,7 +73,7 @@
                     </ul>
                 </nav>
 
-                <a class="cd-3d-trigger cd-img-replace" href="#0">Open</a>
+
                 <?php  /*
 
                     if ($week == $current_week && $completed_day < $day) {
