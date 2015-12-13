@@ -8,7 +8,7 @@
     </div>
 </header>
 
-<div class="md-margin"></div>
+<div class="sm-margin"></div>
 
 <div class="row">
     <div class="small-12 columns text-center">
@@ -45,7 +45,7 @@
     </div>
 </div>
 
-<div class="md-margin"></div>
+<div class="sm-margin"></div>
 
 <div class="row">
     <div class="small-12 columns no-ul-margin">
