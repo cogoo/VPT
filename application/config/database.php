@@ -48,9 +48,9 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'vpt.mysql.eu1.frbit.com';
-$db['default']['username'] = 'vpt';
-$db['default']['password'] = 'R1fafw9ZPyVp8lDbAistVhe2';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
+$db['default']['password'] = 'root';
 $db['default']['database'] = 'vpt';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
