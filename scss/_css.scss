@@ -68,6 +68,7 @@ header {
 h5 {
 	font-size: 18px;
 	font-weight: 300;
+  margin: 0;
 }
 
 button.menu {
@@ -185,7 +186,7 @@ ul.days li {
   text-align: center;
   padding: 20px 10px;
   cursor: pointer;
-  @include box-shadow(0px,0px,8px,#000)
+  @include box-shadow(0px,0px,8px,#000);
   i {
     float: right;
     line-height: 27px;

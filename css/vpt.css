@@ -61,7 +61,8 @@ a {
 
 h5 {
   font-size: 18px;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0; }
 
 button.menu {
   position: relative;
@@ -253,27 +254,30 @@ Main components
 @media only screen and (min-width: 768px) {
   #cd-gallery-items {
     margin-top: 2em; }
+
   #cd-gallery-items > li {
     width: 48%;
     float: left;
     margin-right: 4%;
     margin-bottom: 6.5em; }
+
   #cd-gallery-items > li:nth-child(2n) {
     margin-right: 0; } }
-
 @media only screen and (min-width: 1170px) {
   #cd-gallery-items {
     margin-top: 2.5em; }
+
   #cd-gallery-items > li {
     width: 31%;
     float: left;
     margin-bottom: 7em;
     margin-right: 3.5%; }
+
   #cd-gallery-items > li:nth-child(2n) {
     margin-right: 3.5%; }
+
   #cd-gallery-items > li:nth-child(3n) {
     margin-right: 0; } }
-
 .cd-item-wrapper {
   -webkit-perspective: 500px;
   -moz-perspective: 500px;
@@ -438,19 +442,16 @@ Main components
     opacity: 0; }
   100% {
     opacity: 1; } }
-
 @-moz-keyframes cd-fade-in {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
 @keyframes cd-fade-in {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
 .cd-3d-trigger {
   position: absolute;
   bottom: 10px;
