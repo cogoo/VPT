@@ -10887,7 +10887,7 @@
 		"outputStyle": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
-		"useLibsass": 1
+		"useLibsass": 0
 		},
 	"\/system\/core\/Benchmark.php": {
 		"fileType": 8192,
