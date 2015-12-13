@@ -72,10 +72,108 @@ class Hub extends CI_Controller {
 		$training_id = $this->calc_details->get_training_id($this->goal_id,$this->session_times);
 		$data['activity'] = $this->calc_details->get_training($training_id,$week);
 
+		$this->load->view('vpt/header_footer/header_new', $data);
+		$this->load->view('vpt/member/training_new',$data);
+		$this->load->view('vpt/header_footer/footer_new');
+	}
+
+	/*
+
+	//old training
+
+	public function training($week = 1)
+	{
+
+		$this->session->set_userdata('week_current', $week);
+		$data['title'] = 'Training';
+		$data['week'] = $week;
+		$UID = $this->session->userdata('uid');
+		$data['user'] = $this->calc_details->getuser($UID);
+		$data['current_week'] = $this->week;
+		$training_id = $this->calc_details->get_training_id($this->goal_id,$this->session_times);
+		$data['activity'] = $this->calc_details->get_training($training_id,$week);
+
 		$this->load->view('vpt/header_footer/header', $data);
 		$this->load->view('vpt/member/training',$data);
 		$this->load->view('vpt/header_footer/footer');
+	}*/
+
+	public function diet($week = 1)
+	{
+		if ($week > $this->week+1) {
+			$data['title'] = 'No access';
+			$data['week'] = $week;
+			$data['current_week'] = $this->week;
+			$data['week_needed'] = $week - 2;
+			$UID = $this->session->userdata('uid');
+			$data['user'] = $this->calc_details->getuser($UID);
+			$this->load->view('vpt/header_footer/header', $data);
+			$this->load->view('vpt/member/no_access',$data);
+			$this->load->view('vpt/header_footer/footer');
+		} else {
+
+			$this->session->set_userdata('week_current', $week);
+
+			$UID = $this->session->userdata('uid');
+			$data['user'] = $this->calc_details->getuser($UID);
+			$data['train_id'] = $this->train_id;
+			$data['total_meal'] = $data['user']['Meal_No'];
+			$data['completed_day'] = $data['user']['Completed_Day'];
+
+			$data['title'] = 'Diet';
+			$data['week'] = $week;
+			$data['current_week'] = $this->week;
+			$data['session_times'] = $this->session_times;
+
+			$this->load->view('vpt/header_footer/header_new', $data);
+			$this->load->view('vpt/member/diet_new',$data);
+			$this->load->view('vpt/header_footer/footer_new');
+
+		}
 	}
+
+	public function getdiet($week,$day)
+	{
+		$data['title'] = 'Diet';
+		$data['week'] = $week;
+		$data['day'] = $day;
+		$UID = $this->session->userdata('uid');
+		$data['user'] = $this->calc_details->getuser($UID);
+		$data['completed_day'] = $data['user']['Completed_Day'];
+		$data['current_week'] = $this->week;
+		$data['days_meals'] = $this->calc_details->get_days_meals_mobile($day,$week);
+
+		$this->load->view('vpt/header_footer/header_new', $data);
+		$this->load->view('vpt/member/diet_new_page',$data);
+		$this->load->view('vpt/header_footer/footer_new');
+
+	}
+
+	public function getex($week,$ex)
+	{
+		$data['title'] = 'Training';
+		$data['week'] = $week;
+		$data['current_week'] = $this->week;
+		$data['exercise'] = $this->calc_details->get_exercise($ex);
+
+		$this->load->view('vpt/header_footer/header_new', $data);
+		$this->load->view('vpt/member/training_new_page',$data);
+		$this->load->view('vpt/header_footer/footer_new');
+
+	}
+
+
+	/*
+	//old exercise function
+	public function getex($ex)
+	{
+		$data['exercise'] = $this->calc_details->get_exercise($ex);
+		$this->load->view('vpt/member/ajax/exercise',$data);
+	} */
+
+	/*
+
+	//old diet function
 
 	public function diet($week = 1)
 	{
@@ -110,12 +208,9 @@ class Hub extends CI_Controller {
 
 		}
 	}
+	*/
 
-	public function getex($ex)
-	{
-		$data['exercise'] = $this->calc_details->get_exercise($ex);
-		$this->load->view('vpt/member/ajax/exercise',$data);
-	}
+	
 
 	public function get_mobile_meal($days)
 	{
@@ -350,6 +445,9 @@ class Hub extends CI_Controller {
 			$data['fat_f']['Fat'] = $check['Fat_Grams'];
 			$data['veg_f']['Name'] = $check['Green_Veg']; 
 			$data['hate'] = $check['Failed_Meal']; 
+			$data['day'] = $check['Day']; 
+			$data['week'] = $check['Week']; 
+			$data['meal_no'] = $check['Meal_No']; 
 		} else {
 
 			//since we are only calculating to 90% .. carbs extra is the 10%
@@ -426,7 +524,7 @@ class Hub extends CI_Controller {
 			} else {
 				$data['change'] = FALSE;
 			}
-			$this->load->view('vpt/member/meal',$data);
+			$this->load->view('vpt/member/diet_change_page',$data);
 		}
 		
 		//$this->output->enable_profiler(TRUE);
@@ -683,6 +781,7 @@ class Hub extends CI_Controller {
 		$this->calc_details->delete_meal($data,$split[1],$split[0],$split[2]);
 		$this->calc_details->save_meal($data,$split[1],$split[0],$split[2]);
 		$this->getmeal($id,'ajax');
+		//echo "r";
 	}
 
 	public function change_fav_meal($id)

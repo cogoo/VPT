@@ -18,7 +18,7 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">-->
     
     <link href="/css/inspina/animate.css" rel="stylesheet">
     <link href="/css/inspina/style.css" rel="stylesheet">
