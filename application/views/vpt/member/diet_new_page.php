@@ -83,67 +83,14 @@
                                         <div class="sm-margin"></div>
                                         <div class="meal">
                                             <p><?php echo $meals['Protein_Name']; if (isset($meals['Carb_Name'])) { ?>, <?php echo $meals['Carb_Name']; } if (isset($meals['Fat_Name'])) { ?> &amp; <?php echo $meals['Fat_Name']; } ?></p>
-                                            <a href="#" class="blue">VIEW</a><i id="<?php echo $meals['Meal_No'].'-'.$meals['Day'].'-'.$meals['Week']; ?>" class="fa fa-refresh js-change"></i>
+                                            <a class="js-show-meal blue" data-show="<?php echo $i; ?>">VIEW</a><i id="<?php echo $meals['Meal_No'].'-'.$meals['Day'].'-'.$meals['Week']; ?>" class="fa fa-refresh js-change"></i>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </li>
                         <?php $i += 1;
                         endforeach ?>
-
-                    <!--<li class="cd-item-front">
-                        <a href="#0">
-                            <div class="cd-i-item text-center">
-                                <h5 class="text-left">Meal 1: Breakfast</h5>
-                                <img src="/img/thumb-1.jpg" alt="Preview image">
-                                <div class="sm-margin"></div>
-                                <div class="meal">
-                                    <p>Omlette with spinach</p>
-                                    <a href="#">VIEW</a><i class="fa fa-refresh"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="cd-item-middle">
-                        <a href="#0">
-                            <div class="cd-i-item text-center">
-                                <h5 class="text-left">Meal 1: Breakfast</h5>
-                                <img src="/img/thumb-1.jpg" alt="Preview image">
-                                <div class="sm-margin"></div>
-                                <div class="meal">
-                                    <p>Omlette with spinach</p>
-                                    <a href="#">VIEW</a><i class="fa fa-refresh"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="cd-item-back">
-                        <a href="#0">
-                            <div class="cd-i-item text-center">
-                                <h5 class="text-left">Meal 1: Breakfast</h5>
-                                <img src="/img/thumb-1.jpg" alt="Preview image">
-                                <div class="sm-margin"></div>
-                                <div class="meal">
-                                    <p>Omlette with spinach</p>
-                                    <a href="#">VIEW</a><i class="fa fa-refresh"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="cd-item-out">
-                        <a href="#0">
-                            <div class="cd-i-item text-center">
-                                <h5 class="text-left">Meal 1: Breakfast</h5>
-                                <img src="/img/thumb-1.jpg" alt="Preview image">
-                                <div class="sm-margin"></div>
-                                <div class="meal">
-                                    <p>Omlette with spinach</p>
-                                    <a href="#">VIEW</a><i class="fa fa-refresh"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </li>-->
-                    <!-- <li class="cd-item-out">...</li> -->
                 </ul> <!-- cd-item-wrapper -->
 
                 <nav class="cd-nav text-center">
@@ -169,3 +116,55 @@
         </ul>
     </div>
 </div>
+
+<?php 
+$i = 1;
+foreach ($days_meals as $meals): 
+?>
+    <div style="display:none" id="sm<?php echo $i; ?>" class="meal-breakdown overlay">
+        <div class="row">
+            <div class="small-12 columns">
+                <i data-meal="<?php echo $i; ?>" class="fa fa-times pull-right js-close-meal"></i>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 columns">
+                <h5 >Meal <?php echo $i; ?></h5>
+            </div>
+            <div class="sm-margin clearfix"></div>
+            <img src="/img/thumb-1.jpg" alt="Preview image">
+            <div class="sm-margin clearfix"></div>
+            <div class="small-12 columns">
+                <h5><?php echo $meals['Protein_Name']; if (isset($meals['Carb_Name'])) { ?>, <?php echo $meals['Carb_Name']; } if (isset($meals['Fat_Name'])) { ?> &amp; <?php echo $meals['Fat_Name']; } ?><i class="fav fa fa-star-o pull-right"></i></h5>
+                <div class="sm-margin"></div>
+                <ul>
+                    <li>x3 Large Eggs</li>
+                    <li>50g spinach</li>
+                    <li>1/2 red pepper</li>
+                    <li>x5 button mushrooms</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="small-12 columns">
+                <hr>
+                <h5>Nutritional breakdown</h5>
+                <div class="sm-margin"></div>
+                <div class="pull-left canvas">
+                    <canvas class="pct-break" protein-pct="25" carb-pct="24" fat-pct="4" width="100" height="100" style="width: 50px; height: 50px;"></canvas>
+                </div>
+                <div class="pull-left">
+                    <ul>
+                        <li><span class="blue block"></span>25g protein</li>
+                        <li><span class="brown block"></span>24g carbohydrate</li>
+                        <li><span class="green block"></span>4g fat</li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+<?php $i += 1;
+endforeach ?>

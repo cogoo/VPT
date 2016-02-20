@@ -1,9 +1,60 @@
+
 </div>
 
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="/js/plugins.js"></script>
         <script src="/bower_components/foundation/js/foundation.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js" type="text/javascript"></script>
+        <script src="/js/bootstrap-select.js"></script>
         <script src="/js/main.js"></script>
+        <script type="text/javascript">
+        //these options are common to all skills
+        var options = {
+
+            //prevents the text vanishing on redraw (when tooltip shows)
+            showTooltips: false,
+
+            //bit smoother with less steps
+            animationSteps: 40,
+
+            percentageInnerCutout : 80
+        };
+
+        $(document).ready(function () {
+
+            //cycle through each skill
+            $('.pct-break').each(function () {
+
+                //get this skill's percentage
+                var protein = $(this).attr('protein-pct');
+                protein = parseInt(protein);
+                var carb = $(this).attr('carb-pct');
+                carb = parseInt(carb);
+                var fat = $(this).attr('fat-pct');
+                fat = parseInt(fat);
+
+                //create a custom data set
+                var data = [{
+                    value: protein,
+                    color: '#3599D4'
+                }, {
+                    value: carb,
+                    color: '#C7A06B'
+                }, {
+                    value: fat,
+                    color: '#1BAF1B'
+                }];
+
+                //now draw the chart on this skill canvas with the custom data set
+                var ctx = $(this).get(0).getContext("2d");
+                chart = new Chart(ctx).Doughnut(data,options);
+            });
+
+       
+        });
+
+
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>

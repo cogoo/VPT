@@ -13,12 +13,12 @@ class Login extends CI_Controller {
 
 	public function index()
 	{
-		$data['title'] = 'Register';
-		$data['goals'] = $this->registration->goals();
+		$data['title'] = 'Login / Register';
+		//$data['goals'] = $this->registration->goals();
 
-		$this->load->view('vpt/header_footer/register', $data);
-		$this->load->view('vpt/login/home', $data);
-		$this->load->view('vpt/header_footer/footer');
+		$this->load->view('vpt/header_footer/header_new', $data);
+		$this->load->view('vpt/login/home_new', $data);
+		$this->load->view('vpt/header_footer/footer_new');
 		//$this->output->enable_profiler(TRUE);
 		
 		

@@ -37,6 +37,9 @@
 | in the URL cannot be matched to a valid route.
 |
 */
+$route['register/4'] = "register/register4";
+$route['register/3'] = "register/register3";
+$route['register/2'] = "register/register2";
 $route['getdiet/(:num)/(:num)'] = "hub/getdiet/$1/$2";
 $route['changefavmeal/(:any)'] = "hub/change_fav_meal/$1";
 $route['changemeal/(:any)'] = "hub/change_meal/$1";
@@ -54,7 +57,6 @@ $route['register'] = "register";
 $route['home'] = "hub";
 
 $route['default_controller'] = "hub";
-//$route['(:any)'] = "hub/view/$1";
 $route['404_override'] = '';
 
 

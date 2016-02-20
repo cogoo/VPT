@@ -2,6 +2,8 @@ $(document).foundation();
 
 $(function(){
 
+  $('.selectpicker').selectpicker();
+
 	console.log('Callum, I know this has to be you lol, by the time Im done with this it will be completely unhackable. but due to testing and debug, ive left some stuff open :)');
 
 	$('.menu').on('click', function(){
@@ -46,5 +48,52 @@ $(function(){
           }
 
     });
+
+    $('body').on('click', '.js-show-meal', function(){
+      var meal = $(this).data('show');
+      $('#sm'+meal).show();
+    });
+
+    $('body').on('click', '.js-close-meal', function(){
+      var meal = $(this).data('meal');
+      $('#sm'+meal).hide();
+    });
+
+    $('form.login input').focus(function(){
+      $(this).attr('placeholder','Type here...');
+    }).blur(function(){
+      $(this).attr('placeholder','');
+    });
+
+    //
+    $('.js-plan-chooser').on('click','button',function(){
+      $('.js-plan-chooser button').html('SELECT').removeClass('inverted').addClass('inverted');
+      $(this).html('SELECTED').removeClass('inverted');
+    });
+
+    $("#login").submit(function (event) {
+        event.preventDefault();
+        var form_data = {
+            email: $('#email').val(),
+            pwd: $('#pwd').val()
+        };
+
+        $.ajax({
+            url: '/login/check_user',
+            type: 'POST',
+            data: form_data,
+            success: function (result) {
+              
+               if (result == 'true') {
+                
+                    window.location.replace('/');
+                } else {
+                  
+                    $('#error').show();
+                }
+            }
+        });
+    });
+
 
 });

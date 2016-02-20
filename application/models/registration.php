@@ -139,6 +139,35 @@ class Registration extends CI_Model {
 		return $this->db->insert('users', $data);
 	}
 
+	public function register_part1()
+	{
+		$data = array(
+			'EMail' => $this->input->post('email'),
+			'Password' => sha1($this->input->post('pwd').'Pp&ubBW3AMHVu%aS^R8dm7e#3Bp9tPmm^Wt@$e99rG!mRJdgAv9gSv*3px&v7Z*y5')
+		);
+
+		$this->db->insert('users', $data);
+		return $this->db->insert_id();
+
+	}
+
+	public function register_part2()
+	{
+		$data = array(
+			'FName' => $this->input->post('fname'),
+			'LName' => $this->input->post('lname'),
+			'UName' => $this->input->post('uname'),
+			'Gender' => $this->input->post('gender'),
+			'Day' => $this->input->post('day'),
+			'Month' => $this->input->post('month'),
+			'Year' => $this->input->post('year')
+			
+		);
+
+		$this->db->where('User_ID',$this->session->userdata('uid'));
+		$this->db->update('users', $data);
+	}
+
 	public function login()
 	{
 		$email = $this->input->post('email');
@@ -164,9 +193,9 @@ class Registration extends CI_Model {
 	}
 
 
-	public function goals()
+	public function goals($gender)
 	{
-		//$this->db->order_by('gender, calories');
+		$this->db->where('Gender', $gender);
 		$query = $this->db->get('goals');
 		return $query->result_array();
 	}

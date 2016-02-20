@@ -25,7 +25,7 @@
     <div class="small-12 columns no-ul-margin">
         <ul class="days">
             <?php foreach ($activity as $act): ?>
-            <a href="/gettraining/<?php echo $week?>/<?php echo $act['WorkOut_ID'] ?>"><li><?php echo $act['Name'] ?></li></a>
+            <a href="/gettraining/<?php echo $week?>/<?php echo $act['WorkOut_ID'] ?>"><li><?php echo $act['Name'] ?> <?php if(/*($completed_day >= 1 && $current_week == $week) ||*/ $current_week > $week){ echo "<i class='fa fa-check-square-o green'></i>"; } ?></li></a>
             <?php endforeach ?>
             
          
