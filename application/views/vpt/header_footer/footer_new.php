@@ -3,7 +3,7 @@
 
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="/js/plugins.js"></script>
-        <script src="/bower_components/foundation/js/foundation.min.js"></script>
+        <script src="/bower_components/foundation-sites/dist/foundation.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js" type="text/javascript"></script>
         <script src="/js/bootstrap-select.js"></script>
         <script src="/js/main.js"></script>

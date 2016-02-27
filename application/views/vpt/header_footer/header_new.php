@@ -12,7 +12,7 @@
 
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/bower_components/foundation/css/foundation.min.css">
+        <link rel="stylesheet" href="/bower_components/foundation-sites/dist/foundation.min.css">
         <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/vpt.css">
         <script src="/js/vendor/modernizr-2.8.3.min.js"></script>

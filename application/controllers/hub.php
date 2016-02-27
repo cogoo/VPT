@@ -38,7 +38,7 @@ class Hub extends CI_Controller {
 		
 	}
 
-	public function index()
+	/*public function index()
 	{
 		$data['title'] = 'Home';
 		$UID = $this->session->userdata('uid');
@@ -55,6 +55,30 @@ class Hub extends CI_Controller {
 		$this->load->view('vpt/header_footer/header', $data);
 		$this->load->view('vpt/member/home',$data);
 		$this->load->view('vpt/header_footer/footer');
+		//$this->output->enable_profiler(TRUE);
+		
+		
+	}*/
+
+	public function index()
+	{
+		$data['title'] = 'Home';
+		$UID = $this->session->userdata('uid');
+		$data['full_name'] = $this->session->userdata('full_name');
+		$data['current_week'] = $this->week;
+
+		$data['user'] = $this->calc_details->getuser($UID);
+		$data['goal'] = $this->calc_details->getgoal($data['user']['Goal_ID']);
+		//$data['days_meals'] = $this->calc_details->get_days_meals();
+
+		$data['days_meals'] = $this->calc_details->get_days_meals_mobile(date('N'),$this->week);
+		
+		$weight = $data['user']['Weight'];
+		$bodyfat = $data['user']['BodyFat'];
+		
+		$this->load->view('vpt/header_footer/header_new', $data);
+		$this->load->view('vpt/member/home_new',$data);
+		$this->load->view('vpt/header_footer/footer_new');
 		//$this->output->enable_profiler(TRUE);
 		
 		

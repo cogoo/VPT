@@ -12,8 +12,16 @@ body {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: $main_color;
+}
+
 a {
   color: inherit;
+}
+
+ul {
+  list-style-type: none;
 }
 
 header {
@@ -27,6 +35,20 @@ header {
     ul li {
       text-align: center;
       padding-bottom: 0;
+    }
+  }
+  &.home-header {
+    background-color: darken($VPT_blue,10);
+    margin-top: -10px;
+    padding: 10px 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    .lines {
+      background-color: #fff;
+    }
+    h3 {
+      color: #fff;
+      font-weight: 300;
     }
   }
 }
@@ -148,6 +170,11 @@ div.white {
   text-transform: capitalize;
 }
 
+.image-header {
+  @include circle(50px);
+  border: 1px solid #fff;
+}
+
 .meal_times, .training_times {
   padding-bottom: 15px;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
@@ -197,9 +224,14 @@ div.white {
   left: -100vw;
   color: #fff;
   height: 100vh;
+  background-color: inherit;
   @extend .v-center;
+  ul {
+    list-style-type: none;
+  }
   &.menu {
     left: 0;
+    z-index: 1;
   }
   li{
     margin-bottom: 20px;
@@ -300,6 +332,38 @@ div.white {
 	&.small {
 		@include circle(20px);
 	}
+}
+
+.tabs {
+  background: inherit;
+  border: none;
+  .tabs-title {
+    width: 33%;
+    > a {
+      text-align: center;
+      font-size: 1rem;
+      padding: 5px;
+    }
+  }
+}
+
+.tabs-content {
+  background-color: inherit;
+  border: none;
+}
+
+.tabs-title>a:hover {
+  background: inherit;
+  color: #fff;
+  font-weight: 400;
+
+}
+
+.tabs-title>a:focus, .tabs-title>a[aria-selected=true] {
+  background: inherit;
+  color: #fff; 
+  border-bottom: 5px solid $VPT_blue;
+  font-weight: 400;
 }
 
 .sm-margin {
