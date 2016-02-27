@@ -50,11 +50,13 @@ $(function(){
     });
 
     $('body').on('click', '.js-show-meal', function(){
+      $('body').addClass('noscroll');
       var meal = $(this).data('show');
       $('#sm'+meal).show();
     });
 
     $('body').on('click', '.js-close-meal', function(){
+      $('body').removeClass('noscroll');
       var meal = $(this).data('meal');
       $('#sm'+meal).hide();
     });

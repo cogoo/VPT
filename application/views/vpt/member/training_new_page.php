@@ -13,7 +13,7 @@
 <div class="row">
     <div class="small-12 columns text-center">
         <h5>
-            Back &amp; Biceps
+            <?php echo base64_decode($act_name); ?>
         </h5>
     </div>
 </div>
@@ -22,68 +22,23 @@
 
 <div class="row exercise">
     <div class="small-12 columns no-ul-margin">
-        <ul id="cd-gallery-items" class="active cd-container">
-            <li class="text-center">
-                <ul class="cd-item-wrapper">
-                    <?php 
-                        $i = 1;
-                        foreach ($exercise as $act): 
-                        ?>
+       
+    <?php 
+        $i = 1;
+        foreach ($exercise as $act): 
+        ?>
 
+            <div class="white training_times text-center">
+                <img class="training_times__image" src="/images/pullup.png" alt="Preview image">
+                <h5 class="training_times__header" ><?php echo $act['Name'] ?></h5>
+                <div class="sm-margin"></div>
+                <a class="training_times__anchor blue" href="#">VIEW</a>
+            </div>
+            <div class="sm-margin"></div>
 
-                            <li class="
-                            <?php 
-                                if ($i == 1) {
-                                    echo "cd-item-front";
-                                } else {
-                                    if ($i == 2) {
-                                        echo "cd-item-middle";
-                                    } else {
-                                        if ($i == 3) {
-                                            echo "cd-item-back";
-                                        } else {
-                                            echo "cd-item-out";
-                                        }
-                                    }
-                                }
-                            ?>
-                            ">
-                                <div class="cd-i-item text-center">
-                                    <div class="animate">
-
-                                        <h5 ><?php echo $act['Order'] ?>. <?php echo $act['Name'] ?></h5>
-                                        <img src="/images/pullup.png" alt="Preview image">
-                                        <div class="sm-margin"></div>
-                                        <div class="meal">
-                                            <p><?php echo $act['short_description'] ?></p>
-                                            <a href="#" class="blue">VIEW</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        <?php $i += 1;
-                        endforeach ?>
-
-                </ul> <!-- cd-item-wrapper -->
-
-                <nav class="cd-nav text-center">
-                    <ul class="cd-item-navigation">
-                        <li><a class="cd-img-replace" href="#0">Prev</a></li>
-                        <li><a class="cd-img-replace visible" href="#0">Next</a></li>
-                    </ul>
-                </nav>
-
-
-                <?php  /*
-
-                    if ($week == $current_week && $completed_day < $day) {
-                        ?>
-                            <a class="btn green js-day-complete">completed</a>
-                            <input data-week="<?php echo $week ?>" type="hidden" value="<?php echo $day ?>">
-                        <?php
-                    }*/
-
-                ?>
+              
+        <?php $i += 1;
+        endforeach ?>
                 
             </li>
         </ul>

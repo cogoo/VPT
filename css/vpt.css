@@ -16,6 +16,10 @@ body {
   /*font-family: "Raleway";*/
   font-weight: 300;
   overflow-x: hidden; }
+  body.noscroll {
+    position: fixed;
+    overflow: hidden;
+    height: 100%; }
 
 a {
   color: inherit; }
@@ -124,16 +128,21 @@ div.white {
 .capitalize {
   text-transform: capitalize; }
 
-.meal_times {
-  padding-bottom: 15px; }
+.meal_times, .training_times {
+  padding-bottom: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15); }
 
-.meal_times__header {
+.meal_times__header, .training_times__header {
   font-size: 1.35rem;
   font-weight: 300; }
 
-.meal_times__anchor {
+.meal_times__anchor, .training_times__anchor {
   font-size: 80%;
   font-weight: 400; }
+
+.training_times__image {
+  width: 35%;
+  margin: 15px 0px; }
 
 .body {
   padding-top: 10px;
@@ -272,7 +281,8 @@ div.white {
   margin: 0px 20px; }
 
 .meal-breakdown {
-  text-align: left; }
+  text-align: left;
+  padding-bottom: 50px !important; }
   .meal-breakdown h5 {
     color: #333; }
   .meal-breakdown ul {
@@ -292,6 +302,16 @@ div.white {
         padding: 0; }
         .meal-breakdown .canvas + div ul li {
           list-style-type: none; }
+
+.meal-breakdown__swap {
+  background: #3599D4;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  height: 50px; }
 
 .block {
   display: inline-block;
@@ -316,6 +336,13 @@ div.white {
   z-index: 500;
   height: 100vh;
   width: 100vw; }
+  .overlay.meal-breakdown {
+    position: fixed;
+    padding: 0; }
+    .overlay.meal-breakdown > div {
+      padding: 10px 15px;
+      height: 100%;
+      overflow: scroll; }
 
 /* -------------------------------- 
 
@@ -371,7 +398,7 @@ Main components
 .cd-i-item {
   background-color: #fff;
   color: #BDC3C7;
-  height: 50vh;
+  height: 60vh;
   min-height: 320px; }
 
 .cd-i-item a {

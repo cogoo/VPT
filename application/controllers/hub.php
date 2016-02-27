@@ -63,6 +63,22 @@ class Hub extends CI_Controller {
 	public function training($week = 1)
 	{
 
+		if ($this->session_times == 3) {
+            $rest = array("2", "4", "6", "7");
+        }
+
+        if ($this->session_times == 4) {
+            $rest = array("3", "5", "7");
+        }
+
+        if ($this->session_times == 5) {
+            $rest = array("3", "6");
+        }
+
+        if ($this->session_times == 6) {
+            $rest = array("4");
+        }
+
 		$this->session->set_userdata('week_current', $week);
 		$data['title'] = 'Training';
 		$data['week'] = $week;
@@ -71,6 +87,7 @@ class Hub extends CI_Controller {
 		$data['current_week'] = $this->week;
 		$training_id = $this->calc_details->get_training_id($this->goal_id,$this->session_times);
 		$data['activity'] = $this->calc_details->get_training($training_id,$week);
+		$data['rest'] = $rest;
 
 		$this->load->view('vpt/header_footer/header_new', $data);
 		$this->load->view('vpt/member/training_new',$data);
@@ -149,12 +166,13 @@ class Hub extends CI_Controller {
 
 	}
 
-	public function getex($week,$ex)
+	public function getex($week,$ex,$name)
 	{
 		$data['title'] = 'Training';
 		$data['week'] = $week;
 		$data['current_week'] = $this->week;
 		$data['exercise'] = $this->calc_details->get_exercise($ex);
+		$data['act_name'] = $name;
 
 		$this->load->view('vpt/header_footer/header_new', $data);
 		$this->load->view('vpt/member/training_new_page',$data);
