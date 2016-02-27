@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19102",
+"creatorBuild": "19115",
 "files": {
 	"\/application\/config\/autoload.php": {
 		"fileType": 8192,
@@ -586,6 +586,270 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/breakfast.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29932,
+		"inputAbbreviatedPath": "\/assets\/breakfast.png",
+		"outputAbbreviatedPath": "\/assets\/breakfast.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/breakfast@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 109917,
+		"inputAbbreviatedPath": "\/assets\/breakfast@2x.png",
+		"outputAbbreviatedPath": "\/assets\/breakfast@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/calender.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1037,
+		"inputAbbreviatedPath": "\/assets\/calender.png",
+		"outputAbbreviatedPath": "\/assets\/calender.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/calender@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2582,
+		"inputAbbreviatedPath": "\/assets\/calender@2x.png",
+		"outputAbbreviatedPath": "\/assets\/calender@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/dinner.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37775,
+		"inputAbbreviatedPath": "\/assets\/dinner.png",
+		"outputAbbreviatedPath": "\/assets\/dinner.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/dinner@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 125556,
+		"inputAbbreviatedPath": "\/assets\/dinner@2x.png",
+		"outputAbbreviatedPath": "\/assets\/dinner@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/forward copy 2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 416,
+		"inputAbbreviatedPath": "\/assets\/forward copy 2.png",
+		"outputAbbreviatedPath": "\/assets\/forward copy 2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/forward copy 2@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1280,
+		"inputAbbreviatedPath": "\/assets\/forward copy 2@2x.png",
+		"outputAbbreviatedPath": "\/assets\/forward copy 2@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/ingredients.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 911,
+		"inputAbbreviatedPath": "\/assets\/ingredients.png",
+		"outputAbbreviatedPath": "\/assets\/ingredients.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/ingredients@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1923,
+		"inputAbbreviatedPath": "\/assets\/ingredients@2x.png",
+		"outputAbbreviatedPath": "\/assets\/ingredients@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/lunch.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16216,
+		"inputAbbreviatedPath": "\/assets\/lunch.png",
+		"outputAbbreviatedPath": "\/assets\/lunch.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/lunch@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45500,
+		"inputAbbreviatedPath": "\/assets\/lunch@2x.png",
+		"outputAbbreviatedPath": "\/assets\/lunch@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/multiply copy.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1188,
+		"inputAbbreviatedPath": "\/assets\/multiply copy.png",
+		"outputAbbreviatedPath": "\/assets\/multiply copy.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/multiply copy@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3699,
+		"inputAbbreviatedPath": "\/assets\/multiply copy@2x.png",
+		"outputAbbreviatedPath": "\/assets\/multiply copy@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/multiply.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 564,
+		"inputAbbreviatedPath": "\/assets\/multiply.png",
+		"outputAbbreviatedPath": "\/assets\/multiply.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/multiply@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1379,
+		"inputAbbreviatedPath": "\/assets\/multiply@2x.png",
+		"outputAbbreviatedPath": "\/assets\/multiply@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/Rectangle 55 + Rectangle 55 Copy + Rectangle 55 Copy 2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 211,
+		"inputAbbreviatedPath": "\/assets\/Rectangle 55 + Rectangle 55 Copy + Rectangle 55 Copy 2.png",
+		"outputAbbreviatedPath": "\/assets\/Rectangle 55 + Rectangle 55 Copy + Rectangle 55 Copy 2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/Rectangle 55 + Rectangle 55 Copy + Rectangle 55 Copy 2@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 362,
+		"inputAbbreviatedPath": "\/assets\/Rectangle 55 + Rectangle 55 Copy + Rectangle 55 Copy 2@2x.png",
+		"outputAbbreviatedPath": "\/assets\/Rectangle 55 + Rectangle 55 Copy + Rectangle 55 Copy 2@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/refresh.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1066,
+		"inputAbbreviatedPath": "\/assets\/refresh.png",
+		"outputAbbreviatedPath": "\/assets\/refresh.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/refresh@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3009,
+		"inputAbbreviatedPath": "\/assets\/refresh@2x.png",
+		"outputAbbreviatedPath": "\/assets\/refresh@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/settings.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 808,
+		"inputAbbreviatedPath": "\/assets\/settings.png",
+		"outputAbbreviatedPath": "\/assets\/settings.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/settings@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2396,
+		"inputAbbreviatedPath": "\/assets\/settings@2x.png",
+		"outputAbbreviatedPath": "\/assets\/settings@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/star.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1531,
+		"inputAbbreviatedPath": "\/assets\/star.png",
+		"outputAbbreviatedPath": "\/assets\/star.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/star@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4576,
+		"inputAbbreviatedPath": "\/assets\/star@2x.png",
+		"outputAbbreviatedPath": "\/assets\/star@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/backup\/vpt designs\/ home.jpg": {
 		"fileType": 16384,

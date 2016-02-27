@@ -1,8 +1,20 @@
+<?php
+// logic for image based on number of meals
+// if number of meals = x .. then use this array
+
+$img_array = [];
+$num3 = ['breakfast','lunch','dinner'];
+$num4 = ['breakfast','breakfast','lunch','dinner'];
+$num5 = ['breakfast','breakfast','lunch','lunch','dinner'];
+$num6 = ['breakfast','breakfast','lunch','lunch','dinner','dinner'];
+
+
+?>
+
 <header>
     <div class="row">
         <div class="small-12 columns">
             <h5 class="pull-left"><a href="/diet/<?php echo $week; ?>"><i class="fa fa-angle-left"></i> Week <?php echo $week; ?></a></h5>
-
             <img width="24px" height="24px" class="pull-right" src="/img/icons/checkout@2x.png">
         </div>
     </div>
@@ -49,71 +61,37 @@
 
 <div class="row">
     <div class="small-12 columns no-ul-margin">
-        <ul id="cd-gallery-items" class="active cd-container">
-            <li class="text-center">
-                <ul class="cd-item-wrapper">
-                    <?php 
-                        $i = 1;
-                        foreach ($days_meals as $meals): 
-                        ?>
+        <?php 
+        $i = 1;
+        switch (count($days_meals)) {
+            case '3':
+                $img_array = $num3;
+                break;
+            case '4':
+                $img_array = $num4;
+                break;
+            case '5':
+                $img_array = $num5;
+                break;
+            case '6':
+                $img_array = $num6;
+                break;
+            
+            
+        }
+        
+        foreach ($days_meals as $meals): 
+        ?>
+            <div class="white meal_times text-center">
+                <img src="/assets/<?php echo $img_array[$i-1]; ?>@2x.png">
+                <div class="sm-margin"></div>
+                <h4 class="meal_times__header capitalize"><?php echo $img_array[$i-1]; ?></h4>
+                <a class="blue meal_times__anchor" href="">CHOOSE</a>
+            </div>
+            <div class="sm-margin"></div>
 
-
-                            <li class="
-                            <?php 
-                                if ($i == 1) {
-                                    echo "cd-item-front";
-                                } else {
-                                    if ($i == 2) {
-                                        echo "cd-item-middle";
-                                    } else {
-                                        if ($i == 3) {
-                                            echo "cd-item-back";
-                                        } else {
-                                            echo "cd-item-out";
-                                        }
-                                    }
-                                }
-                            ?>
-                            ">
-                                <div class="cd-i-item text-center">
-                                    <div class="animate">
-
-                                        <h5 >Meal <?php echo $i; ?></h5>
-                                        <img src="/img/thumb-1.jpg" alt="Preview image">
-                                        <div class="sm-margin"></div>
-                                        <div class="meal">
-                                            <p><?php echo $meals['Protein_Name']; if (isset($meals['Carb_Name'])) { ?>, <?php echo $meals['Carb_Name']; } if (isset($meals['Fat_Name'])) { ?> &amp; <?php echo $meals['Fat_Name']; } ?></p>
-                                            <a class="js-show-meal blue" data-show="<?php echo $i; ?>">VIEW</a><i id="<?php echo $meals['Meal_No'].'-'.$meals['Day'].'-'.$meals['Week']; ?>" class="fa fa-refresh js-change"></i>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </li>
-                        <?php $i += 1;
-                        endforeach ?>
-                </ul> <!-- cd-item-wrapper -->
-
-                <nav class="cd-nav text-center">
-                    <ul class="cd-item-navigation">
-                        <li><a class="cd-img-replace" href="#0">Prev</a></li>
-                        <li><a class="cd-img-replace visible" href="#0">Next</a></li>
-                    </ul>
-                </nav>
-
-
-                <?php 
-
-                    if ($week == $current_week && $completed_day < $day) {
-                        ?>
-                            <a class="btn green js-day-complete">completed</a>
-                            <input data-week="<?php echo $week ?>" type="hidden" value="<?php echo $day ?>">
-                        <?php
-                    }
-
-                ?>
-                
-            </li>
-        </ul>
+        <?php $i += 1;
+        endforeach ?>
     </div>
 </div>
 

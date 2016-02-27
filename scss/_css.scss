@@ -139,6 +139,24 @@ div.white {
   margin: 0 auto;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
+.meal_times {
+  padding-bottom: 15px;
+}
+
+.meal_times__header {
+  font-size: 1.35rem;
+  font-weight: 300;
+}
+
+.meal_times__anchor {
+  font-size: 80%;
+  font-weight: 400;
+}
+
 .body {
   padding-top: 10px;
   background-color: $main_bg;
@@ -152,6 +170,11 @@ div.white {
   @include circle(60px);
   margin: 0 auto;
   background-color: rgba(0,0,0,0.1);
+}
+
+.calender {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .animate {
