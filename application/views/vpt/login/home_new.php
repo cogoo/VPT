@@ -13,7 +13,7 @@
 		<div class="white login">
 			<form id="login" class="login">
 				<label>EMAIL</label>
-				<input id="email" name="email" required>
+				<input type="email" id="email" name="email" required>
 				<div class="sm-margin"></div>
 				<label>PASSWORD</label>
 				<input type="password" id="pwd" name="pwd" required>

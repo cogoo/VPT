@@ -16,7 +16,7 @@
 	            echo form_open('register/register_part1_form',$attributes);
 	        ?>
 				<label>EMAIL</label>
-				<input name="email">
+				<input name="email" type="text">
 				<div class="sm-margin"></div>
 				<label>PASSWORD</label>
 				<input name="pwd" type="password">

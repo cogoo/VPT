@@ -2,7 +2,6 @@ body {
 	background-color: $main_color;
 	color: $main_color;
 	font-size:18px;
-	/*font-family: "Raleway";*/
 	font-weight: 300;
   overflow-x: hidden;
   &.noscroll{
@@ -66,23 +65,23 @@ hr.short-stroke {
 }
 
 button.menu {
-    position: relative;
-    z-index: 300;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    cursor: pointer;
-    height: 30px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    width: 30px;
-    background: transparent;
-    outline: none;
-    padding: 0;
-    margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  z-index: 300;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  user-select: none;
+  width: 30px;
+  background: transparent;
+  outline: none;
+  padding: 0;
+  margin: 0;
 }
 
 form.login, .white.login {
@@ -456,6 +455,9 @@ div.white {
   z-index: 500;
   height: 100vh;
   width: 100vw;
+  i.fa-times {
+    font-size: 30px;
+  }
   &.meal-breakdown {
     position: fixed;
     padding: 0;
