@@ -1,7 +1,7 @@
 <header>
     <div class="row">
         <div class="small-12 columns">
-            <div class="c-menu pull-left">
+            <div class="c-menu float-left">
                 <button class="menu">
                     <span class="lines"></span>
                 </button>
@@ -15,7 +15,7 @@
 
 <div class="row weeks">
     <div class="small-12 columns text-center">
-        <h5><a href="/training/<?php echo $week -1; ?>"><i class="fa fa-angle-left"></i></a>WEEK <?php echo $week; ?><a href="/training/<?php echo $week +1; ?>"><i class="fa fa-angle-right"></i></a></h5>
+        <h5><a href="/training/<?php echo $week -1; ?>"><i class="ion-ios-arrow-left"></i></a>WEEK <?php echo $week; ?><a href="/training/<?php echo $week +1; ?>"><i class="ion-ios-arrow-right"></i></a></h5>
     </div>
 </div>
 

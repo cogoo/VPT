@@ -16,7 +16,7 @@
 	            echo form_open('register/register_part4_form',$attributes);
 	        ?>
 				<label>WEIGHT</label>
-				<input class="small-10 columns force pull-left" name="weight">
+				<input class="small-10 columns force float-left" name="weight">
 				<select class="small-2 columns clear" name="unit">
 					<option>KG</option>
 				</select>

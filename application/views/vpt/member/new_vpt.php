@@ -262,9 +262,9 @@
    <!-- Navbar-->
    <div class="header">
     <div class="container">
-        <a href="/" class="pull-left logo">VPT</a>
-        <a class="logout pull-right" href="/logout">Logout</a>
-        <img class="image-header pull-right" src="/images/placeholder/12.jpg">
+        <a href="/" class="float-left logo">VPT</a>
+        <a class="logout float-right" href="/logout">Logout</a>
+        <img class="image-header float-right" src="/images/placeholder/12.jpg">
     </div>
    </div>
     <!-- /Navbar -->
@@ -415,8 +415,8 @@
                                     </form>
                                 </section>
                                 <nav class="article-nav">
-                                    <button><i class="fa fa-angle-left"></i> <span>Previous</span></button>
-                                    <button><span>Next</span> <i class="fa fa-angle-right"></i></button>
+                                    <button><i class="ion-ios-arrow-left"></i> <span>Previous</span></button>
+                                    <button><span>Next</span> <i class="ion-ios-arrow-right"></i></button>
                                 </nav>
                             </div>
                             <div class="row">
@@ -424,12 +424,12 @@
                                     <p>170g Ground beef<br><br>69g White rice<br><br>23g Udos Oil<br><br>+ Portion of Broccoli</p>
                                 </div>
                                 <div class="col-md-4">
-                                    <img style="margin-top: 3em; border: 9px solid white; box-shadow: 2px 10px 18px rgba(0,0,0,0.15);" src="/images/food/Sirloin-Steak.jpg" class="pull-right">
+                                    <img style="margin-top: 3em; border: 9px solid white; box-shadow: 2px 10px 18px rgba(0,0,0,0.15);" src="/images/food/Sirloin-Steak.jpg" class="float-right">
                                 </div>
                                 <div class="col-md-4 text-center icons">
                                     <i style="margin-top:2.5em" class="fa fa-exchange"></i>
                                     <div class="sm-margin"></div>
-                                    <i class="fa fa-star-o"></i>
+                                    <i class="ion-ios-star-outline"></i>
                                     <div class="sm-margin"></div>
                                     <i class="fa fa-balance-scale"></i>
                                 </div>
@@ -443,11 +443,11 @@
                                 </div>
                                 <div class="col-md-7">
                                     <div class="sm-margin"></div>
-                                    <div class="lil red"></div><p class="pull-left">Protein</p>
+                                    <div class="lil red"></div><p class="float-left">Protein</p>
                                     <div class="sm-margin clearfix"></div>
-                                    <div class="lil orange"></div><p class="pull-left">Carbs</p>
+                                    <div class="lil orange"></div><p class="float-left">Carbs</p>
                                     <div class="sm-margin clearfix"></div>
-                                    <div class="lil yellow"></div><p class="pull-left">Fat</p>
+                                    <div class="lil yellow"></div><p class="float-left">Fat</p>
                                 </div>
                             </div>
                             

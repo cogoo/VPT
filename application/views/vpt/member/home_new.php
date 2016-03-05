@@ -1,14 +1,14 @@
 <header class="home-header">
     <div class="row">
         <div class="small-12 columns">
-            <div class="c-menu pull-left">
+            <div class="c-menu float-left">
                 <button class="menu">
                     <span class="lines"></span>
                 </button>
                 <span>Home</span>
             </div>
 
-            <img class="image-header pull-right" src="/images/placeholder/<?php echo $user['User_ID'] ?>.jpg">
+            <img class="image-header float-right" src="/images/placeholder/<?php echo $user['User_ID'] ?>.jpg">
         </div>
     </div>
     <div class="row">
@@ -69,7 +69,7 @@
                     <div>
                         <div class="row">
                             <div class="small-12 columns">
-                                <i data-meal="<?php echo $i; ?>" class="fa fa-times pull-right js-close-meal"></i>
+                                <i data-meal="<?php echo $i; ?>" class="ion-close-round float-right js-close-meal"></i>
                             </div>
                         </div>
                         <div class="row">
@@ -80,7 +80,7 @@
                             <img src="/img/thumb-1.jpg" alt="Preview image">
                             <div class="sm-margin clearfix"></div>
                             <div class="small-12 columns">
-                                <h5><?php echo $meals['Protein_Name']; if (isset($meals['Carb_Name'])) { ?>, <?php echo $meals['Carb_Name']; } if (isset($meals['Fat_Name'])) { ?> &amp; <?php echo $meals['Fat_Name']; } ?><i class="fav fa fa-star-o pull-right"></i></h5>
+                                <h5><?php echo $meals['Protein_Name']; if (isset($meals['Carb_Name'])) { ?>, <?php echo $meals['Carb_Name']; } if (isset($meals['Fat_Name'])) { ?> &amp; <?php echo $meals['Fat_Name']; } ?><i class="fav ion-ios-star-outline float-right"></i></h5>
                                 <div class="sm-margin"></div>
                                 <ul>
                                     <li>x3 Large Eggs</li>
@@ -96,10 +96,10 @@
                                 <hr>
                                 <h5>Nutritional breakdown</h5>
                                 <div class="sm-margin"></div>
-                                <div class="pull-left canvas">
+                                <div class="float-left canvas">
                                     <canvas class="pct-break" protein-pct="25" carb-pct="24" fat-pct="4" width="100" height="100" style="width: 50px; height: 50px;"></canvas>
                                 </div>
-                                <div class="pull-left">
+                                <div class="float-left">
                                     <ul>
                                         <li><span class="blue block"></span>25g protein</li>
                                         <li><span class="brown block"></span>24g carbohydrate</li>

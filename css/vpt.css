@@ -29,6 +29,9 @@ a {
 ul {
   list-style-type: none; }
 
+i {
+  cursor: pointer; }
+
 header.login {
   padding: 50px 0px; }
 header.dark {

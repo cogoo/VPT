@@ -1,9 +1,9 @@
 <header>
     <div class="row">
         <div class="small-12 columns">
-            <h5 class="pull-left"><a href="/training/<?php echo $week; ?>"><i class="fa fa-angle-left"></i> Week <?php echo $week; ?></a></h5>
+            <h5 class="float-left"><a href="/training/<?php echo $week; ?>"><i class="ion-ios-arrow-left"></i> Week <?php echo $week; ?></a></h5>
 
-            <!--<img width="24px" height="24px" class="pull-right" src="/img/icons/checkout@2x.png">-->
+            <!--<img width="24px" height="24px" class="float-right" src="/img/icons/checkout@2x.png">-->
         </div>
     </div>
 </header>

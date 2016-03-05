@@ -14,8 +14,8 @@ $num6 = ['breakfast','breakfast','lunch','lunch','dinner','dinner'];
 <header>
     <div class="row">
         <div class="small-12 columns">
-            <h5 class="pull-left"><a href="/diet/<?php echo $week; ?>"><i class="fa fa-angle-left"></i> Week <?php echo $week; ?></a></h5>
-            <img width="24px" height="24px" class="pull-right" src="/img/icons/checkout@2x.png">
+            <h5 class="float-left"><a href="/diet/<?php echo $week; ?>"><i class="ion-ios-arrow-left"></i> Week <?php echo $week; ?></a></h5>
+            <img width="24px" height="24px" class="float-right" src="/img/icons/checkout@2x.png">
         </div>
     </div>
 </header>
@@ -92,7 +92,7 @@ $num6 = ['breakfast','breakfast','lunch','lunch','dinner','dinner'];
                     <div>
                         <div class="row">
                             <div class="small-12 columns">
-                                <i data-meal="<?php echo $i; ?>" class="fa fa-times pull-right js-close-meal"></i>
+                                <i data-meal="<?php echo $i; ?>" class="ion-close-round float-right js-close-meal"></i>
                             </div>
                         </div>
                         <div class="row">
@@ -103,7 +103,7 @@ $num6 = ['breakfast','breakfast','lunch','lunch','dinner','dinner'];
                             <img src="/img/thumb-1.jpg" alt="Preview image">
                             <div class="sm-margin clearfix"></div>
                             <div class="small-12 columns">
-                                <h5><?php echo $meals['Protein_Name']; if (isset($meals['Carb_Name'])) { ?>, <?php echo $meals['Carb_Name']; } if (isset($meals['Fat_Name'])) { ?> &amp; <?php echo $meals['Fat_Name']; } ?><i class="fav fa fa-star-o pull-right"></i></h5>
+                                <h5><?php echo $meals['Protein_Name']; if (isset($meals['Carb_Name'])) { ?>, <?php echo $meals['Carb_Name']; } if (isset($meals['Fat_Name'])) { ?> &amp; <?php echo $meals['Fat_Name']; } ?><i class="fav ion-ios-star-outline float-right"></i></h5>
                                 <div class="sm-margin"></div>
                                 <ul>
                                     <li>x3 Large Eggs</li>
@@ -119,10 +119,10 @@ $num6 = ['breakfast','breakfast','lunch','lunch','dinner','dinner'];
                                 <hr>
                                 <h5>Nutritional breakdown</h5>
                                 <div class="sm-margin"></div>
-                                <div class="pull-left canvas">
+                                <div class="float-left canvas">
                                     <canvas class="pct-break" protein-pct="25" carb-pct="24" fat-pct="4" width="100" height="100" style="width: 50px; height: 50px;"></canvas>
                                 </div>
-                                <div class="pull-left">
+                                <div class="float-left">
                                     <ul>
                                         <li><span class="blue block"></span>25g protein</li>
                                         <li><span class="brown block"></span>24g carbohydrate</li>

@@ -234,9 +234,9 @@
    <!-- Navbar-->
    <div class="header">
     <div class="container">
-        <a href="/" class="pull-left logo">VPT</a>
-        <a class="logout pull-right" href="/logout">Logout</a>
-        <img class="image-header pull-right" src="/images/placeholder/12.jpg">
+        <a href="/" class="float-left logo">VPT</a>
+        <a class="logout float-right" href="/logout">Logout</a>
+        <img class="image-header float-right" src="/images/placeholder/12.jpg">
     </div>
    </div>
     <!-- /Navbar -->

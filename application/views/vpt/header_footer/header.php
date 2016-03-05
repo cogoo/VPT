@@ -41,8 +41,8 @@
    <div class="header">
     <div class="container">
 
-        <a class="logout pull-right" href="/logout">Logout</a>
-        <img class="image-header pull-right" src="/images/placeholder/<?php echo $user['User_ID'] ?>.jpg">
+        <a class="logout float-right" href="/logout">Logout</a>
+        <img class="image-header float-right" src="/images/placeholder/<?php echo $user['User_ID'] ?>.jpg">
     </div>
    </div>
     <!-- /Navbar -->

@@ -1,7 +1,7 @@
 <header>
     <div class="row">
         <div class="small-12 columns">
-            <div class="c-menu pull-left">
+            <div class="c-menu float-left">
                 <button class="menu">
                     <span class="lines"></span>
                 </button>
@@ -9,7 +9,7 @@
             </div>
             
 
-            <img width="24px" height="24px" class="pull-right" src="/assets/settings@2x.png">
+            <img width="24px" height="24px" class="float-right" src="/assets/settings@2x.png">
         </div>
     </div>
 </header>
@@ -19,7 +19,7 @@
 
 <div class="row weeks">
     <div class="small-12 columns text-center">
-        <h5><a href="/diet/<?php echo $week -1; ?>"><i class="fa fa-angle-left"></i></a>WEEK <?php echo $week; ?><a href="/diet/<?php echo $week +1; ?>"><i class="fa fa-angle-right"></i></a></h5>
+        <h5><a href="/diet/<?php echo $week -1; ?>"><i class="ion-ios-arrow-left"></i></a>WEEK <?php echo $week; ?><a href="/diet/<?php echo $week +1; ?>"><i class="ion-ios-arrow-right"></i></a></h5>
     </div>
 </div>
 

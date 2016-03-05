@@ -79,7 +79,7 @@
 
                             if ($week >= $current_week && $current_week < 13) {
                                 ?>
-                                    <a class="btn green pull-right" href="/complete/diet">MARK WEEK AS COMPLETE</a>
+                                    <a class="btn green float-right" href="/complete/diet">MARK WEEK AS COMPLETE</a>
                                 <?php
 
                             }
