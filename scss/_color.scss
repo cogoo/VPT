@@ -9,3 +9,7 @@
 .lblue {
 	color: $VPT_lblue;
 }
+
+.-bg-blue {
+	background-color: darken($VPT_blue,10);
+}

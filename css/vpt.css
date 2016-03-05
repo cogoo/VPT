@@ -9,6 +9,9 @@
 .lblue {
   color: #BDC3C7; }
 
+.-bg-blue, .stickMe.-is-sticky {
+  background-color: #267db0; }
+
 body {
   background-color: #2A383F;
   color: #2A383F;
@@ -30,7 +33,9 @@ ul {
   list-style-type: none; }
 
 i {
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  z-index: inherit; }
 
 header.login {
   padding: 50px 0px; }
@@ -46,12 +51,16 @@ header.home-header {
   margin-top: -10px;
   padding: 10px 0px;
   padding-bottom: 0px;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
   header.home-header .lines, header.home-header .lines::before, header.home-header .lines::after {
     background-color: #fff; }
   header.home-header h3 {
     color: #fff;
     font-weight: 300; }
+  header.home-header div.row {
+    z-index: 2;
+    position: relative; }
 
 h5 {
   font-size: 18px;
@@ -144,6 +153,29 @@ div.white {
 @media only screen {
   .small-10 {
     width: 83.33333% !important; } }
+.shadowBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.07); }
+
+.stickMe .c-menu {
+  padding-left: .625rem;
+  padding-right: .625rem;
+  padding-top: .625rem;
+  display: none; }
+.stickMe.-is-sticky .c-menu {
+  display: block; }
+
+.-is-sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0; }
+
 .dp-block {
   display: block; }
 
@@ -152,6 +184,12 @@ div.white {
 
 .capitalize {
   text-transform: capitalize; }
+
+.stickyMenu {
+  display: none; }
+
+.is-stuck .stickyMenu {
+  display: block; }
 
 .image-header {
   width: 50px;
@@ -208,6 +246,10 @@ div.white {
   .off-canvas.menu {
     left: 0;
     z-index: 1; }
+    .off-canvas.menu ul a:first-child {
+      position: absolute;
+      top: 10px;
+      font-size: 30px; }
   .off-canvas li {
     margin-bottom: 20px; }
     .off-canvas li.active {
@@ -404,6 +446,13 @@ div.white {
       padding: 10px 15px;
       height: 100%;
       overflow: scroll; }
+
+/* Foundation Overrides */
+.progress {
+  background-color: #74A2CA;
+  height: .1rem;
+  margin: 1rem 0;
+  border-radius: 0; }
 
 /* -------------------------------- 
 

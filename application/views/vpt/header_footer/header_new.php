@@ -25,6 +25,7 @@
         ?>
         <div class="off-canvas">
             <ul>
+                <a><li class="menu"><i class="ion-arrow-left-c"></i></li></a>
                 <a href="/"><li class="<?php if ($title == 'Home') {
                     echo "active";
                 } ?>">Home</li></a>

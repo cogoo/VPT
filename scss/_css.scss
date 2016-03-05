@@ -25,6 +25,8 @@ ul {
 
 i {
   cursor: pointer;
+  position: relative;
+  z-index: inherit;
 }
 
 header {
@@ -46,12 +48,17 @@ header {
     padding: 10px 0px;
     padding-bottom: 0px;
     color: #fff;
+    position: relative;
     .lines {
       background-color: #fff;
     }
     h3 {
       color: #fff;
       font-weight: 300;
+    }
+    div.row {
+      z-index: 2;
+      position: relative;
     }
   }
 }
@@ -161,6 +168,38 @@ div.white {
   }
 }
 
+.shadowBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255,255,255,0.07);
+}
+
+.stickMe {
+  .c-menu {
+    padding-left: .625rem;
+    padding-right: .625rem;
+    padding-top: .625rem;
+    display: none;
+  }
+  &.-is-sticky {
+    @extend .-bg-blue;
+  }
+  &.-is-sticky .c-menu {
+    display: block;
+  }
+}
+
+.-is-sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
 .dp-block {
   display: block;
 }
@@ -171,6 +210,14 @@ div.white {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.stickyMenu {
+  display: none;
+}
+
+.is-stuck .stickyMenu {
+  display: block;
 }
 
 .image-header {
@@ -235,6 +282,11 @@ div.white {
   &.menu {
     left: 0;
     z-index: 1;
+    ul a:first-child {
+      position: absolute;
+      top: 10px;
+      font-size: 30px;
+    }
   }
   li{
     margin-bottom: 20px;
@@ -471,4 +523,12 @@ div.white {
       overflow: scroll;
     }
   }
+}
+
+/* Foundation Overrides */
+.progress {
+  background-color: #74A2CA;
+  height: .1rem;
+  margin: 1rem 0;
+  border-radius: 0;
 }

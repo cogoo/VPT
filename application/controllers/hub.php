@@ -66,7 +66,7 @@ class Hub extends CI_Controller {
 		$UID = $this->session->userdata('uid');
 		$data['full_name'] = $this->session->userdata('full_name');
 		$data['current_week'] = $this->week;
-
+		$data['home'] = 'home';
 		$data['user'] = $this->calc_details->getuser($UID);
 		$data['goal'] = $this->calc_details->getgoal($data['user']['Goal_ID']);
 		//$data['days_meals'] = $this->calc_details->get_days_meals();

@@ -1,4 +1,5 @@
 <header class="home-header">
+    <div class="shadowBG" style="right:<?php echo 100 - (($current_week / 12) * 100) ?>%"></div>
     <div class="row">
         <div class="small-12 columns">
             <div class="c-menu float-left">
@@ -13,12 +14,34 @@
     </div>
     <div class="row">
         <div class="small-12 columns">
-            <div class="md-margin"></div>
+            <div class="sm-margin"></div>
             <h3><?php echo date('l') .', '.date('d').date('S').' '.date('M')?></h3>
         </div>
     </div>
+    <div class="sm-margin"></div>
+    <div class="row">
+        <div class="small-<?php echo $current_week; ?> columns">
+            <span class="float-right">Week <?php echo $current_week; ?></span>
+        </div>
+    </div>
+
     <div class="row">
         <div class="small-12 columns">
+            <div class="progress" role="progressbar" tabindex="0" aria-valuenow="50" aria-valuemin="0" aria-valuetext="50 percent" aria-valuemax="100">
+              <div class="progress-meter" style="width: <?php echo (($current_week / 12) * 100) - 1 ?>%"></div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="row">
+        <div class="stickMe">
+            <div class="c-menu -left">
+                <button class="menu">
+                    <span class="lines"></span>
+                </button>
+                <span>Home</span>
+            </div>
+
             <ul class="tabs" data-tabs id="example-tabs">
               <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Meals</a></li>
               <li class="tabs-title"><a href="#panel2">Training</a></li>
@@ -26,6 +49,8 @@
         </div>
     </div>
 </header>
+
+    
 <div class="sm-margin"></div>
 <div class="row">
     <div class="small-12 columns">
@@ -53,8 +78,6 @@
                 case '6':
                     $img_array = $num6;
                     break;
-                
-                
             }
         
             foreach ($days_meals as $meals): 

@@ -56,6 +56,32 @@
 
         </script>
 
+        <?php 
+            if (isset($home)) {
+                ?>
+                    <script type="text/javascript">
+                        var stickyNavTop = $('.stickMe').offset().top;
+       
+                        var stickyNav = function(){
+                        var scrollTop = $(window).scrollTop();
+                              
+                        if (scrollTop > stickyNavTop) { 
+                            $('.stickMe').addClass('-is-sticky');
+                        } else {
+                            $('.stickMe').removeClass('-is-sticky'); 
+                        }
+                        };
+
+                        stickyNav();
+
+                        $(window).scroll(function() {
+                          stickyNav();
+                        });
+                    </script>
+                <?php
+            }
+        ?>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
