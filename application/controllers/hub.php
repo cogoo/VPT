@@ -153,6 +153,16 @@ class Hub extends CI_Controller {
 		}
 	}
 
+	public function settings()
+	{
+		$data['title'] = 'Setting';
+		$data['current_week'] = $this->week;
+
+		$this->load->view('vpt/header_footer/header_new', $data);
+		$this->load->view('vpt/member/setting');
+		$this->load->view('vpt/header_footer/footer_new');
+	}
+
 	public function getdiet($week,$day)
 	{
 		$data['title'] = 'Diet';

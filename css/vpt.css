@@ -141,6 +141,17 @@ ul.days li {
     float: right;
     line-height: 27px; }
 
+ul.settings {
+  margin-left: 0; }
+  ul.settings li {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 2px;
+    cursor: pointer; }
+    ul.settings li i {
+      float: right; }
+
 div.c-menu button.menu + span {
   vertical-align: top;
   line-height: 17px; }

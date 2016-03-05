@@ -153,6 +153,20 @@ ul.days li {
   }
 }
 
+ul.settings {
+  margin-left: 0;
+  li {
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    i {
+      float: right;
+    }
+  }
+}
+
 div.c-menu button.menu + span {
     vertical-align: top;
     line-height: 17px;

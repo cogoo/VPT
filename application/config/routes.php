@@ -46,6 +46,7 @@ $route['changemeal/(:any)'] = "hub/change_meal/$1";
 $route['day/(:any)'] = "hub/mark_day_complete/$1";
 $route['complete/(:any)'] = "hub/mark_as_complete/$1";
 $route['diet/(:num)'] = "hub/diet/$1";
+$route['settings'] = "hub/settings";
 $route['training/(:num)'] = "hub/training/$1";
 $route['getmobilemeal/(:any)'] = "hub/get_mobile_meal/$1";
 $route['getmeal/(:any)'] = "hub/getmeal/$1";

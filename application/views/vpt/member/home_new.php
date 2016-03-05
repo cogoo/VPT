@@ -20,7 +20,9 @@
     </div>
     <div class="sm-margin"></div>
     <div class="row">
-        <div class="small-<?php echo $current_week; ?> columns">
+        <div class="small-<?php if ($current_week >= 3) {
+            echo $current_week;
+        } else { echo "3";}  ?> columns">
             <span class="float-right">Week <?php echo $current_week; ?></span>
         </div>
     </div>
