@@ -66,6 +66,22 @@ class Calc_details extends CI_Model {
 		
 	}
 
+	public function get_training2($training_id,$week,$order)
+	{
+
+		//$train id variable has to be goal id .. i think
+
+		$this->db->where('Training_ID', $training_id);
+		$this->db->where('Week', $week);
+		$this->db->where('Order', $order);
+		$this->db->order_by('Order');
+		
+		$query = $this->db->get('workout');
+
+		return  $query->row_array();
+		
+	}
+
 	public function get_exercise($ex)
 	{
 

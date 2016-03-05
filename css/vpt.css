@@ -37,6 +37,9 @@ i {
   position: relative;
   z-index: inherit; }
 
+iframe {
+  max-width: 100%; }
+
 header.login {
   padding: 50px 0px; }
 header.dark {
@@ -381,27 +384,30 @@ div.white {
 .weeks i {
   margin: 0px 20px; }
 
-.meal-breakdown {
+.meal-breakdown, .ex-breakdown {
   text-align: left;
   padding-bottom: 50px !important; }
-  .meal-breakdown h5 {
+  .meal-breakdown h5, .ex-breakdown h5 {
     color: #333; }
-  .meal-breakdown ul {
+  .meal-breakdown ul, .ex-breakdown ul {
     padding: 0 1.375rem;
     margin: 0; }
-    .meal-breakdown ul li {
+    .meal-breakdown ul li, .ex-breakdown ul li {
       list-style-type: disc;
       color: #BDC3C7; }
-  .meal-breakdown i.fav {
+  .meal-breakdown i.fav, .ex-breakdown i.fav {
     font-size: 25px;
     color: #C7A06B; }
-  .meal-breakdown .canvas {
+  .meal-breakdown i.del, .ex-breakdown i.del {
+    font-size: 25px;
+    color: #DC0000; }
+  .meal-breakdown .canvas, .ex-breakdown .canvas {
     margin-right: 15px; }
-    .meal-breakdown .canvas + div {
+    .meal-breakdown .canvas + div, .ex-breakdown .canvas + div {
       margin-top: 20px; }
-      .meal-breakdown .canvas + div ul {
+      .meal-breakdown .canvas + div ul, .ex-breakdown .canvas + div ul {
         padding: 0; }
-        .meal-breakdown .canvas + div ul li {
+        .meal-breakdown .canvas + div ul li, .ex-breakdown .canvas + div ul li {
           list-style-type: none; }
 
 .meal-breakdown__swap {
@@ -413,6 +419,9 @@ div.white {
   right: 0;
   padding: 10px;
   height: 50px; }
+
+.meal-action h5 {
+  text-align: right; }
 
 .block {
   display: inline-block;
@@ -439,10 +448,10 @@ div.white {
   width: 100vw; }
   .overlay i.fa-times {
     font-size: 30px; }
-  .overlay.meal-breakdown {
+  .overlay.meal-breakdown, .overlay.ex-breakdown {
     position: fixed;
     padding: 0; }
-    .overlay.meal-breakdown > div {
+    .overlay.meal-breakdown > div, .overlay.ex-breakdown > div {
       padding: 10px 15px;
       height: 100%;
       overflow: scroll; }

@@ -32,7 +32,45 @@
                 <img class="training_times__image" src="/images/pullup.png" alt="Preview image">
                 <h5 class="training_times__header" ><?php echo $act['Name'] ?></h5>
                 <div class="sm-margin"></div>
-                <a class="training_times__anchor blue" href="#">VIEW</a>
+                <a class="training_times__anchor blue js-show-ex" data-show="<?php echo $i; ?>">VIEW</a>
+
+                <div style="display:none" id="sx<?php echo $i; ?>" class="ex-breakdown overlay">
+                        <div>
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <i data-ex="<?php echo $i; ?>" class="ion-close-round float-right js-close-ex"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <h5><?php echo $i.'. '.$act['Name'] ?></h5>
+                                </div>
+                                <div class="sm-margin clearfix"></div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ark1ThQTDoA" frameborder="0" allowfullscreen></iframe>
+                                <div class="sm-margin clearfix"></div>
+                                <div class="small-12 columns">
+                                    <p>
+                                        <?php echo $act['Description'] ?>
+                                    </p>
+                                </div>
+                               
+                            </div>
+                            
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <hr>
+                                    <h5>Muscles worked</h5>
+                                    <div class="sm-margin"></div>
+                                    <img src="/images/mw.jpg" alt="Preview image">
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="meal-breakdown__swap text-center">
+                                <span>PERFORM EXERCISE</span>
+                            </div>
+                        </div>
+                    </div>
             </div>
             <div class="sm-margin"></div>
 

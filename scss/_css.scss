@@ -29,6 +29,10 @@ i {
   z-index: inherit;
 }
 
+iframe {
+  max-width: 100%;
+}
+
 header {
   &.login {
     padding: 50px 0px;
@@ -441,7 +445,7 @@ div.white {
   margin: 0px 20px;
 }
 
-.meal-breakdown {
+.meal-breakdown, .ex-breakdown {
   text-align: left;
   padding-bottom: 50px !important;
   h5 {
@@ -458,6 +462,10 @@ div.white {
   i.fav {
     font-size: 25px;
     color: #C7A06B;
+  }
+  i.del {
+    font-size: 25px;
+    color: #DC0000;
   }
   .canvas {
     margin-right: 15px;
@@ -482,6 +490,10 @@ div.white {
     right: 0;
     padding: 10px;
     height: 50px;
+}
+
+.meal-action h5 {
+  text-align: right;
 }
 
 .block {
@@ -514,7 +526,7 @@ div.white {
   i.fa-times {
     font-size: 30px;
   }
-  &.meal-breakdown {
+  &.meal-breakdown, &.ex-breakdown {
     position: fixed;
     padding: 0;
     > div {

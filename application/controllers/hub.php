@@ -69,9 +69,32 @@ class Hub extends CI_Controller {
 		$data['home'] = 'home';
 		$data['user'] = $this->calc_details->getuser($UID);
 		$data['goal'] = $this->calc_details->getgoal($data['user']['Goal_ID']);
-		//$data['days_meals'] = $this->calc_details->get_days_meals();
-
 		$data['days_meals'] = $this->calc_details->get_days_meals_mobile(date('N'),$this->week);
+		$training_id = $this->calc_details->get_training_id($this->goal_id,$this->session_times);
+		$activity = $this->calc_details->get_training2($training_id,$this->week,date('N'));
+
+		if ($this->session_times == 3) {
+            $rest = array("2", "4", "6", "7");
+        }
+
+        if ($this->session_times == 4) {
+            $rest = array("3", "5", "7");
+        }
+
+        if ($this->session_times == 5) {
+            $rest = array("3", "6");
+        }
+
+        if ($this->session_times == 6) {
+            $rest = array("4");
+        }
+
+		if (in_array(date('N'), $rest)) {
+			$data['exercise'] = [];
+		} else {
+			$data['exercise'] = $this->calc_details->get_exercise($activity['WorkOut_ID']);
+		}
+
 		
 		$weight = $data['user']['Weight'];
 		$bodyfat = $data['user']['BodyFat'];

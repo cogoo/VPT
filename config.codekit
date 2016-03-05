@@ -15282,6 +15282,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/mw.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27650,
+		"inputAbbreviatedPath": "\/images\/mw.jpg",
+		"outputAbbreviatedPath": "\/images\/mw.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/placeholder\/12.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

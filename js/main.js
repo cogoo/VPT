@@ -55,10 +55,22 @@ $(function(){
       $('#sm'+meal).show();
     });
 
+    $('body').on('click', '.js-show-ex', function(){
+      $('body').addClass('noscroll');
+      var ex = $(this).data('show');
+      $('#sx'+ex).show();
+    });
+
     $('body').on('click', '.js-close-meal', function(){
       $('body').removeClass('noscroll');
       var meal = $(this).data('meal');
       $('#sm'+meal).hide();
+    });
+
+    $('body').on('click', '.js-close-ex', function(){
+      $('body').removeClass('noscroll');
+      var ex = $(this).data('ex');
+      $('#sx'+ex).hide();
     });
 
     $('form.login input').focus(function(){

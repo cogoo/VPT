@@ -102,8 +102,8 @@ $num6 = ['breakfast','breakfast','lunch','lunch','dinner','dinner'];
                             <div class="sm-margin clearfix"></div>
                             <img src="/img/thumb-1.jpg" alt="Preview image">
                             <div class="sm-margin clearfix"></div>
-                            <div class="small-12 columns">
-                                <h5><?php echo $meals['Protein_Name']; if (isset($meals['Carb_Name'])) { ?>, <?php echo $meals['Carb_Name']; } if (isset($meals['Fat_Name'])) { ?> &amp; <?php echo $meals['Fat_Name']; } ?><i class="fav ion-ios-star-outline float-right"></i></h5>
+                            <div class="small-10 columns">
+                                <h5><?php echo $meals['Protein_Name']; if (isset($meals['Carb_Name'])) { ?>, <?php echo $meals['Carb_Name']; } if (isset($meals['Fat_Name'])) { ?> &amp; <?php echo $meals['Fat_Name']; } ?></h5>
                                 <div class="sm-margin"></div>
                                 <ul>
                                     <li>x3 Large Eggs</li>
@@ -111,6 +111,10 @@ $num6 = ['breakfast','breakfast','lunch','lunch','dinner','dinner'];
                                     <li>1/2 red pepper</li>
                                     <li>x5 button mushrooms</li>
                                 </ul>
+                            </div>
+                            <div class="meal-action small-2 columns">
+                                <h5><i class="fav ion-ios-star-outline"></i></h5>
+                                <h5><i class="del ion-close-round"></i></h5>
                             </div>
                         </div>
                         

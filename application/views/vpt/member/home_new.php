@@ -102,8 +102,8 @@
                             <div class="sm-margin clearfix"></div>
                             <img src="/img/thumb-1.jpg" alt="Preview image">
                             <div class="sm-margin clearfix"></div>
-                            <div class="small-12 columns">
-                                <h5><?php echo $meals['Protein_Name']; if (isset($meals['Carb_Name'])) { ?>, <?php echo $meals['Carb_Name']; } if (isset($meals['Fat_Name'])) { ?> &amp; <?php echo $meals['Fat_Name']; } ?><i class="fav ion-ios-star-outline float-right"></i></h5>
+                            <div class="small-10 columns">
+                                <h5><?php echo $meals['Protein_Name']; if (isset($meals['Carb_Name'])) { ?>, <?php echo $meals['Carb_Name']; } if (isset($meals['Fat_Name'])) { ?> &amp; <?php echo $meals['Fat_Name']; } ?></h5>
                                 <div class="sm-margin"></div>
                                 <ul>
                                     <li>x3 Large Eggs</li>
@@ -111,6 +111,10 @@
                                     <li>1/2 red pepper</li>
                                     <li>x5 button mushrooms</li>
                                 </ul>
+                            </div>
+                            <div class="meal-action small-2 columns">
+                                <h5><i class="fav ion-ios-star-outline"></i></h5>
+                                <h5><i class="del ion-close-round"></i></h5>
                             </div>
                         </div>
                         
@@ -148,7 +152,71 @@
             ?>
           </div>
           <div class="tabs-panel" id="panel2">
-            <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+            <?php 
+            $i = 1;
+            if (!empty($exercise)) {
+                foreach ($exercise as $act): 
+            ?>
+
+                <div class="white training_times text-center">
+                    <img class="training_times__image" src="/images/pullup.png" alt="Preview image">
+                    <h5 class="training_times__header" ><?php echo $act['Name'] ?></h5>
+                    <div class="sm-margin"></div>
+                    <a class="training_times__anchor blue js-show-ex" data-show="<?php echo $i; ?>">VIEW</a>
+
+                    <div style="display:none" id="sx<?php echo $i; ?>" class="ex-breakdown overlay">
+                        <div>
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <i data-ex="<?php echo $i; ?>" class="ion-close-round float-right js-close-ex"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <h5><?php echo $i.'. '.$act['Name'] ?></h5>
+                                </div>
+                                <div class="sm-margin clearfix"></div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ark1ThQTDoA" frameborder="0" allowfullscreen></iframe>
+                                <div class="sm-margin clearfix"></div>
+                                <div class="small-12 columns">
+                                    <p>
+                                        <?php echo $act['Description'] ?>
+                                    </p>
+                                </div>
+                               
+                            </div>
+                            
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <hr>
+                                    <h5>Muscles worked</h5>
+                                    <div class="sm-margin"></div>
+                                    <img src="/images/mw.jpg" alt="Preview image">
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="meal-breakdown__swap text-center">
+                                <span>PERFORM EXERCISE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm-margin"></div>
+
+                  
+            <?php $i += 1;
+                endforeach;
+            } else {
+            ?>
+                <div class="white meal_times text-center">
+                    <img src="/assets/dinner@2x.png">
+                    <div class="sm-margin"></div>
+                    <h4 class="meal_times__header capitalize">Rest day</h4>
+                </div>
+            <?php
+            }
+             ?>
           </div>
         </div>
     </div>

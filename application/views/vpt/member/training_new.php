@@ -15,7 +15,21 @@
 
 <div class="row weeks">
     <div class="small-12 columns text-center">
-        <h5><a href="/training/<?php echo $week -1; ?>"><i class="ion-ios-arrow-left"></i></a>WEEK <?php echo $week; ?><a href="/training/<?php echo $week +1; ?>"><i class="ion-ios-arrow-right"></i></a></h5>
+        <h5>
+        <?php 
+            if ($week != 1) {
+        ?>
+                <a href="/training/<?php echo $week -1; ?>"><i class="ion-ios-arrow-left"></i></a>
+        <?php
+        } ?>WEEK <?php echo $week; ?>
+        <?php 
+            if ($week != 12) {
+                ?>
+                <a href="/training/<?php echo $week +1; ?>"><i class="ion-ios-arrow-right"></i></a>
+                <?php
+            }
+        ?>
+        </h5>
     </div>
 </div>
 
@@ -73,7 +87,7 @@
                                                     if (in_array($i, $rest)) {
                                                         echo "<a class='btn blue inverted'>REST DAY</a>";
                                                     } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".base64_encode($activity[$an]['Name'])."'>VIEW</a>";
+                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
                                                         $an += 1;
                                                     }
                                                     
@@ -85,7 +99,7 @@
                                                     if (in_array($i, $rest)) {
                                                         echo "<a class='btn blue inverted'>REST DAY</a>";
                                                     } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."'>VIEW</a>";
+                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
                                                         $an += 1;
                                                     }
                                                     break;
@@ -96,7 +110,7 @@
                                                     if (in_array($i, $rest)) {
                                                         echo "<a class='btn blue inverted'>REST DAY</a>";
                                                     } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."'>VIEW</a>";
+                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
                                                         $an += 1;
                                                     }
                                                     break;
@@ -107,7 +121,7 @@
                                                     if (in_array($i, $rest)) {
                                                         echo "<a class='btn blue inverted'>REST DAY</a>";
                                                     } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."'>VIEW</a>";
+                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
                                                         $an += 1;
                                                     }
                                                     break;
@@ -118,7 +132,7 @@
                                                     if (in_array($i, $rest)) {
                                                         echo "<a class='btn blue inverted'>REST DAY</a>";
                                                     } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."'>VIEW</a>";
+                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
                                                         $an += 1;
                                                     }
                                                     break;
@@ -129,7 +143,7 @@
                                                     if (in_array($i, $rest)) {
                                                         echo "<a class='btn blue inverted'>REST DAY</a>";
                                                     } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."'>VIEW</a>";
+                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
                                                         $an += 1;
                                                     }
                                                     break;
@@ -140,7 +154,7 @@
                                                     if (in_array($i, $rest)) {
                                                         echo "<a class='btn blue inverted'>REST DAY</a>";
                                                     } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."'>VIEW</a>";
+                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
                                                         $an += 1;
                                                     }
                                                     break;
