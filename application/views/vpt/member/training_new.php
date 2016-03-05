@@ -37,13 +37,7 @@
 
 <div class="row">
     <div class="small-12 columns no-ul-margin">
-        <!--<ul class="days">
-            <?php foreach ($activity as $act): ?>
-            <a href="/gettraining/<?php echo $week?>/<?php echo $act['WorkOut_ID'] ?>"><li><?php echo $act['Name'] ?> <?php if(/*($completed_day >= 1 && $current_week == $week) ||*/ $current_week > $week){ echo "<i class='fa fa-check-square-o green'></i>"; } ?></li></a>
-            <?php endforeach ?>
-            
-         
-        </ul>-->
+ 
         <ul id="cd-gallery-items" class="active cd-container">
             <li class="text-center">
                 <ul class="cd-item-wrapper">
@@ -51,27 +45,60 @@
                         $i = 1;
                         $an = 0;
                         $days = 7;
+                        //date('N') = 1;
                         while ($i <= $days) {
                         ?>
-
-
-                            <li class="
-                            <?php 
-                                if ($i == 1) {
-                                    echo "cd-item-front";
-                                } else {
-                                    if ($i == 2) {
-                                        echo "cd-item-middle";
-                                    } else {
-                                        if ($i == 3) {
-                                            echo "cd-item-back";
+                        <?php
+                            if ($week <> $current_week) {
+                                ?>
+                                    <li class="
+                                    <?php 
+                                        if ($i == 1) {
+                                            echo "cd-item-front";
                                         } else {
-                                            echo "cd-item-out";
+                                            if ($i == 2) {
+                                                echo "cd-item-middle";
+                                            } else {
+                                                if ($i == 3) {
+                                                    echo "cd-item-back";
+                                                } else {
+                                                    echo "cd-item-out";
+                                                }
+                                            }
                                         }
-                                    }
-                                }
-                            ?>
-                            ">
+                                    ?>
+                                    ">
+                                <?php
+                            } else {
+                                ?>
+                                    <li class="
+                                    <?php 
+                                        if ($i == date('N')) {
+                                            echo "cd-item-front";
+                                        } else {
+                                            if (date('N') > $i) {
+                                                echo "move-right hidden";
+                                            } else {
+                                                if (($i == date('N')+1) && date('N') < 7) {
+                                                    echo "cd-item-middle";
+                                                } else {
+                                                    if (($i == date('N')+2) && date('N') < 6) {
+                                                        echo "cd-item-back";
+                                                    } else {
+                                                        echo "cd-item-out";
+                                                    }
+                                                }  
+                                            }
+                                        }
+                                        
+                                        
+
+                                    ?>
+                                    ">
+                                <?php
+                            }
+                        ?>
+                            
                                 <div class="cd-i-item text-center v-center">
                                     <div class="animate ">
 

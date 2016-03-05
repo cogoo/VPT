@@ -38,28 +38,6 @@ class Hub extends CI_Controller {
 		
 	}
 
-	/*public function index()
-	{
-		$data['title'] = 'Home';
-		$UID = $this->session->userdata('uid');
-		$data['full_name'] = $this->session->userdata('full_name');
-		$data['current_week'] = $this->week;
-
-		$data['user'] = $this->calc_details->getuser($UID);
-		$data['goal'] = $this->calc_details->getgoal($data['user']['Goal_ID']);
-		$data['days_meals'] = $this->calc_details->get_days_meals();
-		
-		$weight = $data['user']['Weight'];
-		$bodyfat = $data['user']['BodyFat'];
-		
-		$this->load->view('vpt/header_footer/header', $data);
-		$this->load->view('vpt/member/home',$data);
-		$this->load->view('vpt/header_footer/footer');
-		//$this->output->enable_profiler(TRUE);
-		
-		
-	}*/
-
 	public function index()
 	{
 		$data['title'] = 'Home';
@@ -140,27 +118,6 @@ class Hub extends CI_Controller {
 		$this->load->view('vpt/member/training_new',$data);
 		$this->load->view('vpt/header_footer/footer_new');
 	}
-
-	/*
-
-	//old training
-
-	public function training($week = 1)
-	{
-
-		$this->session->set_userdata('week_current', $week);
-		$data['title'] = 'Training';
-		$data['week'] = $week;
-		$UID = $this->session->userdata('uid');
-		$data['user'] = $this->calc_details->getuser($UID);
-		$data['current_week'] = $this->week;
-		$training_id = $this->calc_details->get_training_id($this->goal_id,$this->session_times);
-		$data['activity'] = $this->calc_details->get_training($training_id,$week);
-
-		$this->load->view('vpt/header_footer/header', $data);
-		$this->load->view('vpt/member/training',$data);
-		$this->load->view('vpt/header_footer/footer');
-	}*/
 
 	public function diet($week = 1)
 	{
@@ -420,7 +377,7 @@ class Hub extends CI_Controller {
 		$mcal = $data['user']['MCalories'];
 		$calpd = $data['user']['CaloriesPerDay'];
 
-		//calculating protein and fat breakdown
+		//calculating and fat breakdown
 		switch ($data['user']['Goal_ID']) {
 			case 1:
 				//for bulking male
@@ -484,11 +441,11 @@ class Hub extends CI_Controller {
 		$data['carbs_c'] = $carbs_c;
 		$data['carbs_g'] = $carbs_g;
 
-		$data['protein_b1'] = $protein_g / $data['user']['Meal_No'];
+		$data['protein_b1'] = $data['protein_b12'] = $protein_g / $data['user']['Meal_No'];
 		$data['protein_b'] = $protein_g / $data['user']['Meal_No'];
-		$data['Carb_Meal12'] = $carbs_g * $data['break_1']['Carbs'];
+		$data['Carb_Meal12'] = $data['Carb_Meal122'] = $carbs_g * $data['break_1']['Carbs'];
 		$data['Carb_Meal1'] = $carbs_g * $data['break_1']['Carbs'];
-		$data['Fat_Meal1'] = $fat_g * $data['break_1']['Fat'];
+		$data['Fat_Meal1'] = $data['Fat_Meal12'] = $fat_g * $data['break_1']['Fat'];
 
 		$data['protein_b'] = $data['protein_b'] * 0.9;
 		$data['Carb_Meal1'] = $data['Carb_Meal1'] * 0.9;
@@ -706,11 +663,11 @@ class Hub extends CI_Controller {
 		$data['carbs_c'] = $carbs_c;
 		$data['carbs_g'] = $carbs_g;
 
-		$data['protein_b1'] = $protein_g / $data['user']['Meal_No'];
+		$data['protein_b1'] = $data['protein_b12'] = $protein_g / $data['user']['Meal_No'];
 		$data['protein_b'] = $protein_g / $data['user']['Meal_No'];
-		$data['Carb_Meal12'] = $carbs_g * $data['break_1']['Carbs'];
+		$data['Carb_Meal12'] = $data['Carb_Meal122'] = $carbs_g * $data['break_1']['Carbs'];
 		$data['Carb_Meal1'] = $carbs_g * $data['break_1']['Carbs'];
-		$data['Fat_Meal1'] = $fat_g * $data['break_1']['Fat'];
+		$data['Fat_Meal1'] = $data['Fat_Meal12'] = $fat_g * $data['break_1']['Fat'];
 
 		$data['protein_b'] = $data['protein_b'] * 0.9;
 		$data['Carb_Meal1'] = $data['Carb_Meal1'] * 0.9;

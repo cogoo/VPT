@@ -399,7 +399,7 @@ div.white {
     font-size: 25px;
     color: #C7A06B; }
   .meal-breakdown i.del, .ex-breakdown i.del {
-    font-size: 25px;
+    padding-right: 4px;
     color: #DC0000; }
   .meal-breakdown .canvas, .ex-breakdown .canvas {
     margin-right: 15px; }

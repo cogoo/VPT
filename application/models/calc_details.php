@@ -311,7 +311,10 @@ class Calc_details extends CI_Model {
 			'Fat_Name' => $fat,
 			'Fat_Grams' => $fat_g,
 			'Green_Veg' => $veg,
-			'Failed_Meal' => $data['hate']
+			'Failed_Meal' => $data['hate'],
+			'Protein_B1' => $data['protein_b12'],
+			'Carb_Meal12' => $data['Carb_Meal122'],
+			'Fat_Meal1' => $data['Fat_Meal12']
 		);
 
 		return $this->db->insert('users_meals', $ins);

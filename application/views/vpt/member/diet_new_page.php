@@ -106,10 +106,21 @@ $num6 = ['breakfast','breakfast','lunch','lunch','dinner','dinner'];
                                 <h5><?php echo $meals['Protein_Name']; if (isset($meals['Carb_Name'])) { ?>, <?php echo $meals['Carb_Name']; } if (isset($meals['Fat_Name'])) { ?> &amp; <?php echo $meals['Fat_Name']; } ?></h5>
                                 <div class="sm-margin"></div>
                                 <ul>
-                                    <li>x3 Large Eggs</li>
-                                    <li>50g spinach</li>
-                                    <li>1/2 red pepper</li>
-                                    <li>x5 button mushrooms</li>
+                                    <li><?php echo $meals['Protein_Name'] .' - '. floor($meals['Protein_B1'] / $meals['Protein_Grams'] * 100) ?>g</li>
+                                    <?php 
+                                        if (isset($meals['Carb_Name'])) {
+                                        ?>
+                                        <li><?php echo $meals['Carb_Name'] .' - '. floor($meals['Carb_Meal12'] / $meals['Carb_Grams'] * 100) ?>g</li>
+                                        <?php
+                                        }
+
+                                        if (isset($meals['Fat_Name'])) {
+                                        ?>
+                                        <li><?php echo $meals['Fat_Name'] .' - '. floor($meals['Fat_Meal1'] / $meals['Fat_Grams'] * 100) ?>g</li>
+                                        <?php
+                                        } 
+                                    ?>
+                                    
                                 </ul>
                             </div>
                             <div class="meal-action small-2 columns">
@@ -124,13 +135,13 @@ $num6 = ['breakfast','breakfast','lunch','lunch','dinner','dinner'];
                                 <h5>Nutritional breakdown</h5>
                                 <div class="sm-margin"></div>
                                 <div class="float-left canvas">
-                                    <canvas class="pct-break" protein-pct="25" carb-pct="24" fat-pct="4" width="100" height="100" style="width: 50px; height: 50px;"></canvas>
+                                    <canvas class="pct-break" protein-pct="<?php echo $meals['Protein_B1'] ?>" carb-pct="<?php echo $meals['Carb_Meal12'] ?>" fat-pct="<?php echo $meals['Fat_Meal1'] ?>" width="100" height="100" style="width: 50px; height: 50px;"></canvas>
                                 </div>
                                 <div class="float-left">
                                     <ul>
-                                        <li><span class="blue block"></span>25g protein</li>
-                                        <li><span class="brown block"></span>24g carbohydrate</li>
-                                        <li><span class="green block"></span>4g fat</li>
+                                        <li><span class="blue block"></span><?php echo $meals['Protein_B1'] ?>g protein</li>
+                                        <li><span class="brown block"></span><?php echo $meals['Carb_Meal12'] ?>g carbohydrate</li>
+                                        <li><span class="green block"></span><?php echo $meals['Fat_Meal1'] ?>g fat</li>
                                     </ul>
                                 </div>
                                 
