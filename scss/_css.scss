@@ -27,6 +27,9 @@ i {
   cursor: pointer;
   position: relative;
   z-index: inherit;
+  &.ion-close-round {
+    padding: 14px;
+  }
 }
 
 iframe {

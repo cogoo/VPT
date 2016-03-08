@@ -36,6 +36,8 @@ i {
   cursor: pointer;
   position: relative;
   z-index: inherit; }
+  i.ion-close-round {
+    padding: 14px; }
 
 iframe {
   max-width: 100%; }
