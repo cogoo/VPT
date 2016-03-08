@@ -189,7 +189,7 @@
                                     <h5><?php echo $i.'. '.$act['Name'] ?></h5>
                                 </div>
                                 <div class="sm-margin clearfix"></div>
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ark1ThQTDoA" frameborder="0" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ark1ThQTDoA#t=1m10s" autoplay="0" frameborder="0" allowfullscreen></iframe>
                                 <div class="sm-margin clearfix"></div>
                                 <div class="small-12 columns">
                                     <p>
