@@ -244,10 +244,13 @@ div.white {
 
 .calender {
   width: 50%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  transform: rotate(-15deg); }
 
 .animate {
   transition: all 0.25s; }
+  .animate.padded {
+    padding: 0px 20px; }
 
 .off-canvas {
   position: absolute;
@@ -308,7 +311,8 @@ div.white {
     background-color: #3599D4; }
   .btn.green {
     border: 1px solid #1BAF1B;
-    color: #1BAF1B; }
+    color: #1BAF1B;
+    background-color: transparent; }
     .btn.green.clicked-complete {
       background: #1BAF1B;
       color: #fff; }
@@ -534,6 +538,11 @@ Main components
 .cd-i-item a {
   display: inline-block; }
 
+.cd-i-item a.btn.inverted.blue {
+  padding: 5px;
+  font-size: 90%;
+  width: 60%; }
+
 .cd-i-item h5 {
   padding: 20px; }
 
@@ -706,14 +715,14 @@ Main components
   background-repeat: no-repeat;
   background-position: center center;
   z-index: 4;
-  display: none;
+  visibility: hidden;
   border-radius: 0.25em; }
 
 .no-touch .cd-item-navigation a:hover {
-  background-color: rgba(216, 216, 216, 0.6); }
+  /*background-color: rgba(216, 216, 216, 0.6);*/ }
 
 .cd-item-navigation a.visible {
-  display: block;
+  visibility: visible;
   -webkit-animation: cd-fade-in 0.4s;
   -moz-animation: cd-fade-in 0.4s;
   animation: cd-fade-in 0.4s; }

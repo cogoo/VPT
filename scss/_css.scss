@@ -281,10 +281,14 @@ div.white {
 .calender {
   width: 50%;
   margin: 0 auto;
+  transform: rotate(-15deg);
 }
 
 .animate {
   transition: all 0.25s;
+  &.padded {
+    padding: 0px 20px;
+  }
 }
 
 .off-canvas {
@@ -356,6 +360,7 @@ div.white {
   &.green {
     border: 1px solid $VPT_green;
     color: $VPT_green;
+    background-color: transparent;
     &.clicked-complete {
       background: $VPT_green;
       color: #fff;

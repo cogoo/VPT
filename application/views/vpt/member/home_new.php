@@ -9,7 +9,7 @@
                 <span>Home</span>
             </div>
 
-            <img class="image-header float-right" src="/images/placeholder/<?php echo $user['User_ID'] ?>.jpg">
+            <img class="image-header float-right" onerror="this.onerror=null;this.src='/images/placeholder/profile.png'" src="/images/placeholder/<?php echo $user['User_ID'] ?>.jpg">
         </div>
     </div>
     <div class="row">

@@ -6,6 +6,20 @@ class Calc_details extends CI_Model {
 		$this->load->database();
 	}
 
+	/*public function today()
+	{
+		$date = date("Y/m/d");
+
+		$ins = array(
+			'WeekBegin' => $date
+		);
+
+		$this->db->where('User_ID',$this->session->userdata('uid'));
+		return $this->db->update('users', $ins);
+
+
+	}*/
+
 
 	public function get_days_meals()
 	{
@@ -58,7 +72,7 @@ class Calc_details extends CI_Model {
 
 		$this->db->where('Training_ID', $training_id);
 		$this->db->where('Week', $week);
-		$this->db->order_by('Order');
+		$this->db->order_by('W_Order');
 		
 		$query = $this->db->get('workout');
 
@@ -73,8 +87,8 @@ class Calc_details extends CI_Model {
 
 		$this->db->where('Training_ID', $training_id);
 		$this->db->where('Week', $week);
-		$this->db->where('Order', $order);
-		$this->db->order_by('Order');
+		$this->db->where('W_Order', $order);
+		$this->db->order_by('W_Order');
 		
 		$query = $this->db->get('workout');
 
@@ -341,8 +355,10 @@ class Calc_details extends CI_Model {
 
 	public function complete_week($week)
 	{
+		$date = date("Y-m-d");
 		$data = array(
-			'Current_Week' => $week + 1
+			'Current_Week' => $week + 1,
+			'WeekBegin' => $date
 		);
 
 		$this->db->where('User_ID',$this->session->userdata('uid'));

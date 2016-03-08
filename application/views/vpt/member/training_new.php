@@ -41,14 +41,13 @@
         <ul id="cd-gallery-items" class="active cd-container">
             <li class="text-center">
                 <ul class="cd-item-wrapper">
-                    <?php 
-                        $i = 1;
+                    <?php
                         $an = 0;
-                        $days = 7;
-                        //date('N') = 1;
-                        while ($i <= $days) {
-                        ?>
-                        <?php
+                        $i = 1;
+                        $j =  strtotime($user['WeekBegin']);
+                        $days = strtotime("+7 day", strtotime($user['WeekBegin']));
+
+                        while ($j < $days) {
                             if ($week <> $current_week) {
                                 ?>
                                     <li class="
@@ -73,16 +72,16 @@
                                 ?>
                                     <li class="
                                     <?php 
-                                        if ($i == date('N')) {
+                                        if ($i == date('N') + $days_dif) {
                                             echo "cd-item-front";
                                         } else {
-                                            if (date('N') > $i) {
+                                            if (date('N') + $days_dif > $i) {
                                                 echo "move-right hidden";
                                             } else {
-                                                if (($i == date('N')+1) && date('N') < 7) {
+                                                if (($i == date('N')+1 + $days_dif) && date('N') + $days_dif < 7) {
                                                     echo "cd-item-middle";
                                                 } else {
-                                                    if (($i == date('N')+2) && date('N') < 6) {
+                                                    if (($i == date('N')+2 + $days_dif) && date('N') + $days_dif < 6) {
                                                         echo "cd-item-back";
                                                     } else {
                                                         echo "cd-item-out";
@@ -90,9 +89,6 @@
                                                 }  
                                             }
                                         }
-                                        
-                                        
-
                                     ?>
                                     ">
                                 <?php
@@ -107,85 +103,13 @@
 
                                         <?php 
 
-                                            switch ($i) {
-                                                case '1':
-                                                    echo "<h3>Monday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    if (in_array($i, $rest)) {
-                                                        echo "<a class='btn blue inverted'>REST DAY</a>";
-                                                    } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
-                                                        $an += 1;
-                                                    }
-                                                    
-                                                    break;
-                                                
-                                                case '2':
-                                                    echo "<h3>Tuesday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    if (in_array($i, $rest)) {
-                                                        echo "<a class='btn blue inverted'>REST DAY</a>";
-                                                    } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
-                                                        $an += 1;
-                                                    }
-                                                    break;
-
-                                                case '3':
-                                                    echo "<h3>Wednesday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    if (in_array($i, $rest)) {
-                                                        echo "<a class='btn blue inverted'>REST DAY</a>";
-                                                    } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
-                                                        $an += 1;
-                                                    }
-                                                    break;
-                                                
-                                                case '4':
-                                                    echo "<h3>Thursday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    if (in_array($i, $rest)) {
-                                                        echo "<a class='btn blue inverted'>REST DAY</a>";
-                                                    } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
-                                                        $an += 1;
-                                                    }
-                                                    break;
-                                                
-                                                case '5':
-                                                    echo "<h3>Friday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    if (in_array($i, $rest)) {
-                                                        echo "<a class='btn blue inverted'>REST DAY</a>";
-                                                    } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
-                                                        $an += 1;
-                                                    }
-                                                    break;
-                                                
-                                                case '6':
-                                                    echo "<h3>Saturday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    if (in_array($i, $rest)) {
-                                                        echo "<a class='btn blue inverted'>REST DAY</a>";
-                                                    } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
-                                                        $an += 1;
-                                                    }
-                                                    break;
-                                                
-                                                case '7':
-                                                    echo "<h3>Sunday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    if (in_array($i, $rest)) {
-                                                        echo "<a class='btn blue inverted'>REST DAY</a>";
-                                                    } else {
-                                                        echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
-                                                        $an += 1;
-                                                    }
-                                                    break;
-                                            
+                                            echo "<h3>".date('l', $j)."<br>(Day ".$i.")</h3>";
+                                            echo "<div class='sm-margin'></div>";
+                                            if (in_array($i, $rest)) {
+                                                echo "<a class='btn blue inverted'>REST DAY</a>";
+                                            } else {
+                                                echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";
+                                                $an += 1;
                                             }
 
                                         ?>
@@ -193,7 +117,9 @@
                                     </div>
                                 </div>
                             </li>
-                        <?php $i += 1;
+                        <?php 
+                            $i += 1;
+                            $j = strtotime("+1 day", $j);
                         } ?>
                 </ul> <!-- cd-item-wrapper -->
 
@@ -204,18 +130,6 @@
                     </ul>
                 </nav>
 
-
-                <?php 
-                /*
-                    if ($week == $current_week && $completed_day < $day) {
-                        ?>
-                            <a class="btn green js-day-complete">completed</a>
-                            <input data-week="<?php echo $week ?>" type="hidden" value="<?php echo $day ?>">
-                        <?php
-                    }
-                */
-                ?>
-                
             </li>
         </ul>
     </div>

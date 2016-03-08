@@ -77,5 +77,11 @@ class Register extends CI_Controller {
 		redirect('/register/3');	
 	}
 
+	public function register_part4_form()
+	{
+		$this->registration->register_part4();
+		redirect('/register/complete');	
+	}
+
 }
 

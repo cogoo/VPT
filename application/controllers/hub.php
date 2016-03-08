@@ -35,6 +35,7 @@ class Hub extends CI_Controller {
 			$this->session->set_userdata('first_login', 1);
         }
 		
+		//$this->calc_details->today();
 		
 	}
 
@@ -45,11 +46,13 @@ class Hub extends CI_Controller {
 		$data['full_name'] = $this->session->userdata('full_name');
 		$data['current_week'] = $this->week;
 		$data['home'] = 'home';
-		$data['user'] = $this->calc_details->getuser($UID);
+		$data['user'] = $user = $this->calc_details->getuser($UID);
 		$data['goal'] = $this->calc_details->getgoal($data['user']['Goal_ID']);
-		$data['days_meals'] = $this->calc_details->get_days_meals_mobile(date('N'),$this->week);
+		$dif = date_diff(date_create($user['WeekBegin']), date_create(date("Y-m-d")));
+     	$days_dif = $dif->days -1;
+		$data['days_meals'] = $this->calc_details->get_days_meals_mobile(date('N') + $days_dif,$this->week);
 		$training_id = $this->calc_details->get_training_id($this->goal_id,$this->session_times);
-		$activity = $this->calc_details->get_training2($training_id,$this->week,date('N'));
+		$activity = $this->calc_details->get_training2($training_id,$this->week,date('N') + $days_dif);
 
 		if ($this->session_times == 3) {
             $rest = array("2", "4", "6", "7");
@@ -67,7 +70,7 @@ class Hub extends CI_Controller {
             $rest = array("4");
         }
 
-		if (in_array(date('N'), $rest)) {
+		if (in_array(date('N') + $days_dif, $rest)) {
 			$data['exercise'] = [];
 		} else {
 			$data['exercise'] = $this->calc_details->get_exercise($activity['WorkOut_ID']);
@@ -108,11 +111,13 @@ class Hub extends CI_Controller {
 		$data['title'] = 'Training';
 		$data['week'] = $week;
 		$UID = $this->session->userdata('uid');
-		$data['user'] = $this->calc_details->getuser($UID);
+		$data['user'] = $user = $this->calc_details->getuser($UID);
 		$data['current_week'] = $this->week;
 		$training_id = $this->calc_details->get_training_id($this->goal_id,$this->session_times);
 		$data['activity'] = $this->calc_details->get_training($training_id,$week);
 		$data['rest'] = $rest;
+		$dif = date_diff(date_create($user['WeekBegin']), date_create(date("Y-m-d")));
+    	$data['days_dif'] = $dif->days -1;
 
 		$this->load->view('vpt/header_footer/header_new', $data);
 		$this->load->view('vpt/member/training_new',$data);
@@ -128,19 +133,20 @@ class Hub extends CI_Controller {
 			$data['week_needed'] = $week - 2;
 			$UID = $this->session->userdata('uid');
 			$data['user'] = $this->calc_details->getuser($UID);
-			$this->load->view('vpt/header_footer/header', $data);
+			$this->load->view('vpt/header_footer/header_new', $data);
 			$this->load->view('vpt/member/no_access',$data);
-			$this->load->view('vpt/header_footer/footer');
+			$this->load->view('vpt/header_footer/footer_new');
 		} else {
 
 			$this->session->set_userdata('week_current', $week);
 
 			$UID = $this->session->userdata('uid');
-			$data['user'] = $this->calc_details->getuser($UID);
+			$data['user'] = $user = $this->calc_details->getuser($UID);
 			$data['train_id'] = $this->train_id;
 			$data['total_meal'] = $data['user']['Meal_No'];
 			$data['completed_day'] = $data['user']['Completed_Day'];
-
+			$dif = date_diff(date_create($user['WeekBegin']), date_create(date("Y-m-d")));
+    		$data['days_dif'] = $dif->days -1;
 			$data['title'] = 'Diet';
 			$data['week'] = $week;
 			$data['current_week'] = $this->week;
@@ -155,7 +161,7 @@ class Hub extends CI_Controller {
 
 	public function settings()
 	{
-		$data['title'] = 'Setting';
+		$data['title'] = 'Settings';
 		$data['current_week'] = $this->week;
 
 		$this->load->view('vpt/header_footer/header_new', $data);
@@ -193,55 +199,6 @@ class Hub extends CI_Controller {
 		$this->load->view('vpt/header_footer/footer_new');
 
 	}
-
-
-	/*
-	//old exercise function
-	public function getex($ex)
-	{
-		$data['exercise'] = $this->calc_details->get_exercise($ex);
-		$this->load->view('vpt/member/ajax/exercise',$data);
-	} */
-
-	/*
-
-	//old diet function
-
-	public function diet($week = 1)
-	{
-		if ($week > $this->week+1) {
-			$data['title'] = 'No access';
-			$data['week'] = $week;
-			$data['current_week'] = $this->week;
-			$data['week_needed'] = $week - 2;
-			$UID = $this->session->userdata('uid');
-			$data['user'] = $this->calc_details->getuser($UID);
-			$this->load->view('vpt/header_footer/header', $data);
-			$this->load->view('vpt/member/no_access',$data);
-			$this->load->view('vpt/header_footer/footer');
-		} else {
-
-			$this->session->set_userdata('week_current', $week);
-
-			$UID = $this->session->userdata('uid');
-			$data['user'] = $this->calc_details->getuser($UID);
-			$data['train_id'] = $this->train_id;
-			$data['total_meal'] = $data['user']['Meal_No'];
-			$data['completed_day'] = $data['user']['Completed_Day'];
-
-			$data['title'] = 'Diet';
-			$data['week'] = $week;
-			$data['current_week'] = $this->week;
-			$data['session_times'] = $this->session_times;
-
-			$this->load->view('vpt/header_footer/header', $data);
-			$this->load->view('vpt/member/diet',$data);
-			$this->load->view('vpt/header_footer/footer');
-
-		}
-	}
-	*/
-
 	
 
 	public function get_mobile_meal($days)

@@ -21,13 +21,13 @@
     }
 }());
 
-// Place any jQuery/helper plugins in here.
-
 //Cards Plugin
 jQuery(document).ready(function($){
     var visionTrigger = $('.cd-3d-trigger'),
         galleryItems = $('.no-touch #cd-gallery-items').children('li'),
         galleryNavigation = $('.cd-item-navigation a');
+
+        updateNavigation($('#cd-gallery-items').children('li').children('.cd-item-wrapper').siblings('nav').find('.cd-item-navigation').eq(0), $('#cd-gallery-items').children('li').children('.cd-item-wrapper'));
 
     //on mobile - start/end 3d vision clicking on the 3d-vision-trigger
     visionTrigger.on('click', function(){
@@ -109,10 +109,6 @@ function updateNavigation(navigation, container) {
     (isNextActive) ? navigation.find('a').eq(1).addClass('visible') : navigation.find('a').eq(1).removeClass('visible');
     (isPrevActive) ? navigation.find('a').eq(0).addClass('visible') : navigation.find('a').eq(0).removeClass('visible');
 }
-
-/*function hideNavigation(navigation) {
-    navigation.find('a').removeClass('visible');
-}*/
 
 jQuery.fn.visible = function() {
     return this.css('opacity', '1');

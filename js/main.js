@@ -23,7 +23,7 @@ $(function(){
 
           	setTimeout(function(){
 	          	$('.cd-item-front .cd-i-item > div').html( html );
-		        $('.cd-item-front .cd-i-item > div').show(300);
+		          $('.cd-item-front .cd-i-item > div').show(300);
 	          },600);
 
           });
@@ -32,20 +32,17 @@ $(function(){
 
     $(".js-day-complete").on('click', function() {
 
-        var id = $(this).next('input').val();
         var btn = $(this);
        
         $.ajax({
-          url: "/day/"+id
+          url: "/day/7"
         })
           .done(function() {
             btn.addClass('clicked-complete');
             btn.html('<i class="fa fa-check-square-o"></i>');
           });
 
-          if (id == 7) {
-          	window.location.href = '/complete/diet';
-          }
+          window.location.href = '/complete/diet';
 
     });
 

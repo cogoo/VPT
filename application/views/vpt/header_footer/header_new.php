@@ -23,7 +23,7 @@
         <![endif]-->
         <?php if ($title <> 'Login / Register') {
         ?>
-        <div class="off-canvas">
+        <div class="off-canvas animate">
             <ul>
                 <a><li class="menu"><i class="ion-arrow-left-c"></i></li></a>
                 <a href="/"><li class="<?php if ($title == 'Home') {

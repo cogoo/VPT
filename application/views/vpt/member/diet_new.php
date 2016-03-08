@@ -9,7 +9,7 @@
             </div>
             
 
-            <img width="24px" height="24px" class="float-right" src="/assets/settings@2x.png">
+            <img width="24px" height="24px" class="float-right" src="/img/icons/checkout@2x.png">
         </div>
     </div>
 </header>
@@ -41,20 +41,15 @@
 
 <div class="row">
     <div class="small-12 columns no-ul-margin">
-        <!--<ul class="days">
-            <a href="/getdiet/<?php #echo $week?>/1"><li>Monday <?php #if(($completed_day >= 1 && $current_week == $week) || $current_week > $week){ #echo "<i class='fa fa-check-square-o green'></i>"; } ?></li></a>
-        </ul>-->
         <ul id="cd-gallery-items" class="active cd-container">
             <li class="text-center">
                 <ul class="cd-item-wrapper">
-                    <?php 
+                    <?php
                         $i = 1;
-                        $days = 7;
-                        while ($i <= $days) {
-                        ?>
+                        $j =  strtotime($user['WeekBegin']);
+                        $days = strtotime("+7 day", strtotime($user['WeekBegin']));
 
-
-                           <?php
+                        while ($j < $days) {
                             if ($week <> $current_week) {
                                 ?>
                                     <li class="
@@ -79,16 +74,16 @@
                                 ?>
                                     <li class="
                                     <?php 
-                                        if ($i == date('N')) {
+                                        if ($i == date('N') + $days_dif) {
                                             echo "cd-item-front";
                                         } else {
-                                            if (date('N') > $i) {
+                                            if (date('N') + $days_dif > $i) {
                                                 echo "move-right hidden";
                                             } else {
-                                                if (($i == date('N')+1) && date('N') < 7) {
+                                                if (($i == date('N')+1 + $days_dif) && date('N') + $days_dif < 7) {
                                                     echo "cd-item-middle";
                                                 } else {
-                                                    if (($i == date('N')+2) && date('N') < 6) {
+                                                    if (($i == date('N')+2 + $days_dif) && date('N') + $days_dif < 6) {
                                                         echo "cd-item-back";
                                                     } else {
                                                         echo "cd-item-out";
@@ -96,9 +91,6 @@
                                                 }  
                                             }
                                         }
-                                        
-                                        
-
                                     ?>
                                     ">
                                 <?php
@@ -106,63 +98,23 @@
                         ?>
                                 <div class="cd-i-item text-center v-center">
                                     <div class="animate ">
-
+                                       
                                         <img class="calender" src="/assets/calender@2x.png">
                                         <div class='sm-margin'></div>
 
                                         <?php 
-
-                                            switch ($i) {
-                                                case '1':
-                                                    echo "<h3>Monday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    echo "<a class='btn blue inverted' href='/getdiet/".$week."/1'>VIEW</a>";
-                                                    break;
-                                                
-                                                case '2':
-                                                    echo "<h3>Tuesday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    echo "<a class='btn blue inverted' href='/getdiet/".$week."/2'>VIEW</a>";
-                                                    break;
-
-                                                case '3':
-                                                    echo "<h3>Wednesday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    echo "<a class='btn blue inverted' href='/getdiet/".$week."/3'>VIEW</a>";
-                                                    break;
-                                                
-                                                case '4':
-                                                    echo "<h3>Thursday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    echo "<a class='btn blue inverted' href='/getdiet/".$week."/4'>VIEW</a>";
-                                                    break;
-                                                
-                                                case '5':
-                                                    echo "<h3>Friday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    echo "<a class='btn blue inverted' href='/getdiet/".$week."/5'>VIEW</a>";
-                                                    break;
-                                                
-                                                case '6':
-                                                    echo "<h3>Saturday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    echo "<a class='btn blue inverted' href='/getdiet/".$week."/6'>VIEW</a>";
-                                                    break;
-                                                
-                                                case '7':
-                                                    echo "<h3>Sunday</h3>";
-                                                    echo "<div class='sm-margin'></div>";
-                                                    echo "<a class='btn blue inverted' href='/getdiet/".$week."/7'>VIEW</a>";
-                                                    break;
-                                            
-                                            }
-
+                                            echo "<h3>".date('l', $j)."<br>(Day ".$i.")</h3>";
+                                            echo "<div class='sm-margin'></div>";
+                                            echo "<a class='btn blue inverted' href='/getdiet/".$week."/".$i."'>VIEW</a>";
                                         ?>
                                         
                                     </div>
                                 </div>
                             </li>
-                        <?php $i += 1;
+                        <?php 
+                            $i += 1;
+                            $j = strtotime("+1 day", $j);
+
                         } ?>
                 </ul> <!-- cd-item-wrapper -->
 
@@ -173,16 +125,12 @@
                     </ul>
                 </nav>
 
-
                 <?php 
-                /*
-                    if ($week == $current_week && $completed_day < $day) {
+                    if ($week == $current_week && date('N') + $days_dif == 7) {
                         ?>
                             <a class="btn green js-day-complete">completed</a>
-                            <input data-week="<?php echo $week ?>" type="hidden" value="<?php echo $day ?>">
                         <?php
                     }
-                */
                 ?>
                 
             </li>

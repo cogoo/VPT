@@ -15333,6 +15333,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/placeholder\/profile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1500,
+		"inputAbbreviatedPath": "\/images\/placeholder\/profile.png",
+		"outputAbbreviatedPath": "\/images\/placeholder\/profile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/pullup.png": {
 		"fileType": 32768,
 		"ignore": 0,
