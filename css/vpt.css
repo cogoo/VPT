@@ -12,12 +12,16 @@
 .-bg-blue, .stickMe.-is-sticky {
   background-color: #267db0; }
 
+html {
+  -webkit-overflow-scrolling: touch; }
+
 body {
   background-color: #2A383F;
   color: #2A383F;
   font-size: 18px;
   font-weight: 300;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; }
   body.noscroll {
     position: fixed;
     overflow: hidden;
@@ -462,7 +466,8 @@ div.white {
   padding: 15px 0px;
   z-index: 500;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  -webkit-overflow-scrolling: touch; }
   .overlay i.fa-times {
     font-size: 30px; }
   .overlay.meal-breakdown, .overlay.ex-breakdown {

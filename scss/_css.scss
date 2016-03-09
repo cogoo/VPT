@@ -1,9 +1,14 @@
+html {
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
 	background-color: $main_color;
 	color: $main_color;
 	font-size:18px;
 	font-weight: 300;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
   &.noscroll{
     position: fixed;
     overflow: hidden;
@@ -545,6 +550,7 @@ div.white {
   z-index: 500;
   height: 100vh;
   width: 100vw;
+  -webkit-overflow-scrolling: touch;
   i.fa-times {
     font-size: 30px;
   }

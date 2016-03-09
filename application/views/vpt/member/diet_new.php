@@ -98,7 +98,6 @@
                         ?>
                                 <div class="cd-i-item text-center v-center">
                                     <div class="animate ">
-                                       
                                         <img class="calender" src="/assets/calender@2x.png">
                                         <div class='sm-margin'></div>
 

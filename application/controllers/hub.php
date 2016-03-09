@@ -160,7 +160,7 @@ class Hub extends CI_Controller {
     		if ($days_dif > 5 ) {
     			$data['days_dif'] = 5;
     		} else {*/
-    			$data['days_dif'] = $days_dif;
+    		$data['days_dif'] = $days_dif;
     		//}
     		
 			$data['title'] = 'Diet';
