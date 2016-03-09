@@ -152,16 +152,19 @@ class Hub extends CI_Controller {
 			$data['train_id'] = $this->train_id;
 			$data['total_meal'] = $data['user']['Meal_No'];
 			$data['completed_day'] = $data['user']['Completed_Day'];
-			$dif = date_diff(date_create($user['WeekBegin']), date_create(date("Y-m-d")));
-    		$days_dif = $dif->days -1;
-    		if ($days_dif > 5) {
-    			$data['days_dif'] = 5;
-    		} else {
-    			$data['days_dif'] = $days_dif;
-    		}
-			$data['title'] = 'Diet';
 			$data['week'] = $week;
 			$data['current_week'] = $this->week;
+			$dif = date_diff(date_create($user['WeekBegin']), date_create(date("Y-m-d")));
+    		$days_dif = $dif->days -1;
+    		/*print_r($days_dif);
+    		if ($days_dif > 5 ) {
+    			$data['days_dif'] = 5;
+    		} else {*/
+    			$data['days_dif'] = $days_dif;
+    		//}
+    		
+			$data['title'] = 'Diet';
+			
 			$data['session_times'] = $this->session_times;
 
 			$this->load->view('vpt/header_footer/header_new', $data);
