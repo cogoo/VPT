@@ -19,7 +19,6 @@ body {
   font-weight: 300;
   overflow-x: hidden; }
   body.noscroll {
-    position: fixed;
     overflow: hidden;
     height: 100%; }
 
