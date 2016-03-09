@@ -50,9 +50,9 @@ class Hub extends CI_Controller {
 		$data['goal'] = $this->calc_details->getgoal($data['user']['Goal_ID']);
 		$dif = date_diff(date_create($user['WeekBegin']), date_create(date("Y-m-d")));
      	$days_dif = $dif->days -1;
-     	if ($days_dif > 5) {
+     	/*if ($days_dif > 5) {
 			$days_dif = 5;
-		}
+		}*/
 		$data['days_meals'] = $this->calc_details->get_days_meals_mobile(date('N') + $days_dif,$this->week);
 		$training_id = $this->calc_details->get_training_id($this->goal_id,$this->session_times);
 		$activity = $this->calc_details->get_training2($training_id,$this->week,date('N') + $days_dif);
@@ -121,11 +121,11 @@ class Hub extends CI_Controller {
 		$data['rest'] = $rest;
 		$dif = date_diff(date_create($user['WeekBegin']), date_create(date("Y-m-d")));
     	$days_dif = $dif->days -1;
-		if ($days_dif > 5) {
+		/*if ($days_dif > 5) {
 			$data['days_dif'] = 5;
-		} else {
+		} else {*/
 			$data['days_dif'] = $days_dif;
-		}
+		//}
 		$this->load->view('vpt/header_footer/header_new', $data);
 		$this->load->view('vpt/member/training_new',$data);
 		$this->load->view('vpt/header_footer/footer_new');
