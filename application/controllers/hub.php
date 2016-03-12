@@ -73,7 +73,7 @@ class Hub extends CI_Controller {
             $rest = array("4");
         }
 
-		if (in_array($days_dif, $rest)) {
+		if (in_array($days_dif+1, $rest)) {
 			$data['exercise'] = [];
 		} else {
 			$data['exercise'] = $this->calc_details->get_exercise($activity['WorkOut_ID']);
