@@ -43,22 +43,22 @@
                 <ul class="cd-item-wrapper">
                     <?php
                         $an = 0;
-                        $i = 1;
+                        $i = 0;
                         $j =  strtotime($user['WeekBegin']);
                         $days = strtotime("+7 day", strtotime($user['WeekBegin']));
 
                         while ($j < $days) {
-                            if ($week <> $current_week) {
+                            if ($week <> $current_week || $days_dif > 6) {
                                 ?>
                                     <li class="
                                     <?php 
-                                        if ($i == 1) {
+                                        if ($i == 0) {
                                             echo "cd-item-front";
                                         } else {
-                                            if ($i == 2) {
+                                            if ($i == 1) {
                                                 echo "cd-item-middle";
                                             } else {
-                                                if ($i == 3) {
+                                                if ($i == 2) {
                                                     echo "cd-item-back";
                                                 } else {
                                                     echo "cd-item-out";
@@ -72,16 +72,16 @@
                                 ?>
                                     <li class="
                                     <?php 
-                                        if ($i == date('N') + $days_dif) {
+                                        if ($i == $days_dif) {
                                             echo "cd-item-front";
                                         } else {
-                                            if (date('N') + $days_dif > $i) {
+                                            if ($days_dif > $i) {
                                                 echo "move-right hidden";
                                             } else {
-                                                if (($i == date('N')+1 + $days_dif) && date('N') + $days_dif < 7) {
+                                                if (($i == 1 + $days_dif) && $days_dif < 7) {
                                                     echo "cd-item-middle";
                                                 } else {
-                                                    if (($i == date('N')+2 + $days_dif) && date('N') + $days_dif < 6) {
+                                                    if (($i == 2 + $days_dif) && $days_dif < 6) {
                                                         echo "cd-item-back";
                                                     } else {
                                                         echo "cd-item-out";
@@ -103,9 +103,9 @@
 
                                         <?php 
 
-                                            echo "<h3>".date('l', $j)."<br>(Day ".$i.")</h3>";
+                                            echo "<h3>".date('l', $j)."<br>(Day ".($i + 1).")</h3>";
                                             echo "<div class='sm-margin'></div>";
-                                            if (in_array($i, $rest)) {
+                                            if (in_array(($i+1), $rest)) {
                                                 echo "<a class='btn blue inverted'>REST DAY</a>";
                                             } else {
                                                 echo "<a class='btn blue inverted' href='/gettraining/".$week."/".$activity[$an]['WorkOut_ID']."/".url_title(base64_encode($activity[$an]['Name']))."'>VIEW</a>";

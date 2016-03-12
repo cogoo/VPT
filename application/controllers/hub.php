@@ -49,13 +49,13 @@ class Hub extends CI_Controller {
 		$data['user'] = $user = $this->calc_details->getuser($UID);
 		$data['goal'] = $this->calc_details->getgoal($data['user']['Goal_ID']);
 		$dif = date_diff(date_create($user['WeekBegin']), date_create(date("Y-m-d")));
-     	$days_dif = $dif->days -1;
-     	if ($days_dif > 5) {
-			$days_dif = 5;
+     	$days_dif = $dif->days;
+     	if ($days_dif > 6) {
+			$days_dif = 6;
 		}
-		$data['days_meals'] = $this->calc_details->get_days_meals_mobile(date('N') + $days_dif,$this->week);
+		$data['days_meals'] = $this->calc_details->get_days_meals_mobile($days_dif + 1,$this->week);
 		$training_id = $this->calc_details->get_training_id($this->goal_id,$this->session_times);
-		$activity = $this->calc_details->get_training2($training_id,$this->week,date('N') + $days_dif);
+		$activity = $this->calc_details->get_training2($training_id,$this->week,$days_dif+ 1);
 
 		if ($this->session_times == 3) {
             $rest = array("2", "4", "6", "7");
@@ -73,7 +73,7 @@ class Hub extends CI_Controller {
             $rest = array("4");
         }
 
-		if (in_array(date('N') + $days_dif, $rest)) {
+		if (in_array($days_dif, $rest)) {
 			$data['exercise'] = [];
 		} else {
 			$data['exercise'] = $this->calc_details->get_exercise($activity['WorkOut_ID']);
@@ -120,9 +120,9 @@ class Hub extends CI_Controller {
 		$data['activity'] = $this->calc_details->get_training($training_id,$week);
 		$data['rest'] = $rest;
 		$dif = date_diff(date_create($user['WeekBegin']), date_create(date("Y-m-d")));
-    	$days_dif = $dif->days -1;
-		if ($days_dif > 5) {
-			$data['days_dif'] = 5;
+    	$days_dif = $dif->days;
+		if ($days_dif > 6) {
+			$data['days_dif'] = 6;
 		} else {
 			$data['days_dif'] = $days_dif;
 		}
@@ -155,12 +155,11 @@ class Hub extends CI_Controller {
 			$data['week'] = $week;
 			$data['current_week'] = $this->week;
 			$dif = date_diff(date_create($user['WeekBegin']), date_create(date("Y-m-d")));
-    		$days_dif = $dif->days -1;
-    		//print_r($days_dif);
-    		if ($days_dif > 5 ) {
-    			$data['days_dif'] = 5;
+    		$days_dif = $dif->days;
+    		if ($days_dif > 6 ) {
+    			$data['days_dif'] = 6;
     		} else {
-    		$data['days_dif'] = $days_dif;
+    			$data['days_dif'] = $days_dif;
     		}
     		
 			$data['title'] = 'Diet';
