@@ -64,7 +64,7 @@
             $num3 = ['breakfast','lunch','dinner'];
             $num4 = ['breakfast','breakfast','lunch','dinner'];
             $num5 = ['breakfast','breakfast','lunch','lunch','dinner'];
-            $num6 = ['breakfast','breakfast','lunch','lunch','dinner','dinner'];
+            $num6 = ['breakfast','snack','lunch','snack','dinner','snack'];
 
             $i = 1;
             switch (count($days_meals)) {

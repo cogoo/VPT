@@ -15,7 +15,7 @@ $num6 = ['breakfast','breakfast','lunch','lunch','dinner','dinner'];
     <div class="row">
         <div class="small-12 columns">
             <h5 class="float-left"><a href="/diet/<?php echo $week; ?>"><i class="ion-ios-arrow-left"></i> Week <?php echo $week; ?></a></h5>
-            <img width="24px" height="24px" class="float-right" src="/img/icons/checkout@2x.png">
+            <!--<img width="24px" height="24px" class="float-right" src="/img/icons/checkout@2x.png">-->
         </div>
     </div>
 </header>
