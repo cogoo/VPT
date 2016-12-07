@@ -565,6 +565,17 @@ div.white {
   }
 }
 
+.reveal-s {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 75%;
+  margin: 0 auto;
+  background-color: #FFF;
+}
+
 /* Foundation Overrides */
 .progress {
   background-color: #74A2CA;

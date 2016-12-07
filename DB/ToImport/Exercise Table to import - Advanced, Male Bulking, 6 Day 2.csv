@@ -1,0 +1,4134 @@
+Exercise_ID,Name,Description,Sets,Order,Type,Image,WorkOut_ID,Second
+,Flat Barbell Bench Press,"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Barbell Bench Description",5,1,Weights,,1,37
+,Barbell Incline Bench (30 degrees),"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Incline Barbell Bench Description",5,2,Weights,,1,37
+,Superset Dumbell Flyes with Dumbell Pull-Over,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Fly Description
+
+Dumbell Pull-Over Description",5,3,Weights,,1,37
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+4 Sets to failure
+
+45 Seconds Rest
+
+Chin-up Description",4,4,Weights,,1,37
+,Superset Bent-Over Barbell Row with Bent-Over Dumbell Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Bent Over Barbell Description
+
+Bent Over Dumbell Description",5,5,Weights,,1,37
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest",5,6,Weights,,1,37
+,Clean and Press,"Tempo 3-0-1-0
+
+5 x 5
+
+45 Seconds Rest
+
+Clean and Press Description",5,1,Weights,,2,38
+,Superset Standing DB Press with Front Dumbell Raise,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Standing DB Press Description
+
+Front DB Raise Description",5,2,Weights,,2,38
+,Superset Lateral Raise with Upright Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Lat Raise Description
+
+Upright Row Description",5,3,Weights,,2,38
+,Barbell Curl,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Curl Description",5,4,Weights,,2,38
+,Superset Incline DB Curl with Concentration Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Incline DB Curl Description
+
+Concentration Curl Description",5,5,Weights,,2,38
+,Close Grip Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Bench Press Description",5,6,Weights,,2,38
+,Superset Barbell Skullcrushers with DB Kickbacks,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Skullcrushers Description
+
+DB Kickbacks Description",5,7,Weights,,2,38
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,8,Weights,,2,38
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,9,Weights,,2,38
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,3,39
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,3,39
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,3,39
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,3,39
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,3,39
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,3,39
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,3,39
+,Flat Barbell Bench Press,"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Barbell Bench Description",5,1,Weights,,4,40
+,Barbell Incline Bench (30 degrees),"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Incline Barbell Bench Description",5,2,Weights,,4,40
+,Superset Dumbell Flyes with Dumbell Pull-Over,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Fly Description
+
+Dumbell Pull-Over Description",5,3,Weights,,4,40
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+4 Sets to failure
+
+45 Seconds Rest
+
+Chin-up Description",4,4,Weights,,4,40
+,Superset Bent-Over Barbell Row with Bent-Over Dumbell Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Bent Over Barbell Description
+
+Bent Over Dumbell Description",5,5,Weights,,4,40
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest",5,6,Weights,,4,40
+,Clean and Press,"Tempo 3-0-1-0
+
+5 x 5
+
+45 Seconds Rest
+
+Clean and Press Description",5,1,Weights,,5,41
+,Superset Standing DB Press with Front Dumbell Raise,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Standing DB Press Description
+
+Front DB Raise Description",5,2,Weights,,5,41
+,Superset Lateral Raise with Upright Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Lat Raise Description
+
+Upright Row Description",5,3,Weights,,5,41
+,Barbell Curl,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Curl Description",5,4,Weights,,5,41
+,Superset Incline DB Curl with Concentration Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Incline DB Curl Description
+
+Concentration Curl Description",5,5,Weights,,5,41
+,Close Grip Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Bench Press Description",5,6,Weights,,5,41
+,Superset Barbell Skullcrushers with DB Kickbacks,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Skullcrushers Description
+
+DB Kickbacks Description",5,7,Weights,,5,41
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,8,Weights,,5,41
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,9,Weights,,5,41
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,6,42
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,6,42
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,6,42
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,6,42
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,6,42
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,6,42
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,6,42
+,Flat Barbell Bench Press,"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Barbell Bench Description",5,1,Weights,,7,43
+,Barbell Incline Bench (30 degrees),"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Incline Barbell Bench Description",5,2,Weights,,7,43
+,Superset Dumbell Flyes with Dumbell Pull-Over,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Fly Description
+
+Dumbell Pull-Over Description",5,3,Weights,,7,43
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+4 Sets to failure
+
+45 Seconds Rest
+
+Chin-up Description",4,4,Weights,,7,43
+,Superset Bent-Over Barbell Row with Bent-Over Dumbell Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Bent Over Barbell Description
+
+Bent Over Dumbell Description",5,5,Weights,,7,43
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest",5,6,Weights,,7,43
+,Clean and Press,"Tempo 3-0-1-0
+
+5 x 5
+
+45 Seconds Rest
+
+Clean and Press Description",5,1,Weights,,8,44
+,Superset Standing DB Press with Front Dumbell Raise,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Standing DB Press Description
+
+Front DB Raise Description",5,2,Weights,,8,44
+,Superset Lateral Raise with Upright Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Lat Raise Description
+
+Upright Row Description",5,3,Weights,,8,44
+,Barbell Curl,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Curl Description",5,4,Weights,,8,44
+,Superset Incline DB Curl with Concentration Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Incline DB Curl Description
+
+Concentration Curl Description",5,5,Weights,,8,44
+,Close Grip Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Bench Press Description",5,6,Weights,,8,44
+,Superset Barbell Skullcrushers with DB Kickbacks,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Skullcrushers Description
+
+DB Kickbacks Description",5,7,Weights,,8,44
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,8,Weights,,8,44
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,9,Weights,,8,44
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,9,45
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,9,45
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,9,45
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,9,45
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,9,45
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,9,45
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,9,45
+,Flat Barbell Bench Press,"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Barbell Bench Description",5,1,Weights,,10,46
+,Barbell Incline Bench (30 degrees),"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Incline Barbell Bench Description",5,2,Weights,,10,46
+,Superset Dumbell Flyes with Dumbell Pull-Over,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Fly Description
+
+Dumbell Pull-Over Description",5,3,Weights,,10,46
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+4 Sets to failure
+
+45 Seconds Rest
+
+Chin-up Description",4,4,Weights,,10,46
+,Superset Bent-Over Barbell Row with Bent-Over Dumbell Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Bent Over Barbell Description
+
+Bent Over Dumbell Description",5,5,Weights,,10,46
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest",5,6,Weights,,10,46
+,Clean and Press,"Tempo 3-0-1-0
+
+5 x 5
+
+45 Seconds Rest
+
+Clean and Press Description",5,1,Weights,,11,47
+,Superset Standing DB Press with Front Dumbell Raise,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Standing DB Press Description
+
+Front DB Raise Description",5,2,Weights,,11,47
+,Superset Lateral Raise with Upright Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Lat Raise Description
+
+Upright Row Description",5,3,Weights,,11,47
+,Barbell Curl,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Curl Description",5,4,Weights,,11,47
+,Superset Incline DB Curl with Concentration Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Incline DB Curl Description
+
+Concentration Curl Description",5,5,Weights,,11,47
+,Close Grip Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Bench Press Description",5,6,Weights,,11,47
+,Superset Barbell Skullcrushers with DB Kickbacks,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Skullcrushers Description
+
+DB Kickbacks Description",5,7,Weights,,11,47
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,8,Weights,,11,47
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,9,Weights,,11,47
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,12,48
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,12,48
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,12,48
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,12,48
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,12,48
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,12,48
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,12,48
+,Flat Barbell Bench Press,"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Barbell Bench Description",5,1,Weights,,13,49
+,Barbell Incline Bench (30 degrees),"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Incline Barbell Bench Description",5,2,Weights,,13,49
+,Superset Dumbell Flyes with Dumbell Pull-Over,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Fly Description
+
+Dumbell Pull-Over Description",5,3,Weights,,13,49
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+4 Sets to failure
+
+45 Seconds Rest
+
+Chin-up Description",4,4,Weights,,13,49
+,Superset Bent-Over Barbell Row with Bent-Over Dumbell Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Bent Over Barbell Description
+
+Bent Over Dumbell Description",5,5,Weights,,13,49
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest",5,6,Weights,,13,49
+,Clean and Press,"Tempo 3-0-1-0
+
+5 x 5
+
+45 Seconds Rest
+
+Clean and Press Description",5,1,Weights,,14,50
+,Superset Standing DB Press with Front Dumbell Raise,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Standing DB Press Description
+
+Front DB Raise Description",5,2,Weights,,14,50
+,Superset Lateral Raise with Upright Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Lat Raise Description
+
+Upright Row Description",5,3,Weights,,14,50
+,Barbell Curl,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Curl Description",5,4,Weights,,14,50
+,Superset Incline DB Curl with Concentration Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Incline DB Curl Description
+
+Concentration Curl Description",5,5,Weights,,14,50
+,Close Grip Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Bench Press Description",5,6,Weights,,14,50
+,Superset Barbell Skullcrushers with DB Kickbacks,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Skullcrushers Description
+
+DB Kickbacks Description",5,7,Weights,,14,50
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,8,Weights,,14,50
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,9,Weights,,14,50
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,15,51
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,15,51
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,15,51
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,15,51
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,15,51
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,15,51
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,15,51
+,Flat Barbell Bench Press,"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Barbell Bench Description",5,1,Weights,,16,52
+,Barbell Incline Bench (30 degrees),"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Incline Barbell Bench Description",5,2,Weights,,16,52
+,Superset Dumbell Flyes with Dumbell Pull-Over,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Fly Description
+
+Dumbell Pull-Over Description",5,3,Weights,,16,52
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+4 Sets to failure
+
+45 Seconds Rest
+
+Chin-up Description",4,4,Weights,,16,52
+,Superset Bent-Over Barbell Row with Bent-Over Dumbell Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Bent Over Barbell Description
+
+Bent Over Dumbell Description",5,5,Weights,,16,52
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest",5,6,Weights,,16,52
+,Clean and Press,"Tempo 3-0-1-0
+
+5 x 5
+
+45 Seconds Rest
+
+Clean and Press Description",5,1,Weights,,17,53
+,Superset Standing DB Press with Front Dumbell Raise,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Standing DB Press Description
+
+Front DB Raise Description",5,2,Weights,,17,53
+,Superset Lateral Raise with Upright Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Lat Raise Description
+
+Upright Row Description",5,3,Weights,,17,53
+,Barbell Curl,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Curl Description",5,4,Weights,,17,53
+,Superset Incline DB Curl with Concentration Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Incline DB Curl Description
+
+Concentration Curl Description",5,5,Weights,,17,53
+,Close Grip Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Bench Press Description",5,6,Weights,,17,53
+,Superset Barbell Skullcrushers with DB Kickbacks,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Skullcrushers Description
+
+DB Kickbacks Description",5,7,Weights,,17,53
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,8,Weights,,17,53
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,9,Weights,,17,53
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,18,54
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,18,54
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,18,54
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,18,54
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,18,54
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,18,54
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,18,54
+,Flat Barbell Bench Press,"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Barbell Bench Description",5,1,Weights,,19,55
+,Barbell Incline Bench (30 degrees),"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Incline Barbell Bench Description",5,2,Weights,,19,55
+,Superset Dumbell Flyes with Dumbell Pull-Over,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Fly Description
+
+Dumbell Pull-Over Description",5,3,Weights,,19,55
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+4 Sets to failure
+
+45 Seconds Rest
+
+Chin-up Description",4,4,Weights,,19,55
+,Superset Bent-Over Barbell Row with Bent-Over Dumbell Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Bent Over Barbell Description
+
+Bent Over Dumbell Description",5,5,Weights,,19,55
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest",5,6,Weights,,19,55
+,Clean and Press,"Tempo 3-0-1-0
+
+5 x 5
+
+45 Seconds Rest
+
+Clean and Press Description",5,1,Weights,,20,56
+,Superset Standing DB Press with Front Dumbell Raise,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Standing DB Press Description
+
+Front DB Raise Description",5,2,Weights,,20,56
+,Superset Lateral Raise with Upright Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Lat Raise Description
+
+Upright Row Description",5,3,Weights,,20,56
+,Barbell Curl,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Curl Description",5,4,Weights,,20,56
+,Superset Incline DB Curl with Concentration Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Incline DB Curl Description
+
+Concentration Curl Description",5,5,Weights,,20,56
+,Close Grip Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Bench Press Description",5,6,Weights,,20,56
+,Superset Barbell Skullcrushers with DB Kickbacks,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Skullcrushers Description
+
+DB Kickbacks Description",5,7,Weights,,20,56
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,8,Weights,,20,56
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,9,Weights,,20,56
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,21,57
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,21,57
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,21,57
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,21,57
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,21,57
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,21,57
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,21,57
+,Flat Barbell Bench Press,"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Barbell Bench Description",5,1,Weights,,22,58
+,Barbell Incline Bench (30 degrees),"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Incline Barbell Bench Description",5,2,Weights,,22,58
+,Superset Dumbell Flyes with Dumbell Pull-Over,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Fly Description
+
+Dumbell Pull-Over Description",5,3,Weights,,22,58
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+4 Sets to failure
+
+45 Seconds Rest
+
+Chin-up Description",4,4,Weights,,22,58
+,Superset Bent-Over Barbell Row with Bent-Over Dumbell Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Bent Over Barbell Description
+
+Bent Over Dumbell Description",5,5,Weights,,22,58
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest",5,6,Weights,,22,58
+,Clean and Press,"Tempo 3-0-1-0
+
+5 x 5
+
+45 Seconds Rest
+
+Clean and Press Description",5,1,Weights,,23,59
+,Superset Standing DB Press with Front Dumbell Raise,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Standing DB Press Description
+
+Front DB Raise Description",5,2,Weights,,23,59
+,Superset Lateral Raise with Upright Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Lat Raise Description
+
+Upright Row Description",5,3,Weights,,23,59
+,Barbell Curl,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Curl Description",5,4,Weights,,23,59
+,Superset Incline DB Curl with Concentration Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Incline DB Curl Description
+
+Concentration Curl Description",5,5,Weights,,23,59
+,Close Grip Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Bench Press Description",5,6,Weights,,23,59
+,Superset Barbell Skullcrushers with DB Kickbacks,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Skullcrushers Description
+
+DB Kickbacks Description",5,7,Weights,,23,59
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,8,Weights,,23,59
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,9,Weights,,23,59
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,24,60
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,24,60
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,24,60
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,24,60
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,24,60
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,24,60
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,24,60
+,Flat Barbell Bench Press,"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Barbell Bench Description",5,1,Weights,,25,61
+,Barbell Incline Bench (30 degrees),"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Incline Barbell Bench Description",5,2,Weights,,25,61
+,Superset Dumbell Flyes with Dumbell Pull-Over,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Fly Description
+
+Dumbell Pull-Over Description",5,3,Weights,,25,61
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+4 Sets to failure
+
+45 Seconds Rest
+
+Chin-up Description",4,4,Weights,,25,61
+,Superset Bent-Over Barbell Row with Bent-Over Dumbell Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Bent Over Barbell Description
+
+Bent Over Dumbell Description",5,5,Weights,,25,61
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest",5,6,Weights,,25,61
+,Clean and Press,"Tempo 3-0-1-0
+
+5 x 5
+
+45 Seconds Rest
+
+Clean and Press Description",5,1,Weights,,26,62
+,Superset Standing DB Press with Front Dumbell Raise,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Standing DB Press Description
+
+Front DB Raise Description",5,2,Weights,,26,62
+,Superset Lateral Raise with Upright Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Lat Raise Description
+
+Upright Row Description",5,3,Weights,,26,62
+,Barbell Curl,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Curl Description",5,4,Weights,,26,62
+,Superset Incline DB Curl with Concentration Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Incline DB Curl Description
+
+Concentration Curl Description",5,5,Weights,,26,62
+,Close Grip Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Bench Press Description",5,6,Weights,,26,62
+,Superset Barbell Skullcrushers with DB Kickbacks,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Skullcrushers Description
+
+DB Kickbacks Description",5,7,Weights,,26,62
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,8,Weights,,26,62
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,9,Weights,,26,62
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,27,63
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,27,63
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,27,63
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,27,63
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,27,63
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,27,63
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,27,63
+,Flat Barbell Bench Press,"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Barbell Bench Description",5,1,Weights,,28,64
+,Barbell Incline Bench (30 degrees),"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Incline Barbell Bench Description",5,2,Weights,,28,64
+,Superset Dumbell Flyes with Dumbell Pull-Over,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Fly Description
+
+Dumbell Pull-Over Description",5,3,Weights,,28,64
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+4 Sets to failure
+
+45 Seconds Rest
+
+Chin-up Description",4,4,Weights,,28,64
+,Superset Bent-Over Barbell Row with Bent-Over Dumbell Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Bent Over Barbell Description
+
+Bent Over Dumbell Description",5,5,Weights,,28,64
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest",5,6,Weights,,28,64
+,Clean and Press,"Tempo 3-0-1-0
+
+5 x 5
+
+45 Seconds Rest
+
+Clean and Press Description",5,1,Weights,,29,65
+,Superset Standing DB Press with Front Dumbell Raise,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Standing DB Press Description
+
+Front DB Raise Description",5,2,Weights,,29,65
+,Superset Lateral Raise with Upright Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Lat Raise Description
+
+Upright Row Description",5,3,Weights,,29,65
+,Barbell Curl,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Curl Description",5,4,Weights,,29,65
+,Superset Incline DB Curl with Concentration Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Incline DB Curl Description
+
+Concentration Curl Description",5,5,Weights,,29,65
+,Close Grip Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Bench Press Description",5,6,Weights,,29,65
+,Superset Barbell Skullcrushers with DB Kickbacks,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Skullcrushers Description
+
+DB Kickbacks Description",5,7,Weights,,29,65
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,8,Weights,,29,65
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,9,Weights,,29,65
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,30,66
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,30,66
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,30,66
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,30,66
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,30,66
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,30,66
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,30,66
+,Flat Barbell Bench Press,"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Barbell Bench Description",5,1,Weights,,31,67
+,Barbell Incline Bench (30 degrees),"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Incline Barbell Bench Description",5,2,Weights,,31,67
+,Superset Dumbell Flyes with Dumbell Pull-Over,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Fly Description
+
+Dumbell Pull-Over Description",5,3,Weights,,31,67
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+4 Sets to failure
+
+45 Seconds Rest
+
+Chin-up Description",4,4,Weights,,31,67
+,Superset Bent-Over Barbell Row with Bent-Over Dumbell Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Bent Over Barbell Description
+
+Bent Over Dumbell Description",5,5,Weights,,31,67
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest",5,6,Weights,,31,67
+,Clean and Press,"Tempo 3-0-1-0
+
+5 x 5
+
+45 Seconds Rest
+
+Clean and Press Description",5,1,Weights,,32,68
+,Superset Standing DB Press with Front Dumbell Raise,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Standing DB Press Description
+
+Front DB Raise Description",5,2,Weights,,32,68
+,Superset Lateral Raise with Upright Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Lat Raise Description
+
+Upright Row Description",5,3,Weights,,32,68
+,Barbell Curl,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Curl Description",5,4,Weights,,32,68
+,Superset Incline DB Curl with Concentration Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Incline DB Curl Description
+
+Concentration Curl Description",5,5,Weights,,32,68
+,Close Grip Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Bench Press Description",5,6,Weights,,32,68
+,Superset Barbell Skullcrushers with DB Kickbacks,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Skullcrushers Description
+
+DB Kickbacks Description",5,7,Weights,,32,68
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,8,Weights,,32,68
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,9,Weights,,32,68
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,33,69
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,33,69
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,33,69
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,33,69
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,33,69
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,33,69
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,33,69
+,Flat Barbell Bench Press,"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Barbell Bench Description",5,1,Weights,,34,70
+,Barbell Incline Bench (30 degrees),"Tempo: 3-0-1-0
+
+5 x 30, 12, 10, 8, 6 Reps
+
+45 Seconds Rest
+
+Incline Barbell Bench Description",5,2,Weights,,34,70
+,Superset Dumbell Flyes with Dumbell Pull-Over,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Fly Description
+
+Dumbell Pull-Over Description",5,3,Weights,,34,70
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+4 Sets to failure
+
+45 Seconds Rest
+
+Chin-up Description",4,4,Weights,,34,70
+,Superset Bent-Over Barbell Row with Bent-Over Dumbell Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Bent Over Barbell Description
+
+Bent Over Dumbell Description",5,5,Weights,,34,70
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest",5,6,Weights,,34,70
+,Clean and Press,"Tempo 3-0-1-0
+
+5 x 5
+
+45 Seconds Rest
+
+Clean and Press Description",5,1,Weights,,35,71
+,Superset Standing DB Press with Front Dumbell Raise,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Standing DB Press Description
+
+Front DB Raise Description",5,2,Weights,,35,71
+,Superset Lateral Raise with Upright Row,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Lat Raise Description
+
+Upright Row Description",5,3,Weights,,35,71
+,Barbell Curl,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Curl Description",5,4,Weights,,35,71
+,Superset Incline DB Curl with Concentration Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Incline DB Curl Description
+
+Concentration Curl Description",5,5,Weights,,35,71
+,Close Grip Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Bench Press Description",5,6,Weights,,35,71
+,Superset Barbell Skullcrushers with DB Kickbacks,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Barbell Skullcrushers Description
+
+DB Kickbacks Description",5,7,Weights,,35,71
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 30, 12, 10, 8, 6
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,8,Weights,,35,71
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,9,Weights,,35,71
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,36,72
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,36,72
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,36,72
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,36,72
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,36,72
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,36,72
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,36,72
+,Incline Barbell Bench Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Incline Barbell Bench Description",10,1,Weights,,37,73
+,Flat Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+90 Seconds Rest
+
+Flat Barbell Bench Description",5,2,Weights,,37,73
+,Superset Dumbell Flyes with Cable Crossover,"Tempo 3-0-1-0
+
+5 x 12 Reps
+
+45 Seconds Rest
+
+Dumbell Flyes Description
+
+Cable Crossover Description",5,3,Weights,,37,73
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+50 Reps Total as quickly as possible
+
+(use weight if needed)
+
+Wide grip Chin-Up Description",1,4,Weights,,37,73
+,Superset Bent-Over Barbell Rows with Bent-Over DB Rows,"Tempo 3-0-1-0
+
+8 x 8 Reps
+
+60 Seconds Rest
+
+Bent-Over Barbell Row Description
+
+Bent-Over DB Row Description",8,5,Weights,,37,73
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25 Reps
+
+45 Seconds Rest
+
+Hanging Leg Raise Description",5,6,Weights,,37,73
+,Seated DB Military Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Seated DB Military Press Description",10,1,Weights,,38,74
+,Superset Arnold Press with Lat Raises,"Tempo 3-0-1-0
+
+5 x 8 
+
+60 Seconds Rest
+
+Arnold Press Description
+
+Lat Raises Description",5,1,Weights,,38,74
+,Superset DB Upright Rows with Bent-Over Rear Delt Flyes,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+60 Seconds Rest
+
+DB Upright Row Description
+
+Bent-Over Rear Delt Flyes Description",5,2,Weights,,38,74
+,Barbell Curls,"Tempo 3-0-1-0
+
+8 x 8,8,8,8,8,5,5,5 Reps
+
+60 Seconds Rest
+
+Barbell Curl Description",8,3,Weights,,38,74
+,Superset Concentration Curls with Seated DB Curls,"Tempo 3-0-1-0
+
+5 x 6
+
+60 Seconds Rest
+
+Concentration Curl Description
+
+Seated DB Curl Description",5,4,Weights,,38,74
+,Close-Grip Bench Press,"Tempo 3-0-1-0
+
+10 x 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+1-10 Method
+
+No Rest
+
+Close-Grip Bench Description",10,5,Weights,,38,74
+,Superset Skull Crushers with DB One-Arm Tricep Extension,"Tempo 3-0-1-0
+
+5 x 15
+
+45 Seconds Rest
+
+Skull Crushers Description
+
+DB One-Arm Tricep Extension",5,6,Weights,,38,74
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 12
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,7,Weights,,38,74
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,8,Weights,,38,74
+,Barbell Squat,"Tempo 3-0-1-0
+
+Max Effort Method
+
+8 x 20, 15, 10, 8, 5, 3, 1, 1 Reps
+
+90 - 120 Seconds Rest
+
+Barbell Squat Description",8,1,Weights,,39,75
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+6 x 6
+
+90 Second Rest
+
+Stiff-Legged Deadlift Description",6,2,Weights,,39,75
+,Barbell Lunge,"Tempo 3-0-1-0
+
+4 x 4 Reps
+
+90 Seconds Rest
+
+Barbell Lunge Description",4,3,Weights,,39,75
+,Superset Leg Extension with Lying Leg Curl,"Tempo 3-0-1-0
+
+5 x 20
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Lying Leg Curl Description",5,4,Weights,,39,75
+,Superset Standing Calf Raises with Kneeling Cable Crunches,"Tempo 3-0-1-0
+
+4 x 10 superset with 4 x 25
+
+Standing Calf Raise Description
+
+Kneeling Cable Crunch Description",4,5,Weights,,39,75
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,40,76
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,40,76
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,40,76
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,40,76
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,40,76
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,40,76
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,40,76
+,Incline Barbell Bench Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Incline Barbell Bench Description",10,1,Weights,,41,77
+,Flat Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+90 Seconds Rest
+
+Flat Barbell Bench Description",5,2,Weights,,41,77
+,Superset Dumbell Flyes with Cable Crossover,"Tempo 3-0-1-0
+
+5 x 12 Reps
+
+45 Seconds Rest
+
+Dumbell Flyes Description
+
+Cable Crossover Description",5,3,Weights,,41,77
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+50 Reps Total as quickly as possible
+
+(use weight if needed)
+
+Wide grip Chin-Up Description",1,4,Weights,,41,77
+,Superset Bent-Over Barbell Rows with Bent-Over DB Rows,"Tempo 3-0-1-0
+
+8 x 8 Reps
+
+60 Seconds Rest
+
+Bent-Over Barbell Row Description
+
+Bent-Over DB Row Description",8,5,Weights,,41,77
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25 Reps
+
+45 Seconds Rest
+
+Hanging Leg Raise Description",5,6,Weights,,41,77
+,Seated DB Military Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Seated DB Military Press Description",10,1,Weights,,42,78
+,Superset Arnold Press with Lat Raises,"Tempo 3-0-1-0
+
+5 x 8 
+
+60 Seconds Rest
+
+Arnold Press Description
+
+Lat Raises Description",5,1,Weights,,42,78
+,Superset DB Upright Rows with Bent-Over Rear Delt Flyes,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+60 Seconds Rest
+
+DB Upright Row Description
+
+Bent-Over Rear Delt Flyes Description",5,2,Weights,,42,78
+,Barbell Curls,"Tempo 3-0-1-0
+
+8 x 8,8,8,8,8,5,5,5 Reps
+
+60 Seconds Rest
+
+Barbell Curl Description",8,3,Weights,,42,78
+,Superset Concentration Curls with Seated DB Curls,"Tempo 3-0-1-0
+
+5 x 6
+
+60 Seconds Rest
+
+Concentration Curl Description
+
+Seated DB Curl Description",5,4,Weights,,42,78
+,Close-Grip Bench Press,"Tempo 3-0-1-0
+
+10 x 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+1-10 Method
+
+No Rest
+
+Close-Grip Bench Description",10,5,Weights,,42,78
+,Superset Skull Crushers with DB One-Arm Tricep Extension,"Tempo 3-0-1-0
+
+5 x 15
+
+45 Seconds Rest
+
+Skull Crushers Description
+
+DB One-Arm Tricep Extension",5,6,Weights,,42,78
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 12
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,7,Weights,,42,78
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,8,Weights,,42,78
+,Barbell Squat,"Tempo 3-0-1-0
+
+Max Effort Method
+
+8 x 20, 15, 10, 8, 5, 3, 1, 1 Reps
+
+90 - 120 Seconds Rest
+
+Barbell Squat Description",8,1,Weights,,43,79
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+6 x 6
+
+90 Second Rest
+
+Stiff-Legged Deadlift Description",6,2,Weights,,43,79
+,Barbell Lunge,"Tempo 3-0-1-0
+
+4 x 4 Reps
+
+90 Seconds Rest
+
+Barbell Lunge Description",4,3,Weights,,43,79
+,Superset Leg Extension with Lying Leg Curl,"Tempo 3-0-1-0
+
+5 x 20
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Lying Leg Curl Description",5,4,Weights,,43,79
+,Superset Standing Calf Raises with Kneeling Cable Crunches,"Tempo 3-0-1-0
+
+4 x 10 superset with 4 x 25
+
+Standing Calf Raise Description
+
+Kneeling Cable Crunch Description",4,5,Weights,,43,79
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,44,80
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,44,80
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,44,80
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,44,80
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,44,80
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,44,80
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,44,80
+,Incline Barbell Bench Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Incline Barbell Bench Description",10,1,Weights,,45,81
+,Flat Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+90 Seconds Rest
+
+Flat Barbell Bench Description",5,2,Weights,,45,81
+,Superset Dumbell Flyes with Cable Crossover,"Tempo 3-0-1-0
+
+5 x 12 Reps
+
+45 Seconds Rest
+
+Dumbell Flyes Description
+
+Cable Crossover Description",5,3,Weights,,45,81
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+50 Reps Total as quickly as possible
+
+(use weight if needed)
+
+Wide grip Chin-Up Description",1,4,Weights,,45,81
+,Superset Bent-Over Barbell Rows with Bent-Over DB Rows,"Tempo 3-0-1-0
+
+8 x 8 Reps
+
+60 Seconds Rest
+
+Bent-Over Barbell Row Description
+
+Bent-Over DB Row Description",8,5,Weights,,45,81
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25 Reps
+
+45 Seconds Rest
+
+Hanging Leg Raise Description",5,6,Weights,,45,81
+,Seated DB Military Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Seated DB Military Press Description",10,1,Weights,,46,82
+,Superset Arnold Press with Lat Raises,"Tempo 3-0-1-0
+
+5 x 8 
+
+60 Seconds Rest
+
+Arnold Press Description
+
+Lat Raises Description",5,1,Weights,,46,82
+,Superset DB Upright Rows with Bent-Over Rear Delt Flyes,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+60 Seconds Rest
+
+DB Upright Row Description
+
+Bent-Over Rear Delt Flyes Description",5,2,Weights,,46,82
+,Barbell Curls,"Tempo 3-0-1-0
+
+8 x 8,8,8,8,8,5,5,5 Reps
+
+60 Seconds Rest
+
+Barbell Curl Description",8,3,Weights,,46,82
+,Superset Concentration Curls with Seated DB Curls,"Tempo 3-0-1-0
+
+5 x 6
+
+60 Seconds Rest
+
+Concentration Curl Description
+
+Seated DB Curl Description",5,4,Weights,,46,82
+,Close-Grip Bench Press,"Tempo 3-0-1-0
+
+10 x 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+1-10 Method
+
+No Rest
+
+Close-Grip Bench Description",10,5,Weights,,46,82
+,Superset Skull Crushers with DB One-Arm Tricep Extension,"Tempo 3-0-1-0
+
+5 x 15
+
+45 Seconds Rest
+
+Skull Crushers Description
+
+DB One-Arm Tricep Extension",5,6,Weights,,46,82
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 12
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,7,Weights,,46,82
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,8,Weights,,46,82
+,Barbell Squat,"Tempo 3-0-1-0
+
+Max Effort Method
+
+8 x 20, 15, 10, 8, 5, 3, 1, 1 Reps
+
+90 - 120 Seconds Rest
+
+Barbell Squat Description",8,1,Weights,,47,83
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+6 x 6
+
+90 Second Rest
+
+Stiff-Legged Deadlift Description",6,2,Weights,,47,83
+,Barbell Lunge,"Tempo 3-0-1-0
+
+4 x 4 Reps
+
+90 Seconds Rest
+
+Barbell Lunge Description",4,3,Weights,,47,83
+,Superset Leg Extension with Lying Leg Curl,"Tempo 3-0-1-0
+
+5 x 20
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Lying Leg Curl Description",5,4,Weights,,47,83
+,Superset Standing Calf Raises with Kneeling Cable Crunches,"Tempo 3-0-1-0
+
+4 x 10 superset with 4 x 25
+
+Standing Calf Raise Description
+
+Kneeling Cable Crunch Description",4,5,Weights,,47,83
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,48,84
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,48,84
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,48,84
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,48,84
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,48,84
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,48,84
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,48,84
+,Incline Barbell Bench Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Incline Barbell Bench Description",10,1,Weights,,49,85
+,Flat Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+90 Seconds Rest
+
+Flat Barbell Bench Description",5,2,Weights,,49,85
+,Superset Dumbell Flyes with Cable Crossover,"Tempo 3-0-1-0
+
+5 x 12 Reps
+
+45 Seconds Rest
+
+Dumbell Flyes Description
+
+Cable Crossover Description",5,3,Weights,,49,85
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+50 Reps Total as quickly as possible
+
+(use weight if needed)
+
+Wide grip Chin-Up Description",1,4,Weights,,49,85
+,Superset Bent-Over Barbell Rows with Bent-Over DB Rows,"Tempo 3-0-1-0
+
+8 x 8 Reps
+
+60 Seconds Rest
+
+Bent-Over Barbell Row Description
+
+Bent-Over DB Row Description",8,5,Weights,,49,85
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25 Reps
+
+45 Seconds Rest
+
+Hanging Leg Raise Description",5,6,Weights,,49,85
+,Seated DB Military Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Seated DB Military Press Description",10,1,Weights,,50,86
+,Superset Arnold Press with Lat Raises,"Tempo 3-0-1-0
+
+5 x 8 
+
+60 Seconds Rest
+
+Arnold Press Description
+
+Lat Raises Description",5,1,Weights,,50,86
+,Superset DB Upright Rows with Bent-Over Rear Delt Flyes,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+60 Seconds Rest
+
+DB Upright Row Description
+
+Bent-Over Rear Delt Flyes Description",5,2,Weights,,50,86
+,Barbell Curls,"Tempo 3-0-1-0
+
+8 x 8,8,8,8,8,5,5,5 Reps
+
+60 Seconds Rest
+
+Barbell Curl Description",8,3,Weights,,50,86
+,Superset Concentration Curls with Seated DB Curls,"Tempo 3-0-1-0
+
+5 x 6
+
+60 Seconds Rest
+
+Concentration Curl Description
+
+Seated DB Curl Description",5,4,Weights,,50,86
+,Close-Grip Bench Press,"Tempo 3-0-1-0
+
+10 x 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+1-10 Method
+
+No Rest
+
+Close-Grip Bench Description",10,5,Weights,,50,86
+,Superset Skull Crushers with DB One-Arm Tricep Extension,"Tempo 3-0-1-0
+
+5 x 15
+
+45 Seconds Rest
+
+Skull Crushers Description
+
+DB One-Arm Tricep Extension",5,6,Weights,,50,86
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 12
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,7,Weights,,50,86
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,8,Weights,,50,86
+,Barbell Squat,"Tempo 3-0-1-0
+
+Max Effort Method
+
+8 x 20, 15, 10, 8, 5, 3, 1, 1 Reps
+
+90 - 120 Seconds Rest
+
+Barbell Squat Description",8,1,Weights,,51,87
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+6 x 6
+
+90 Second Rest
+
+Stiff-Legged Deadlift Description",6,2,Weights,,51,87
+,Barbell Lunge,"Tempo 3-0-1-0
+
+4 x 4 Reps
+
+90 Seconds Rest
+
+Barbell Lunge Description",4,3,Weights,,51,87
+,Superset Leg Extension with Lying Leg Curl,"Tempo 3-0-1-0
+
+5 x 20
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Lying Leg Curl Description",5,4,Weights,,51,87
+,Superset Standing Calf Raises with Kneeling Cable Crunches,"Tempo 3-0-1-0
+
+4 x 10 superset with 4 x 25
+
+Standing Calf Raise Description
+
+Kneeling Cable Crunch Description",4,5,Weights,,51,87
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,52,88
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,52,88
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,52,88
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,52,88
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,52,88
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,52,88
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,52,88
+,Incline Barbell Bench Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Incline Barbell Bench Description",10,1,Weights,,53,89
+,Flat Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+90 Seconds Rest
+
+Flat Barbell Bench Description",5,2,Weights,,53,89
+,Superset Dumbell Flyes with Cable Crossover,"Tempo 3-0-1-0
+
+5 x 12 Reps
+
+45 Seconds Rest
+
+Dumbell Flyes Description
+
+Cable Crossover Description",5,3,Weights,,53,89
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+50 Reps Total as quickly as possible
+
+(use weight if needed)
+
+Wide grip Chin-Up Description",1,4,Weights,,53,89
+,Superset Bent-Over Barbell Rows with Bent-Over DB Rows,"Tempo 3-0-1-0
+
+8 x 8 Reps
+
+60 Seconds Rest
+
+Bent-Over Barbell Row Description
+
+Bent-Over DB Row Description",8,5,Weights,,53,89
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25 Reps
+
+45 Seconds Rest
+
+Hanging Leg Raise Description",5,6,Weights,,53,89
+,Seated DB Military Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Seated DB Military Press Description",10,1,Weights,,54,90
+,Superset Arnold Press with Lat Raises,"Tempo 3-0-1-0
+
+5 x 8 
+
+60 Seconds Rest
+
+Arnold Press Description
+
+Lat Raises Description",5,1,Weights,,54,90
+,Superset DB Upright Rows with Bent-Over Rear Delt Flyes,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+60 Seconds Rest
+
+DB Upright Row Description
+
+Bent-Over Rear Delt Flyes Description",5,2,Weights,,54,90
+,Barbell Curls,"Tempo 3-0-1-0
+
+8 x 8,8,8,8,8,5,5,5 Reps
+
+60 Seconds Rest
+
+Barbell Curl Description",8,3,Weights,,54,90
+,Superset Concentration Curls with Seated DB Curls,"Tempo 3-0-1-0
+
+5 x 6
+
+60 Seconds Rest
+
+Concentration Curl Description
+
+Seated DB Curl Description",5,4,Weights,,54,90
+,Close-Grip Bench Press,"Tempo 3-0-1-0
+
+10 x 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+1-10 Method
+
+No Rest
+
+Close-Grip Bench Description",10,5,Weights,,54,90
+,Superset Skull Crushers with DB One-Arm Tricep Extension,"Tempo 3-0-1-0
+
+5 x 15
+
+45 Seconds Rest
+
+Skull Crushers Description
+
+DB One-Arm Tricep Extension",5,6,Weights,,54,90
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 12
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,7,Weights,,54,90
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,8,Weights,,54,90
+,Barbell Squat,"Tempo 3-0-1-0
+
+Max Effort Method
+
+8 x 20, 15, 10, 8, 5, 3, 1, 1 Reps
+
+90 - 120 Seconds Rest
+
+Barbell Squat Description",8,1,Weights,,55,91
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+6 x 6
+
+90 Second Rest
+
+Stiff-Legged Deadlift Description",6,2,Weights,,55,91
+,Barbell Lunge,"Tempo 3-0-1-0
+
+4 x 4 Reps
+
+90 Seconds Rest
+
+Barbell Lunge Description",4,3,Weights,,55,91
+,Superset Leg Extension with Lying Leg Curl,"Tempo 3-0-1-0
+
+5 x 20
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Lying Leg Curl Description",5,4,Weights,,55,91
+,Superset Standing Calf Raises with Kneeling Cable Crunches,"Tempo 3-0-1-0
+
+4 x 10 superset with 4 x 25
+
+Standing Calf Raise Description
+
+Kneeling Cable Crunch Description",4,5,Weights,,55,91
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,56,92
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,56,92
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,56,92
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,56,92
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,56,92
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,56,92
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,56,92
+,Incline Barbell Bench Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Incline Barbell Bench Description",10,1,Weights,,57,93
+,Flat Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+90 Seconds Rest
+
+Flat Barbell Bench Description",5,2,Weights,,57,93
+,Superset Dumbell Flyes with Cable Crossover,"Tempo 3-0-1-0
+
+5 x 12 Reps
+
+45 Seconds Rest
+
+Dumbell Flyes Description
+
+Cable Crossover Description",5,3,Weights,,57,93
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+50 Reps Total as quickly as possible
+
+(use weight if needed)
+
+Wide grip Chin-Up Description",1,4,Weights,,57,93
+,Superset Bent-Over Barbell Rows with Bent-Over DB Rows,"Tempo 3-0-1-0
+
+8 x 8 Reps
+
+60 Seconds Rest
+
+Bent-Over Barbell Row Description
+
+Bent-Over DB Row Description",8,5,Weights,,57,93
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25 Reps
+
+45 Seconds Rest
+
+Hanging Leg Raise Description",5,6,Weights,,57,93
+,Seated DB Military Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Seated DB Military Press Description",10,1,Weights,,58,94
+,Superset Arnold Press with Lat Raises,"Tempo 3-0-1-0
+
+5 x 8 
+
+60 Seconds Rest
+
+Arnold Press Description
+
+Lat Raises Description",5,1,Weights,,58,94
+,Superset DB Upright Rows with Bent-Over Rear Delt Flyes,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+60 Seconds Rest
+
+DB Upright Row Description
+
+Bent-Over Rear Delt Flyes Description",5,2,Weights,,58,94
+,Barbell Curls,"Tempo 3-0-1-0
+
+8 x 8,8,8,8,8,5,5,5 Reps
+
+60 Seconds Rest
+
+Barbell Curl Description",8,3,Weights,,58,94
+,Superset Concentration Curls with Seated DB Curls,"Tempo 3-0-1-0
+
+5 x 6
+
+60 Seconds Rest
+
+Concentration Curl Description
+
+Seated DB Curl Description",5,4,Weights,,58,94
+,Close-Grip Bench Press,"Tempo 3-0-1-0
+
+10 x 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+1-10 Method
+
+No Rest
+
+Close-Grip Bench Description",10,5,Weights,,58,94
+,Superset Skull Crushers with DB One-Arm Tricep Extension,"Tempo 3-0-1-0
+
+5 x 15
+
+45 Seconds Rest
+
+Skull Crushers Description
+
+DB One-Arm Tricep Extension",5,6,Weights,,58,94
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 12
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,7,Weights,,58,94
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,8,Weights,,58,94
+,Barbell Squat,"Tempo 3-0-1-0
+
+Max Effort Method
+
+8 x 20, 15, 10, 8, 5, 3, 1, 1 Reps
+
+90 - 120 Seconds Rest
+
+Barbell Squat Description",8,1,Weights,,59,95
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+6 x 6
+
+90 Second Rest
+
+Stiff-Legged Deadlift Description",6,2,Weights,,59,95
+,Barbell Lunge,"Tempo 3-0-1-0
+
+4 x 4 Reps
+
+90 Seconds Rest
+
+Barbell Lunge Description",4,3,Weights,,59,95
+,Superset Leg Extension with Lying Leg Curl,"Tempo 3-0-1-0
+
+5 x 20
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Lying Leg Curl Description",5,4,Weights,,59,95
+,Superset Standing Calf Raises with Kneeling Cable Crunches,"Tempo 3-0-1-0
+
+4 x 10 superset with 4 x 25
+
+Standing Calf Raise Description
+
+Kneeling Cable Crunch Description",4,5,Weights,,59,95
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,60,96
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,60,96
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,60,96
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,60,96
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,60,96
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,60,96
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,60,96
+,Incline Barbell Bench Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Incline Barbell Bench Description",10,1,Weights,,61,97
+,Flat Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+90 Seconds Rest
+
+Flat Barbell Bench Description",5,2,Weights,,61,97
+,Superset Dumbell Flyes with Cable Crossover,"Tempo 3-0-1-0
+
+5 x 12 Reps
+
+45 Seconds Rest
+
+Dumbell Flyes Description
+
+Cable Crossover Description",5,3,Weights,,61,97
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+50 Reps Total as quickly as possible
+
+(use weight if needed)
+
+Wide grip Chin-Up Description",1,4,Weights,,61,97
+,Superset Bent-Over Barbell Rows with Bent-Over DB Rows,"Tempo 3-0-1-0
+
+8 x 8 Reps
+
+60 Seconds Rest
+
+Bent-Over Barbell Row Description
+
+Bent-Over DB Row Description",8,5,Weights,,61,97
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25 Reps
+
+45 Seconds Rest
+
+Hanging Leg Raise Description",5,6,Weights,,61,97
+,Seated DB Military Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Seated DB Military Press Description",10,1,Weights,,62,98
+,Superset Arnold Press with Lat Raises,"Tempo 3-0-1-0
+
+5 x 8 
+
+60 Seconds Rest
+
+Arnold Press Description
+
+Lat Raises Description",5,1,Weights,,62,98
+,Superset DB Upright Rows with Bent-Over Rear Delt Flyes,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+60 Seconds Rest
+
+DB Upright Row Description
+
+Bent-Over Rear Delt Flyes Description",5,2,Weights,,62,98
+,Barbell Curls,"Tempo 3-0-1-0
+
+8 x 8,8,8,8,8,5,5,5 Reps
+
+60 Seconds Rest
+
+Barbell Curl Description",8,3,Weights,,62,98
+,Superset Concentration Curls with Seated DB Curls,"Tempo 3-0-1-0
+
+5 x 6
+
+60 Seconds Rest
+
+Concentration Curl Description
+
+Seated DB Curl Description",5,4,Weights,,62,98
+,Close-Grip Bench Press,"Tempo 3-0-1-0
+
+10 x 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+1-10 Method
+
+No Rest
+
+Close-Grip Bench Description",10,5,Weights,,62,98
+,Superset Skull Crushers with DB One-Arm Tricep Extension,"Tempo 3-0-1-0
+
+5 x 15
+
+45 Seconds Rest
+
+Skull Crushers Description
+
+DB One-Arm Tricep Extension",5,6,Weights,,62,98
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 12
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,7,Weights,,62,98
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,8,Weights,,62,98
+,Barbell Squat,"Tempo 3-0-1-0
+
+Max Effort Method
+
+8 x 20, 15, 10, 8, 5, 3, 1, 1 Reps
+
+90 - 120 Seconds Rest
+
+Barbell Squat Description",8,1,Weights,,63,99
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+6 x 6
+
+90 Second Rest
+
+Stiff-Legged Deadlift Description",6,2,Weights,,63,99
+,Barbell Lunge,"Tempo 3-0-1-0
+
+4 x 4 Reps
+
+90 Seconds Rest
+
+Barbell Lunge Description",4,3,Weights,,63,99
+,Superset Leg Extension with Lying Leg Curl,"Tempo 3-0-1-0
+
+5 x 20
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Lying Leg Curl Description",5,4,Weights,,63,99
+,Superset Standing Calf Raises with Kneeling Cable Crunches,"Tempo 3-0-1-0
+
+4 x 10 superset with 4 x 25
+
+Standing Calf Raise Description
+
+Kneeling Cable Crunch Description",4,5,Weights,,63,99
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,64,100
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,64,100
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,64,100
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,64,100
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,64,100
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,64,100
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,64,100
+,Incline Barbell Bench Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Incline Barbell Bench Description",10,1,Weights,,65,101
+,Flat Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+90 Seconds Rest
+
+Flat Barbell Bench Description",5,2,Weights,,65,101
+,Superset Dumbell Flyes with Cable Crossover,"Tempo 3-0-1-0
+
+5 x 12 Reps
+
+45 Seconds Rest
+
+Dumbell Flyes Description
+
+Cable Crossover Description",5,3,Weights,,65,101
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+50 Reps Total as quickly as possible
+
+(use weight if needed)
+
+Wide grip Chin-Up Description",1,4,Weights,,65,101
+,Superset Bent-Over Barbell Rows with Bent-Over DB Rows,"Tempo 3-0-1-0
+
+8 x 8 Reps
+
+60 Seconds Rest
+
+Bent-Over Barbell Row Description
+
+Bent-Over DB Row Description",8,5,Weights,,65,101
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25 Reps
+
+45 Seconds Rest
+
+Hanging Leg Raise Description",5,6,Weights,,65,101
+,Seated DB Military Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Seated DB Military Press Description",10,1,Weights,,66,102
+,Superset Arnold Press with Lat Raises,"Tempo 3-0-1-0
+
+5 x 8 
+
+60 Seconds Rest
+
+Arnold Press Description
+
+Lat Raises Description",5,1,Weights,,66,102
+,Superset DB Upright Rows with Bent-Over Rear Delt Flyes,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+60 Seconds Rest
+
+DB Upright Row Description
+
+Bent-Over Rear Delt Flyes Description",5,2,Weights,,66,102
+,Barbell Curls,"Tempo 3-0-1-0
+
+8 x 8,8,8,8,8,5,5,5 Reps
+
+60 Seconds Rest
+
+Barbell Curl Description",8,3,Weights,,66,102
+,Superset Concentration Curls with Seated DB Curls,"Tempo 3-0-1-0
+
+5 x 6
+
+60 Seconds Rest
+
+Concentration Curl Description
+
+Seated DB Curl Description",5,4,Weights,,66,102
+,Close-Grip Bench Press,"Tempo 3-0-1-0
+
+10 x 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+1-10 Method
+
+No Rest
+
+Close-Grip Bench Description",10,5,Weights,,66,102
+,Superset Skull Crushers with DB One-Arm Tricep Extension,"Tempo 3-0-1-0
+
+5 x 15
+
+45 Seconds Rest
+
+Skull Crushers Description
+
+DB One-Arm Tricep Extension",5,6,Weights,,66,102
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 12
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,7,Weights,,66,102
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,8,Weights,,66,102
+,Barbell Squat,"Tempo 3-0-1-0
+
+Max Effort Method
+
+8 x 20, 15, 10, 8, 5, 3, 1, 1 Reps
+
+90 - 120 Seconds Rest
+
+Barbell Squat Description",8,1,Weights,,67,103
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+6 x 6
+
+90 Second Rest
+
+Stiff-Legged Deadlift Description",6,2,Weights,,67,103
+,Barbell Lunge,"Tempo 3-0-1-0
+
+4 x 4 Reps
+
+90 Seconds Rest
+
+Barbell Lunge Description",4,3,Weights,,67,103
+,Superset Leg Extension with Lying Leg Curl,"Tempo 3-0-1-0
+
+5 x 20
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Lying Leg Curl Description",5,4,Weights,,67,103
+,Superset Standing Calf Raises with Kneeling Cable Crunches,"Tempo 3-0-1-0
+
+4 x 10 superset with 4 x 25
+
+Standing Calf Raise Description
+
+Kneeling Cable Crunch Description",4,5,Weights,,67,103
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,68,104
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,68,104
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,68,104
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,68,104
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,68,104
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,68,104
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,68,104
+,Incline Barbell Bench Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Incline Barbell Bench Description",10,1,Weights,,69,105
+,Flat Barbell Bench Press,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+90 Seconds Rest
+
+Flat Barbell Bench Description",5,2,Weights,,69,105
+,Superset Dumbell Flyes with Cable Crossover,"Tempo 3-0-1-0
+
+5 x 12 Reps
+
+45 Seconds Rest
+
+Dumbell Flyes Description
+
+Cable Crossover Description",5,3,Weights,,69,105
+,Wide grip Chin-Up,"Tempo 3-0-1-0
+
+50 Reps Total as quickly as possible
+
+(use weight if needed)
+
+Wide grip Chin-Up Description",1,4,Weights,,69,105
+,Superset Bent-Over Barbell Rows with Bent-Over DB Rows,"Tempo 3-0-1-0
+
+8 x 8 Reps
+
+60 Seconds Rest
+
+Bent-Over Barbell Row Description
+
+Bent-Over DB Row Description",8,5,Weights,,69,105
+,Hanging leg Raise,"Tempo 3-0-1-0
+
+5 x 25 Reps
+
+45 Seconds Rest
+
+Hanging Leg Raise Description",5,6,Weights,,69,105
+,Seated DB Military Press,"Tempo 3-0-1-0
+
+10 x 4 Reps
+
+90 Seconds Rest
+
+Seated DB Military Press Description",10,1,Weights,,70,106
+,Superset Arnold Press with Lat Raises,"Tempo 3-0-1-0
+
+5 x 8 
+
+60 Seconds Rest
+
+Arnold Press Description
+
+Lat Raises Description",5,1,Weights,,70,106
+,Superset DB Upright Rows with Bent-Over Rear Delt Flyes,"Tempo 3-0-1-0
+
+5 x 6 Reps
+
+60 Seconds Rest
+
+DB Upright Row Description
+
+Bent-Over Rear Delt Flyes Description",5,2,Weights,,70,106
+,Barbell Curls,"Tempo 3-0-1-0
+
+8 x 8,8,8,8,8,5,5,5 Reps
+
+60 Seconds Rest
+
+Barbell Curl Description",8,3,Weights,,70,106
+,Superset Concentration Curls with Seated DB Curls,"Tempo 3-0-1-0
+
+5 x 6
+
+60 Seconds Rest
+
+Concentration Curl Description
+
+Seated DB Curl Description",5,4,Weights,,70,106
+,Close-Grip Bench Press,"Tempo 3-0-1-0
+
+10 x 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+1-10 Method
+
+No Rest
+
+Close-Grip Bench Description",10,5,Weights,,70,106
+,Superset Skull Crushers with DB One-Arm Tricep Extension,"Tempo 3-0-1-0
+
+5 x 15
+
+45 Seconds Rest
+
+Skull Crushers Description
+
+DB One-Arm Tricep Extension",5,6,Weights,,70,106
+,Superset Wrist Curls with Reverse Wrist Curls,"Tempo 3-0-1-0
+
+5 x 12
+
+45 Seconds Rest
+
+Wrist Curl Description
+
+Reverse Wrist Curl Description",5,7,Weights,,70,106
+,Decline Sit-Up,"Tempo 3-0-1-0
+
+5 x 25
+
+45 Seconds Rest
+
+Decline Sit-Up Description",5,8,Weights,,70,106
+,Barbell Squat,"Tempo 3-0-1-0
+
+Max Effort Method
+
+8 x 20, 15, 10, 8, 5, 3, 1, 1 Reps
+
+90 - 120 Seconds Rest
+
+Barbell Squat Description",8,1,Weights,,71,107
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+6 x 6
+
+90 Second Rest
+
+Stiff-Legged Deadlift Description",6,2,Weights,,71,107
+,Barbell Lunge,"Tempo 3-0-1-0
+
+4 x 4 Reps
+
+90 Seconds Rest
+
+Barbell Lunge Description",4,3,Weights,,71,107
+,Superset Leg Extension with Lying Leg Curl,"Tempo 3-0-1-0
+
+5 x 20
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Lying Leg Curl Description",5,4,Weights,,71,107
+,Superset Standing Calf Raises with Kneeling Cable Crunches,"Tempo 3-0-1-0
+
+4 x 10 superset with 4 x 25
+
+Standing Calf Raise Description
+
+Kneeling Cable Crunch Description",4,5,Weights,,71,107
+,Barbell Squat,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Barbell Squat Description",5,1,Weights,,72,108
+,Stiff-Legged Deadlift,"Tempo 3-0-1-0
+
+5 x 8-12 reps
+
+45 Seconds Rest
+
+Stiff-Legged Deadlift Description",5,2,Weights,,72,108
+,Good Morning,"Tempo 3-0-1-0 
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Good Morning Description",5,3,Weights,,72,108
+,Barbell Lunge,"Tempo 3-0-1-0
+
+5 x 8-12
+
+
+45 Seconds Rest
+
+Barbell Lunge Description",5,4,Weights,,72,108
+,Superset Leg Extension with Seated Leg Curl,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Leg Extension Description
+
+Seated Leg Curl Description",5,5,Weights,,72,108
+,Superset Standing Calf Raises with Seated Calf Raises,"Tempo 3-0-1-0
+
+5 x 8-12 Reps
+
+45 Seconds Rest
+
+Standing Calf Raise Description
+
+Seated Calf Raise Description",5,6,Weights,,72,108
+,Kneeling Cable Crunch,"Tempo 3-0-1-0
+
+4 x 25 Reps
+
+45 Seconds Rest
+
+Kneeling Cable Crunch Description",4,7,Weights,,72,108
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,

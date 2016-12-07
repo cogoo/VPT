@@ -103,9 +103,21 @@ $num6 = ['breakfast','breakfast','lunch','lunch','dinner','dinner'];
                                 </ul>
                             </div>
                             <div class="meal-action small-2 columns">
-                                <h5><i class="fav ion-ios-star-outline"></i></h5>
+                                <h5><i data-open="exampleModal<?php echo $i; ?>" class="fav ion-ios-star-outline"></i></h5>
                                 <h5><i class="del ion-close-round"></i></h5>
                             </div>
+                            <div class="tiny reveal-s" id="exampleModal<?php echo $i; ?>" data-reveal>
+                                <div class="inner text-center">
+                                    <h4>Meal Saved to Favourites!</h4>
+                                    <p>As meals are generated based on calaries it's smart to favourite ingredients too in case this meal doesn't match exactly</p>
+                                    <ul>
+                                        <li><input type="checkbox" id="protein" name="protein" /><label for="protein"><?php echo $meals['Protein_Name'] ?></label></li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <button></button>
+                                </div>
+                           </div>
                         </div>
                         
                         <div class="row">
